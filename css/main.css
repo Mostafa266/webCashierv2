@@ -317,3 +317,7 @@ ul{
   flex-direction: row!important;
   
 }
+
+.searchbar{
+  z-index: 1 !important;
+}
