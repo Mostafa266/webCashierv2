@@ -307,3 +307,13 @@ ul{
   }
 }
 
+
+.layout-container{
+    flex-direction: row-reverse!important;
+}
+
+
+.ltr .layout-container{
+  flex-direction: row!important;
+  
+}
