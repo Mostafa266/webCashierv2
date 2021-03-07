@@ -1,0 +1,562 @@
+
+.bg-bills {
+  width: 100%;
+  padding: 0 0 16px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+  overflow-y: hidden;
+  .billsHeaderContainer {
+    height: 52px;
+    margin: 0 0 0 1px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: #1877f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none;
+    top: 0;
+    margin-bottom: 0;
+    .right {
+      display: flex;
+    }
+    #menuIcon {
+      border-right: 1px solid #fff;
+    }
+    .right .title {
+      width: 44px;
+      height: 32px;
+      margin: 0 15px 0 9px;
+      font-family: "NotoSansArabic-Medium";
+      font-size: 15px;
+      font-weight: 500;
+      text-align: right;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+    }
+    .right .title2 {
+      width: 43px;
+      height: 32px;
+      font-size: 15px;
+      font-weight: 300;
+      text-align: right;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      span{
+        font-family: "NotoSansArabic-Light";
+
+      }
+    }
+    .left {
+      height: 52px;
+      margin: 0 1px 0 0;
+    }
+    .text-center {
+      .billTitle {
+        width: 36px;
+        height: 40px;
+        margin: 0 7px 0 0;
+        padding: 4px 9px;
+        padding-top: 8px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffffff;
+        span {
+          width: 18px;
+          height: 32px;
+          font-family: "NotoSansArabic-Medium";
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 2.13;
+          text-align: center;
+          color: white;
+        }
+      }
+      .count {
+        display: flex;
+        align-items: center;
+        span {
+          width: 8px;
+          height: 32px;
+          font-family: "NotoSansArabic-Bold";
+          font-size: 15px;
+          font-weight: bold;
+          line-height: 2.13;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .clientContainer {
+    width: 100%;
+    height: 51.5px;
+    margin: 0 0 0.5px;
+    padding: 13px 23.3px 13.5px 0px;
+    background-color: #ffffff;
+    float: right;
+    text-align: right;
+    position: fixed;
+    left: -2px;
+    border: none;
+    top: 51px;
+
+        .clientTitle_container {
+      width: 57px;
+      height: 25px;
+      margin: 0 9px 0 0;
+      .client_title {
+        font-family: "NotoSansArabic-Medium";
+        font-size: 12px;
+        font-weight: 500;
+        text-align: right;
+        color: #212121;
+      }
+    }
+  }
+  .divider {
+    border: 1px solid #f9f3f3;
+    width: 100%;
+    margin: 0.5px 0.5px 0;
+    margin-top: 52px;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 41.7%;
+    border: none;
+    z-index: -10;
+    margin-bottom: 40px;
+  }
+
+  .billDetails {
+    width: 100%;
+    height: 72px;
+    padding: 11px 16px 0.5px 8.5px;
+    border-radius: 6px;
+    background-color: #ffffff;
+ 
+    .paymentIcon {
+      width: 57.5px;
+      height: 56px;
+      margin: 8px 10.5px 0 8px;
+      padding: 17px 13.1px 17px 14px;
+      border-radius: 12px;
+      -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(30px);
+      background-color: #f5f5f5;
+    }
+
+    .discountPrecentage {
+      height: 24px;
+      border-radius: 16px;
+      background-color: #ffe9f0;
+      padding: 0 6px 0 5px;
+      span {
+        font-family: "NotoSansArabic-Medium";
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: -0.24px;
+        text-align: left;
+        color: #ff545d;
+        position: relative;
+        top: -1px;
+      }
+    }
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-6 {
+      width: 24px;
+      height: 24px;
+      margin: 16px 0;
+      border-radius: 16px;
+      border: solid 0.2px #ff7adf;
+      opacity: 0;
+    }
+    .img-6 {
+      opacity: 1;
+      border: none;
+    }
+    .discountIccon {
+      padding-left: 15px;
+    }
+    .cash {
+      width: 41px;
+      height: 28px;
+      margin: 15px 0px 13px 0px;
+      font-family: 'NotoSansArabic-Medium';
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+      color: #242424;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      .oldPrice {
+        text-decoration: line-through;
+        opacity: 0.4;
+        font-family: 'NotoSansArabic-Medium';
+        font-size: 11px;
+        text-align: left;
+        color: #212121;
+      }
+    }
+    .product_count {
+      width: 36px;
+      height: 40px;
+      margin: 8px 0;
+      padding: 4px 9px;
+      border-radius: 6px;
+      background-color: #e4e6eb;
+      display: flex;
+      align-items: center;
+
+      p {
+        width: 18px;
+        height: 32px;
+        font-family: 'NotoSansArabic-Medium';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 2.13;
+        text-align: center;
+        color: #212121;
+      }
+    }
+    .details {
+      text-align: right;
+      align-items: center;
+      .product_description {
+        p {
+          height: 28px;
+          font-family: 'NotoSansArabic-Medium';
+          font-size: 12px;
+          text-align: right;
+          color: #212121;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          align-items: center;
+          // white-space: initial;
+        }
+        .oldPrice {
+          text-decoration: line-through;
+          opacity: 0.4;
+          font-family: "NotoSansArabic-Regular";
+          font-size: 11px;
+          text-align: left;
+          color: #212121;
+        }
+        span {
+          width: 50px;
+          height: 23px;
+          font-family: "NotoSansArabic-Regular";
+          font-size: 11px;
+          text-align: right;
+          color: #212121;
+          input,input:focus{
+            width: inherit;
+            padding: 0 3px 1px 0px;
+            border-radius: 2px;
+            border: solid 0.5px #e8e4e4;
+                    }
+        }
+      }
+    }
+  }
+  .first-top{
+    margin-top: 51.5px;
+    height: calc(100vh - 254px);
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .billDetails:hover {
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4 {
+      opacity: 1;
+      border: none;
+    }
+  }
+
+  .billdivider {
+    height: 0;
+    margin: 0 7.5px 0 8.5px;
+    border: 1px solid #f8f9fa;
+  }
+}
+.billdropdown.show {
+  display: block;
+
+  text-align: right;
+  position: absolute;
+  -webkit-transform: initial !important;
+  transform: initial !important;
+  top: 0px !important;
+  left: 0px !important;
+  will-change: transform;
+  right: initial;
+  width: 336px;
+  height: 452px;
+  margin: 52px 0 0;
+  padding: 8px 0 12px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.item-content {
+  width: 336px;
+  height: 72px;
+  padding: 22px 16px 21px 0px;
+  background-color: #ffffff;
+  span {
+    height: 29px;
+    margin: 0 8px 0 0;
+    font-family: 'NotoSansArabic-Medium';
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    color: #212121;
+  }
+  .deletebill {
+    color: #ff545d;
+  }
+}
+.item-content:hover {
+  background-color: #e3f3ff;
+  // height: 36px;
+  // margin: 0 0.5px 0.5px 0;
+  cursor: pointer;
+}
+.addClienMenu {
+  padding: 0;
+  width: 100%;
+  top: 50px !important;
+  height: 100vh;
+
+  overflow-y: hidden;
+  transform: translate3d(0px, 0px, 0px) !important;
+  left: -2px;
+  .item-content {
+    width: -webkit-fill-available;
+  }
+  .headerAddClient {
+    width: 100%;
+    height: 52px;
+    padding: 14px 15.7px 13px 16px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: #e3f3ff;
+  }
+  .list-of-Users {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding-left: 16px;
+    padding-right: 8px;
+    .list-group {
+      border-radius: 0rem;
+      padding-bottom: 51px;
+      .clientName {
+        font-size: 12px;
+      }
+      .client-price {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        color: #242424;
+        font-family: "NotoSansArabic-Bold";
+      }
+      p {
+        font-family: 'NotoSansArabic-Medium';
+        font-size: 10px;
+        text-align: right;
+        color: #212121;
+      }
+    }
+    .list-group-item {
+      padding: 8px;
+      background-color: #fff;
+      border: none;
+      height: 52px;
+      margin: 0 0 20px;
+      border-bottom: 1px solid #f8f9fa;
+      img {
+        margin-left: 9px;
+      }
+    }
+  }
+  .addNewClient {
+    width: 100%;
+    height: 52px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f2f5;
+    p {
+      font-family: 'NotoSansArabic-Medium';
+      font-size: 12px;
+      font-weight: 500;
+      text-align: right;
+      color: #1877f2;
+    }
+  }
+  ul {
+    padding-inline-start: 0px;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid #f0f2f5;
+  }
+
+  .nav-tabs > li.nav-item > a,
+  .nav-tabs > li.nav-item > a:hover {
+    border: none;
+    color: #4285f4 !important;
+    background: transparent;
+    position: relative;
+    height: 40px;
+    padding-top: 8px;
+    font-family: "NotoSansArabic-Regular";
+    font-size: 12px;
+    text-align: center;
+  }
+  .nav-tabs > li > a {
+    border: none;
+    font-size: 12px;
+
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .nav-tabs > li.nav-item > a::after {
+    content: "";
+    background: #4285f4;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+  }
+  .nav-tabs > li.nav-item > a.active::after,
+  .nav-tabs > li.nav-item:hover > a::after {
+    transform: scale(1);
+  }
+  .nav-tabs .nav-item {
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  .headerAddClient {
+    width: 100%;
+    ul {
+      padding-inline-start: 0px;
+    }
+    .nav-tabs {
+      border-bottom: 1px solid #f0f2f5;
+      height: 40px;
+    }
+    .nav-tabs > li > a {
+      border: none;
+      color: #666;
+    }
+    .nav-tabs > li.nav-item > a,
+    .nav-tabs > li.nav-item > a:hover {
+      border: none;
+      // color: #4285f4 !important;
+      background: transparent;
+      position: relative;
+      font-size: 12px;
+      line-height: 9;
+      text-align: right;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .nav-tabs > li.nav-item > a::after {
+      content: "";
+      background: #4285f4;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      bottom: -1px;
+      transition: all 250ms ease 0s;
+      transform: scale(0);
+    }
+    .nav-tabs > li.nav-item > a.active::after,
+    .nav-tabs > li.nav-item:hover > a::after {
+      transform: scale(1);
+    }
+    .nav-tabs .nav-item {
+      width: 50%;
+      text-align: center;
+    }
+
+    .searchIconContainer {
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+    .searchIconContainer .inputContainer {
+      height: 44px;
+      width: 100%;
+      margin: 4px 0;
+      border-radius: 0;
+      background-color: transparent;
+      position: relative;
+      top: 0px;
+      right: 0px;
+      border: none;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 10%;
+  /* left: 0; */
+  z-index: 1050;
+  display: none;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.modal-content {
+  /* 80% of window height */
+  height: 100%;
+  background-color: #ffffff;
+  border: none;
+}
+.modal-header {
+  height: 47.5px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} //end modal delivery
+.fixed-top.searchbar{
+  top: 51px;
+}
+

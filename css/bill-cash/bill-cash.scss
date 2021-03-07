@@ -1,0 +1,204 @@
+body{
+    background-color: #ffffff;
+}
+.bill{
+    position: relative;
+    z-index: -10;
+    top: 51px;
+}
+.finalTotal {
+  height: 72px;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: #f2f2f2 !important;
+}
+.remaingPrice {
+  font-family: "NotoSansArabic-Regular";
+  font-size: 20px;
+  text-align: left;
+  color: #1877f2;
+}
+.totalBill .remaining {
+  text-align: right;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 9px;
+  border-bottom: none;
+  height: 100%;
+}
+.rigth-side {
+  background-color: #ffff;
+  border: solid 1px #e4e6eb;
+}
+.fixed-header {
+  height: 52px;
+  margin: 0px 0 0 0.5px;
+  border: solid 1px #e4e6eb;
+  background-color: #ffff;
+
+  .img-container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      float: right;
+    }
+  }
+}
+.calculator-container {
+  max-width: 368px;
+    margin: auto;
+    margin-top: 65.5px;
+    direction: rtl;
+  .btns-container {
+    margin-bottom: 35px;
+    .btn-cash,.btn-visa{
+      width: 128px;
+      height: 52px; 
+      text-align: center;
+      border-radius: 8px;
+      font-family: "NotoSansArabic-Regular";
+      display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+    .btn-cash {
+      margin: 0 0 0 17.5px;
+    
+      border: solid 0.2px rgba(60, 65, 81, 0.1);
+      background-color: #1877f2;
+      color: #ffffff;
+    }
+    .btn-visa {
+     
+      border: solid 0.2px #a7b6df;
+      color: #212121;
+    }
+  }
+  .cashing-input {
+    p {
+
+      text-align: right;
+      color: #3c4151;
+      height: 21px;
+      padding-right: 5px;
+    }
+    .input-group {
+      height: 72px;
+      padding: 11px 8px 10px 21.5px;
+      border-radius: 8px;
+      border: solid 1.4px #1877f2;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      .currency {
+        border: none !important;
+        position: absolute;
+        right: 86px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.13;
+        text-align: center;
+        color: #4080ff;
+        z-index: 100;
+      }
+
+      .input-group-btn {
+        width: 69px;
+        // height: 38.6px;
+        padding: 5.5px 16.5px 4.1px;
+        border-radius: 6px;
+        border: solid 1px rgba(70, 84, 121, 0.31);
+        span {
+          width: 36px;
+          height: 29px;
+          opacity: 0.6;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 2.07;
+          text-align: center;
+          color: #465479;
+        }
+      }
+    }
+    .form-control {
+      border: none;
+      margin: 0 0 0 16px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 2.13;
+      text-align: right;
+      color: #4080ff !important;
+      border: none;
+    }
+    ::placeholder {
+      color: #4080ff;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #4080ff;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #4080ff;
+    }
+  }
+  .calculator-numbers{
+      margin-top: 16px;
+      flex-wrap: wrap;
+      direction: ltr;
+      .number-container{
+        width: 112px;
+        height: 64.9px;
+        border-radius: 8px;
+        background-color: #ebebed;
+        margin-bottom: 16px;
+        input{
+            width: 24px;
+    height: 42px;
+    border: none;
+        }
+        .specialnum{
+            width: 42px !important;
+            height: 42px;
+        }
+      }
+    
+  }
+  .reciveCash{
+    height: 56px;
+    padding: 9px 42px 9px 32px;
+    border-radius: 28px;
+width: 100%;
+    background-color: #1877f2;
+   .reciveNum{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff;
+    font-family: "NotoSansArabic-SemiBold";
+
+   }
+   .reciveText{
+    font-family: "NotoSansArabic-Regular";
+    font-size: 14px;
+    line-height: 1.79;
+    text-align: center;
+    color: #ffffff;
+  
+   }
+  }
+}
+@media (max-width: 786px) {
+  .calculator-container {
+    padding: 47.5px 20px 45px 20px;
+    margin-top: 52px;
+  }
+}
