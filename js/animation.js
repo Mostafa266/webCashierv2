@@ -53,3 +53,9 @@ tl.fromTo('.item-nav', 0.5, {
     bottom:0,
     stagger: 0.1
 },'-=1.45')
+
+
+$('#lang').on('click',function(){
+    $('body').toggleClass('ltr');
+    tl.restart()
+  })

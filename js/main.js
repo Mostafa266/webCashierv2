@@ -51,6 +51,3 @@ $( document ).ready(function() {
   }
 
 
-  $('#lang').on('click',function(){
-    $('body').toggleClass('ltr')
-  })
