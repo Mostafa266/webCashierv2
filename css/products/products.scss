@@ -106,8 +106,16 @@
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+    border: 2px solid transparent;
+    border-radius: .25rem;
   margin: 0.5em;
+  &:hover{
+    border: 2px solid #1877f2;
+    box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
+-webkit-box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
+-moz-box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
+  }
+
 }
 .card-body {
   padding: 8px;
@@ -261,6 +269,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 0;
+  padding: 0 10px;
 
   span {
     padding-right: 4px;

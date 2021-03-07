@@ -121,8 +121,16 @@
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 2px solid transparent;
   border-radius: .25rem;
   margin: 0.5em;
+}
+
+.card:hover {
+  border: 2px solid #1877f2;
+  box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
+  -webkit-box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
+  -moz-box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
 }
 
 .card-body {
@@ -297,6 +305,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  padding: 0 10px;
 }
 
 .dropdown-item span {
