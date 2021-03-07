@@ -65,12 +65,8 @@
   margin-left: 16px;
 }
 
-.product_container.selected {
-  padding: 1px 1px 9.2px;
-  border-radius: 6px;
-  border: solid 3px #1877f2;
-  background-color: #ffffff;
-  margin-bottom: 22px;
+.card.selected {
+  border: 2px solid #1877f2;
 }
 
 .card-img-top {
@@ -120,7 +116,6 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border: 2px solid transparent;
   border-radius: .25rem;
   margin: 0.5em;

@@ -62,14 +62,10 @@
   margin-left: 16px;
 }
 
-.product_container.selected {
+.card.selected {
   // width: 125px;
   // height: 155px;
-  padding: 1px 1px 9.2px;
-  border-radius: 6px;
-  border: solid 3px #1877f2;
-  background-color: #ffffff;
-  margin-bottom: 22px;
+  border: 2px solid #1877f2;
 }
 
 .card-img-top {
@@ -105,15 +101,14 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-    border: 2px solid transparent;
-    border-radius: .25rem;
+  border: 2px solid transparent;
+  border-radius: .25rem;
   margin: 0.5em;
   &:hover{
     border: 2px solid #1877f2;
     box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
--webkit-box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
--moz-box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
+  -webkit-box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
+  -moz-box-shadow: 1px 1px 25px 0px rgba(146,146,146,0.75);
   }
 
 }
