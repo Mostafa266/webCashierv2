@@ -97,17 +97,18 @@
     }
   }
   .clientContainer {
-    width: 100%;
+    width: 97%;
     height: 51.5px;
     margin: 0 0 0.5px;
     padding: 13px 23.3px 13.5px 0px;
-    background-color: #ffffff;
-    float: right;
+    background-color: #f2f2f2;
+    /* float: right; */
     text-align: right;
     position: fixed;
-    left: -2px;
+    left: 13px;
     border: none;
-    top: 51px;
+    top: 55px;
+    border-radius: 36px;d
 
         .clientTitle_container {
       width: 57px;
@@ -285,7 +286,7 @@
     }
   }
   .first-top{
-    // margin-top: 51.5px;
+    margin-top: 58px;
     height: calc(100vh - 272px);
     /* overflow-y: scroll; */
     overflow-x: hidden;
