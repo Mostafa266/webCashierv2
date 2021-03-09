@@ -108,7 +108,7 @@
     left: 1.5%;
     border: none;
     top: 56px;
-    border-radius: 36px;d
+    border-radius: 40px;
 
         .clientTitle_container {
       width: 57px;
@@ -370,12 +370,16 @@
     width: -webkit-fill-available;
   }
   .headerAddClient {
-    width: 100%;
+    width: 90%;
     height: 52px;
     padding: 14px 15.7px 13px 16px;
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+    // -webkit-backdrop-filter: blur(30px);
+    // backdrop-filter: blur(30px);
     background-color: #e3f3ff;
+    border-radius: 40px;
+    top: 4px;
+    position: relative;
+    right: 10px;
   }
   .list-of-Users {
     height: 100vh;
@@ -479,7 +483,7 @@
   }
 
   .headerAddClient {
-    width: 100%;
+  
     ul {
       padding-inline-start: 0px;
     }
@@ -537,6 +541,9 @@
       top: 0px;
       right: 0px;
       border: none;
+      &:hover{
+      box-shadow: none;
+      }
     }
   }
 }

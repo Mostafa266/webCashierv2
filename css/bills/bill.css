@@ -141,18 +141,16 @@
   left: 1.5%;
   border: none;
   top: 56px;
-  border-radius: 36px;
+  border-radius: 40px;
 }
 
-.bg-bills .clientContainer d
-.clientTitle_container {
+.bg-bills .clientContainer .clientTitle_container {
   width: 57px;
   height: 25px;
   margin: 0 9px 0 0;
 }
 
-.bg-bills .clientContainer d
-.clientTitle_container .client_title {
+.bg-bills .clientContainer .clientTitle_container .client_title {
   font-family: "NotoSansArabic-Medium";
   font-size: 12px;
   font-weight: 500;
@@ -445,12 +443,14 @@
 }
 
 .addClienMenu .headerAddClient {
-  width: 100%;
+  width: 90%;
   height: 52px;
   padding: 14px 15.7px 13px 16px;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
   background-color: #e3f3ff;
+  border-radius: 40px;
+  top: 4px;
+  position: relative;
+  right: 10px;
 }
 
 .addClienMenu .list-of-Users {
@@ -570,10 +570,6 @@
   color: rgba(0, 0, 0, 0.6) !important;
 }
 
-.addClienMenu .headerAddClient {
-  width: 100%;
-}
-
 .addClienMenu .headerAddClient ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
@@ -641,6 +637,11 @@
   top: 0px;
   right: 0px;
   border: none;
+}
+
+.addClienMenu .headerAddClient .searchIconContainer .inputContainer:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .modal {
