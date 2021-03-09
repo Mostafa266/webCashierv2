@@ -332,7 +332,6 @@
 }
 
 .bg-bills .first-top {
-  margin-top: 51.5px;
   height: calc(100vh - 254px);
   /* overflow-y: scroll; */
   overflow-x: hidden;
