@@ -247,6 +247,12 @@
   display: flex;
 }
 
+@media screen and (min-width: 1920px) {
+  .bg-bills .billDetails .cash {
+    font-size: 16px;
+  }
+}
+
 .bg-bills .billDetails .cash .oldPrice {
   text-decoration: line-through;
   opacity: 0.4;
@@ -254,6 +260,12 @@
   font-size: 11px;
   text-align: left;
   color: #212121;
+}
+
+@media screen and (min-width: 1920px) {
+  .bg-bills .billDetails .cash .oldPrice {
+    font-size: 0.9rem;
+  }
 }
 
 .bg-bills .billDetails .product_count {
@@ -306,6 +318,12 @@
           align-items: center;
 }
 
+@media screen and (min-width: 1920px) {
+  .bg-bills .billDetails .details .product_description p {
+    font-size: 16px;
+  }
+}
+
 .bg-bills .billDetails .details .product_description .oldPrice {
   text-decoration: line-through;
   opacity: 0.4;
@@ -332,7 +350,7 @@
 }
 
 .bg-bills .first-top {
-  height: calc(100vh - 254px);
+  height: calc(100vh - 272px);
   /* overflow-y: scroll; */
   overflow-x: hidden;
   position: absolute;
