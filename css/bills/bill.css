@@ -138,9 +138,9 @@
   /* float: right; */
   text-align: right;
   position: fixed;
-  left: 13px;
+  left: 1.5%;
   border: none;
-  top: 55px;
+  top: 56px;
   border-radius: 36px;
 }
 
@@ -354,11 +354,10 @@
 
 .bg-bills .first-top {
   margin-top: 58px;
-  height: calc(100vh - 272px);
+  height: calc(100vh - 329px);
   /* overflow-y: scroll; */
   overflow-x: hidden;
   position: absolute;
-  z-index: -1;
   width: 100%;
 }
 
