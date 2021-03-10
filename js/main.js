@@ -25,14 +25,24 @@ $( document ).ready(function() {
   $('#addNew_client').on('shown.bs.modal', function() {
     $('client-name').focus();
   })
-  function toggleClientsList(){
-    var x = document.getElementById("clientList");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+  // function toggleClientsList(){
+  //   var x = document.getElementById("clientList");
+  //   var y =  document.getElementById('productsList');
+
+  //   if (x.style.display === "none") {
+  //     x.style.display = "block";
+  //     y.style.display = 'none';
+
+  //   } else {
+  //     y.style.display = 'block';
+  //     x.style.display = "none";
+  //   }
+  // }
+
+    // Add client animation
+  
+
+
   //toggle favourite icon 
   function swap(){
     let img1= document.getElementById('favauriteIcon1');

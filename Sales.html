@@ -433,11 +433,11 @@
           </div>
           <!-- end dropdown for bill menu -->
 
-          <div class="clientContainer" id="dropdownClient" onclick="toggleClientsList()" type="button">
+          <div class="clientContainer" id="dropdownClient" type="button">
 
             <img src="imgs/addclient_icon.svg" />
             <span class="clientTitle_container">
-              <span class="client_title"> اضف عميل </span>
+              <span class="client_title" id="client_title"> اضف عميل </span>
             </span>
           </div>
 
@@ -450,7 +450,7 @@
                   <form class="card card-sm inputContainer">
                     <div class="card-body row no-gutters d-flex align-items-center">
                       <div id="container">
-                        <div class="image-container" onclick="toggleClientsList()">
+                        <div class="image-container" id="closeClientsList">
                           <img src="imgs/multiple.svg" alt="A image" />
                         </div>
                       </div>
@@ -480,14 +480,9 @@
                   <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#profile" role="tab"
                     aria-controls="profile" aria-selected="false">محلات</a>
                 </li>
-
               </ul>
-
               <!-- Tab panes -->
               <div class="tab-content" id="nav-tabContent">
-
-
-
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
                   <div data-toggle="modal" style="cursor: pointer;" data-target="#addNew_client"
                     class="addNewClient d-flex justify-content-center align-items-center">
@@ -496,14 +491,16 @@
                     </p>
                   </div>
                   <div class="list-of-Users">
-                    <ul class="list-group">
+                    <ul class="list-group" id="list-of-Users">
                       <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div class="d-flex">
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">يوسف العوضي</span>
+                              <br>
+                              <span id="userPhone">05912345700</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -513,8 +510,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">محمود محمد</span>
+                              <br>
+                              <span id="userPhone">05487793158</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -524,8 +523,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">حسن المهدي</span>
+                              <br>
+                              <span id="userPhone">0111155528</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -535,8 +536,23 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">ابو بكر</span>
+                              <br>
+                              <span id="userPhone">0123456789</span>
+                            </span>
+                          </p>
+                        </div>
+                        <span class="client-price">11.00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                          <img src="imgs/clientPhoto.svg" style="float: left;">
+                          <p>
+                            <span class="clientName">
+                              <span id="name">احمد محمد</span>
+                              <br>
+                              <span id="userPhone">0987654321</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -546,8 +562,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -557,8 +575,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -568,8 +588,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -579,8 +601,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -590,8 +614,10 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
@@ -601,12 +627,67 @@
                           <img src="imgs/clientPhoto.svg" style="float: left;">
                           <p>
                             <span class="clientName">
-                              عاصم الجزيرى<br>
-                            </span>01013875831
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
                           </p>
                         </div>
                         <span class="client-price">00.00</span>
                       </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                          <img src="imgs/clientPhoto.svg" style="float: left;">
+                          <p>
+                            <span class="clientName">
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
+                          </p>
+                        </div>
+                        <span class="client-price">00.00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                          <img src="imgs/clientPhoto.svg" style="float: left;">
+                          <p>
+                            <span class="clientName">
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
+                          </p>
+                        </div>
+                        <span class="client-price">00.00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                          <img src="imgs/clientPhoto.svg" style="float: left;">
+                          <p>
+                            <span class="clientName">
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
+                          </p>
+                        </div>
+                        <span class="client-price">00.00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                          <img src="imgs/clientPhoto.svg" style="float: left;">
+                          <p>
+                            <span class="clientName">
+                              <span id="name">عاصم الجزيرى</span>
+                              <br>
+                              <span id="userPhone">01013875831</span>
+                            </span>
+                          </p>
+                        </div>
+                        <span class="client-price">00.00</span>
+                      </li>
+
                     </ul>
                   </div>
                 </div>
@@ -626,7 +707,7 @@
           <!-- </div> -->
         </div>
 
-        <div class="first-top">
+        <div class="first-top" id="productsList">
           <!-- <div class="divider"></div> -->
           <!-- bill with hover action -->
           <div class="billDetails">

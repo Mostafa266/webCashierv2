@@ -5,7 +5,8 @@
   background-color: #ffffff;
   position: relative;
   z-index: 10;
-  overflow-y: hidden;
+  // overflow-y: hidden;
+  overflow: hidden;
   .billsHeaderContainer {
     height: 52px;
     margin: 0 0 0 1px;
@@ -97,7 +98,7 @@
     }
   }
   .clientContainer {
-    width: 97%;
+    width: 100%;
     height: 51.5px;
     margin: 0 0 0.5px;
     padding: 13px 23.3px 13.5px 0px;
@@ -105,7 +106,6 @@
     /* float: right; */
     text-align: right;
     position: fixed;
-    left: 1.5%;
     border: none;
     top: 56px;
     border-radius: 40px;
@@ -370,7 +370,7 @@
     width: -webkit-fill-available;
   }
   .headerAddClient {
-    width: 90%;
+    width: 100%;
     height: 52px;
     padding: 14px 15.7px 13px 16px;
     // -webkit-backdrop-filter: blur(30px);
@@ -379,17 +379,24 @@
     border-radius: 40px;
     top: 4px;
     position: relative;
-    right: 10px;
   }
   .list-of-Users {
     height: 100vh;
     overflow-y: auto;
     background-color: #ffffff;
     padding-left: 16px;
+    overflow-x: hidden !important;
     padding-right: 8px;
     .list-group {
       border-radius: 0rem;
-      padding-bottom: 51px;
+    overflow-x: hidden !important;
+    padding-bottom: 51px;
+    li{
+      cursor: pointer;
+      &:hover{
+        background: #f2f2f2;
+      }
+    }
       .clientName {
         font-size: 12px;
       }
