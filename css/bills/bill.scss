@@ -211,7 +211,7 @@
         text-decoration: line-through;
         opacity: 0.4;
         font-family: 'NotoSansArabic-Medium';
-        font-size: 11px;
+        font-size: 14px !important;
         text-align: left;
         color: #212121;
         @media screen and (min-width:1920px) {
@@ -228,14 +228,12 @@
       background-color: #e4e6eb;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       p {
-        width: 18px;
-        height: 32px;
         font-family: 'NotoSansArabic-Medium';
         font-size: 15px;
         font-weight: 500;
-        line-height: 2.13;
         text-align: center;
         color: #212121;
       }
@@ -280,6 +278,7 @@
             padding: 0 3px 1px 0px;
             border-radius: 2px;
             border: solid 0.5px #e8e4e4;
+          font-size: 14px;
                     }
         }
       }
@@ -291,7 +290,7 @@
     /* overflow-y: scroll; */
     overflow-x: hidden;
     position: absolute;
-    // z-index: -1;
+    z-index: -1;
     width: 100%;
   }
   .billDetails:hover {
@@ -303,6 +302,7 @@
     .img-4 {
       opacity: 1;
       border: none;
+      cursor: pointer;
     }
   }
 

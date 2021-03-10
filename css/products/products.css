@@ -264,17 +264,17 @@
 
 .dropdown-menu.show {
   display: block;
-  width: 188px;
+  width: 327px;
   right: 80%;
   text-align: right;
   background-color: #ffffff;
   position: absolute;
   -webkit-transform: initial !important;
           transform: initial !important;
-  top: 20px !important;
-  left: 0px;
+  top: 0px !important;
+  left: 0px !important;
   will-change: transform;
-  right: 0;
+  right: auto;
   z-index: 100;
   direction: rtl;
 }

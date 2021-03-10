@@ -18,56 +18,105 @@
   height: 100%;
 }
 
-.list-item {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.item-nav {
+.sidebar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  height: auto;
+  padding: 0;
+  position: relative;
+}
+
+.sidebar ul li {
+  display: block;
+  font-size: 1.2rem;
+  height: 5.6rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.sidebar ul li::after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  bottom: 0;
+  width: 2px;
+  height: 0%;
+  background-color: #1877f2;
+}
+
+.sidebar ul li:hover {
+  background: #eee;
+}
+
+.sidebar ul li:hover span {
+  color: #1877f2;
+}
+
+.sidebar ul li:hover svg {
+  fill: #1877f2;
+}
+
+.sidebar ul li:hover::after {
+  height: 100%;
+}
+
+.sidebar ul li a {
+  color: #8d8d8d;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60px;
-  height: 60px;
-  padding-bottom: 4px;
+  text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.item-nav .item-img {
-  width: 44px;
-  height: 44px;
-  background-color: #cbd0d6;
-  border-radius: 50%;
+.sidebar ul li svg {
+  height: 4rem;
+  width: 4rem;
+  fill: #a6cdff;
 }
 
-.item-nav:hover {
-  background-color: #edf2f6;
-}
-
-a:focus,
-a:hover {
-  color: #23527c;
-  text-decoration: none !important;
+.sidebar ul li span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: -1.3rem;
+  text-decoration: none;
+  position: relative;
+  top: -11px;
 }
 
 @media (max-width: 2560px) {
   .sidebar {
     width: 72px;
-  }
-  .item-nav {
-    width: 72px;
-    height: 72px;
-  }
-  .item-nav .item-img {
-    width: 52px;
-    height: 52px;
   }
   .col-md-5 {
     -ms-flex: 0 0 33%;
