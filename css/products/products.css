@@ -121,7 +121,7 @@
   margin: 0.5em;
 }
 
-.card:hover {
+.salesContainer .card:hover {
   border: 2px solid #1877f2;
   box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
   -webkit-box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
