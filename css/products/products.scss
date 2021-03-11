@@ -241,6 +241,7 @@
   display: block;
   width: 327px;
   right: 80%;
+  z-index: 2222;
   text-align: right;
   background-color: #ffffff;
   position: absolute;
@@ -249,7 +250,6 @@
   left: 0px !important;
   will-change: transform;
   right: auto;
-  z-index: 100;
   direction: rtl;
 
 }

@@ -9,13 +9,6 @@ $('#lang').on('click',function(){
     $('body').toggleClass('ltr');
     tl.restart()
   })
-
-
-
-
-
-
-
     // add client list animation
   let tl2 = new TimelineMax({paused:true});
   tl2.to('#productsList',0.3,{opacity:'0',display:'none'})
@@ -46,7 +39,7 @@ $('#lang').on('click',function(){
   });
 
   let tl3 = new TimelineMax();
-  tl3.fromTo('.billdropdown .item-content',1,{opacity: 0,position:'relative',bottom:'-30px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1})
+  tl3.fromTo('.billdropdown .item-content',0.5,{opacity: 0,position:'relative',bottom:'-30px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1})
   tl3.reversed(true);
   $('#menuIcon').on('click',function(){
     tl3.reversed(!tl3.reversed());

@@ -162,8 +162,12 @@ body{
         margin-bottom: 16px;
         input{
             width: 24px;
-    height: 42px;
-    border: none;
+            height: 42px;
+            border: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+
         }
         .specialnum{
             width: 42px !important;

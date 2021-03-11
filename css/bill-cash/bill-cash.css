@@ -217,6 +217,9 @@ body {
   width: 24px;
   height: 42px;
   border: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .calculator-container .calculator-numbers .number-container .specialnum {
