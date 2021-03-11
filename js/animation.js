@@ -14,7 +14,7 @@ $('#lang').on('click',function(){
   tl2.to('#productsList',0.3,{opacity:'0',display:'none'})
   tl2.fromTo('#clientList',0.3,{display:'none',opacity:'0'},{display:'block',opacity:1})
   tl2.fromTo('#list-of-Users li',0.3,{display:'none',opacity:'0',bottom:'-30px'},{display:'block',opacity:1,bottom:'0px',stagger:0.1},'-=0.3')
-  tl2.fromTo('.headerAddClient',0.3,{opacity:0,top:'40px'},{opacity:1,top:"4px"},'-=1.4')
+  tl2.fromTo('.headerAddClient',0.3,{opacity:0,top:'40px'},{opacity:1,top:"4px"},'-=1.6')
 
   $('#dropdownClient').on('click',function(){
     tl2.play();
