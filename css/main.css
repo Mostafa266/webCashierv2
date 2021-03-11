@@ -238,6 +238,14 @@ input[type=number] {
   display: table-cell;
 }
 
+/* .backIcon{
+  display: inline-block !important;
+  width: 20px!important;
+  height: 20px!important;
+  position: relative !important;
+  top: -16px!important;
+} */
+
 #container .image-container img {
   max-width: 48px;
   max-height: 48px;        
@@ -322,4 +330,12 @@ ul{
 
 .searchbar{
   z-index: 1 !important;
+}
+
+
+.clientSearchInput{
+  position: relative;
+  top: -3px;
+  border: none !important;
+  background-color: transparent;
 }

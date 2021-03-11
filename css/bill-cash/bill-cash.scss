@@ -97,7 +97,7 @@ body{
       align-items: center;
       .currency {
         border: none !important;
-        position: absolute;
+        // position: absolute;
         right: 86px;
         font-size: 16px;
         font-weight: 500;
@@ -105,6 +105,9 @@ body{
         text-align: center;
         color: #4080ff;
         z-index: 100;
+        float: left;
+        position: relative;
+        margin-left: 24%;
       }
 
       .input-group-btn {
@@ -134,6 +137,9 @@ body{
       text-align: right;
       color: #4080ff !important;
       border: none;
+      &:focus{
+         border: none !important;
+      }
     }
     ::placeholder {
       color: #4080ff;

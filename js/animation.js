@@ -50,3 +50,13 @@ $('#lang').on('click',function(){
   })
   // Dropdownmenu animation 
 
+
+
+  $('.cash-button').on('click',function(){
+    iziToast.show({
+      title: 'تمت العمليه بنجاح',
+      message: 'تم تسجيل فاتورتك بنجاح',
+      color:'green',
+      transitionIn:'fadeInUp',
+  });
+  })

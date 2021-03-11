@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/searchbox/search.css" />
   <link rel="stylesheet" href="css/totalBill/totalbill.css" />
   <link rel="stylesheet" href="css/sidebar/sidebar.css" />
-  <link rel="stylesheet" href="css/products/products.css" />
+  <link rel="stylesheet" href="css/products/products.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -937,7 +937,16 @@
                     <div class="card-body row no-gutters d-flex align-items-center">
                       <div id="container">
                         <div class="image-container" id="closeClientsList">
-                          <img src="imgs/multiple.svg" alt="A image" />
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24.896" height="18.206" viewBox="0 0 24.896 18.206">
+                            <g id="Group_4651" data-name="Group 4651" transform="translate(0 0.354)">
+                              <g id="Group_3933" data-name="Group 3933" transform="translate(24.189) rotate(90)">
+                                <g id="Group_5315" data-name="Group 5315">
+                                  <line id="Line_337" data-name="Line 337" y1="24.189" transform="translate(8.664)" fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="1"/>
+                                  <path id="Path_1911" data-name="Path 1911" d="M0,8.749,8.749,0,17.5,8.749" transform="translate(0 0.001)" fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="1"/>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
                         </div>
                       </div>
                       <div id="iconSearch">
@@ -2143,16 +2152,15 @@
                   id="nav-discount-tab" data-toggle="tab" href="#discount" role="tab" aria-controls="home"
                   aria-selected="true">الخصم<img src="imgs/discountWithoutBg.svg"></a>
               </div>
-
-
             </div>
             <!-- Tab panes -->
             <div class="tab-pane fade show" id="discount" role="tabpanel" aria-labelledby="nav-discount-tab">
               <div class="inputs-container d-flex justify-content-center align-items-center">
-                <input type="number" class="form-control" placeholder="0.00 ">
-
+                <label for="discount-LE-input">جم</label>
+                <input type="number" class="form-control" id='discount-LE-input'>
                 <img src="imgs/convert.svg">
-                <input type="number" class="form-control" placeholder="00   %">
+                <input type="number" class="form-control" id='discount-number-input'>
+                <label for="discount-number-input">%</label>
 
 
               </div>
@@ -2181,6 +2189,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous"></script>
   <script src="./js/animation.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -125,7 +125,6 @@ body {
 
 .calculator-container .cashing-input .input-group .currency {
   border: none !important;
-  position: absolute;
   right: 86px;
   font-size: 16px;
   font-weight: 500;
@@ -133,6 +132,9 @@ body {
   text-align: center;
   color: #4080ff;
   z-index: 100;
+  float: left;
+  position: relative;
+  margin-left: 24%;
 }
 
 .calculator-container .cashing-input .input-group .input-group-btn {
@@ -162,6 +164,10 @@ body {
   text-align: right;
   color: #4080ff !important;
   border: none;
+}
+
+.calculator-container .cashing-input .form-control:focus {
+  border: none !important;
 }
 
 .calculator-container .cashing-input ::-webkit-input-placeholder {
