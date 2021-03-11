@@ -614,3 +614,6 @@
   top: 51px;
 }
 
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+  outline: none;
+}
