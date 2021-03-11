@@ -465,5 +465,8 @@
     right: -50%;
     position: relative;
   }
+  .salesContainer {
+    margin: 58px auto !important;
+  }
 }
 /*# sourceMappingURL=sidebar.css.map */
