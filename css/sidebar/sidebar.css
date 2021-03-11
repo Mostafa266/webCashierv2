@@ -451,4 +451,19 @@
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .fullAddClientScreen {
+    position: relative !important;
+    height: 100vh !important;
+  }
+  .discountPrecentage {
+    right: -50%;
+    position: relative;
+  }
+  .bg-bills .billDetails .img-6 {
+    right: -50%;
+    position: relative;
+  }
+}
 /*# sourceMappingURL=sidebar.css.map */

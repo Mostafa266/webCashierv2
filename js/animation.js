@@ -18,9 +18,13 @@ $('#lang').on('click',function(){
 
   $('#dropdownClient').on('click',function(){
     tl2.play();
+    $('.bill').fadeOut();
+    $('.bg-bills').addClass('fullAddClientScreen')
   });
 
   $('#closeClientsList').on('click',function(){
+    $('.bg-bills').removeClass('fullAddClientScreen');
+    
     tl2.reverse(0.7);
   })
 
