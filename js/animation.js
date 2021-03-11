@@ -59,4 +59,9 @@ $('#lang').on('click',function(){
       color:'green',
       transitionIn:'fadeInUp',
   });
+let tl4 = new TimelineMax();
+tl4.fromTo('.divider', 0.5, {opacity: 0,position:'relative',width:'0'}, {opacity: 1,position:'relative',width:'100%',stagger: 0.1},'-=2.5')
+tl4.fromTo('.billDetails', 0.5, {opacity: 0,position:'relative',bottom:'-20px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1},'-=4.45')
+tl4.reverse(0.7);
+
   })
