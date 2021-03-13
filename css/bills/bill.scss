@@ -284,6 +284,12 @@
           @media screen and (min-width:1920px) {
               font-size: 18px;
           }
+          @media screen and (min-width:1024px) and (max-width:1355px) {
+            font-size: 14px !important;
+          }
+           @media screen and (min-width:1355px) and (max-width:1767px) {
+            font-size: 15px !important;
+          }
         }
         .oldPrice {
           text-decoration: line-through;
@@ -424,7 +430,8 @@
       transform: rotate(180deg);
       z-index: 2132 !important;
       position: relative;
-  }
+}
+}
   .list-of-Users {
     height: 100vh;
     overflow-y: auto;
