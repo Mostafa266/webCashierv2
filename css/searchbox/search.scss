@@ -70,6 +70,7 @@
   padding-right: 6.7px;
   padding-top: 0;
   width: 84%‏‏;
+
 }
 
 .search-image-container {
@@ -81,4 +82,8 @@
   height: 19.5px;
 }
 
+.searchInputOver::-webkit-search-cancel-button,
+.clientSearchInput::-webkit-search-cancel-button{
+   display: none !important;
+}
 /*# sourceMappingURL=search.css.map */
