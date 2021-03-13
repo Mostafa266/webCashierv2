@@ -42,6 +42,7 @@ $('#lang').on('click',function(){
       client_title.innerText= userNametext +" - "+ userPhone
       console.log(userPhone);
       tl2.reverse(0.7);
+    $('.bill').fadeIn();
       
     })
   });
