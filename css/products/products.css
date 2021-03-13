@@ -69,6 +69,12 @@
   border: 2px solid #1877f2;
 }
 
+@media screen and (min-width: 1024px) {
+  .card.selected {
+    border: 3px solid #1877f2;
+  }
+}
+
 .card-img-top {
   width: 123px;
   height: 72px;
@@ -122,10 +128,10 @@
 }
 
 .salesContainer .card:hover {
-  border: 2px solid #1877f2;
-  box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
-  -webkit-box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
-  -moz-box-shadow: 1px 1px 25px 0px rgba(146, 146, 146, 0.75);
+  border: 3px solid #CBD0D6;
+  box-shadow: 1px 1px 10px 0px rgba(146, 146, 146, 0.75);
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(146, 146, 146, 0.75);
+  -moz-box-shadow: 1px 1px 10px 0px rgba(146, 146, 146, 0.75);
 }
 
 .card-body {

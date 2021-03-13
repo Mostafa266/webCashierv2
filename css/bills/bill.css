@@ -96,7 +96,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .bg-bills .billsHeaderContainer .text-center .billTitle span {
@@ -134,7 +134,7 @@
   height: 51.5px;
   margin: 0 0 0.5px;
   padding: 13px 23.3px 13.5px 0px;
-  background-color: #e3f3ff;
+  background-color: #f2f2f2;
   /* float: right; */
   text-align: right;
   position: fixed;
@@ -390,7 +390,7 @@
 
 .bg-bills .first-top {
   margin-top: 58px;
-  height: calc(100vh - 329px);
+  height: calc(100vh - 314px);
   /* overflow-y: scroll; */
   overflow-x: hidden;
   position: absolute;
@@ -423,6 +423,10 @@
   height: 0;
   margin: 0 7.5px 0 8.5px;
   border: 1px solid #f8f9fa;
+}
+
+.bill.fixed .divider {
+  border: 2px solid #f8f9fa;
 }
 
 .billdropdown.show {
@@ -532,8 +536,16 @@
   font-size: 12px;
 }
 
+.addClienMenu .list-of-Users .list-group .clientName #name {
+  font-size: 18px;
+}
+
+.addClienMenu .list-of-Users .list-group .clientName #userPhone {
+  font-size: 16px;
+}
+
 .addClienMenu .list-of-Users .list-group .client-price {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   text-align: left;
   color: #242424;

@@ -36,7 +36,12 @@ body{
   margin: 0px 0 0 0.5px;
   border: solid 1px #e4e6eb;
   background-color: #ffff;
-
+  max-width: 66.5555% !important;
+  width:66.5555% !important;
+  @media screen  and(max-width:767px){
+    max-width: 100% !important;
+    width:100% !important;
+  }
   .img-container {
     width: 48px;
     height: 48px;

@@ -435,7 +435,30 @@
     position: relative;
   }
 
-  .salesContainer{
-    margin: 58px auto !important;
+  // .salesContainer{
+  //   margin: 58px auto !important;
+  // }
+}
+
+
+.salesContainer{
+  @media screen and (max-width:768px){
+    padding: 0 !important;
+      margin: 0 !important;
+      padding-top: 21% !important;
+  }
+}
+
+.salesContainer{
+  @media screen and (max-width:475px){
+    padding: 0 !important;
+      margin: 0 !important;
+      padding-top: 32% !important;
+  }
+}.salesContainer{
+  @media screen and (max-width:375px){
+    padding: 0 !important;
+      margin: 0 !important;
+      padding-top: 45% !important;
   }
 }

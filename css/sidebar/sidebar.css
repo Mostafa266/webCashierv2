@@ -465,8 +465,29 @@
     right: -50%;
     position: relative;
   }
+}
+
+@media screen and (max-width: 768px) {
   .salesContainer {
-    margin: 58px auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 21% !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .salesContainer {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 32% !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .salesContainer {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 45% !important;
   }
 }
 /*# sourceMappingURL=sidebar.css.map */
