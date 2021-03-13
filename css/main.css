@@ -341,3 +341,11 @@ ul{
   border: none !important;
   background-color: transparent;
 }
+
+.tippyStyle{
+  text-align: right;
+}
+
+.salesContainer .card.selected:hover{
+  border: 3px solid #1877f2;
+}

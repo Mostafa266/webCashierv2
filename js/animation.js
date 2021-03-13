@@ -81,3 +81,33 @@ $('#lang').on('click',function(){
   tl4.reverse(0.7);
 
   })
+
+
+  
+
+  // to get clicke item value from add client 
+  $( ".billDetails .productNameText" ).each(function( index ) {
+      let gettingTitleValue = this.innerText;
+      tippy(this, {
+        onShow(instance) {
+          instance.setContent(gettingTitleValue);
+          const box = instance.popper.firstElementChild;
+          box.classList.add('tippyStyle');
+          console.log(box);
+        },
+        allowHTML: true,
+        animation: 'scale'  
+      })
+  });
+
+
+
+  //   $( ".billDetails .productNameText" ).each(function( index ) {
+  //     tippy('.productNameText', {
+  //         allowHTML: true,
+  //         content: this.innerHTML,
+  //     });
+  // });
+
+
+

@@ -180,37 +180,37 @@ body {
 }
 
 .calculator-container .cashing-input ::-webkit-input-placeholder {
-  color: #4080ff;
+  color: #cbd0d6;
   opacity: 1;
   /* Firefox */
 }
 
 .calculator-container .cashing-input :-ms-input-placeholder {
-  color: #4080ff;
+  color: #cbd0d6;
   opacity: 1;
   /* Firefox */
 }
 
 .calculator-container .cashing-input ::-ms-input-placeholder {
-  color: #4080ff;
+  color: #cbd0d6;
   opacity: 1;
   /* Firefox */
 }
 
 .calculator-container .cashing-input ::placeholder {
-  color: #4080ff;
+  color: #cbd0d6;
   opacity: 1;
   /* Firefox */
 }
 
 .calculator-container .cashing-input :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #4080ff;
+  color: #cbd0d6;
 }
 
 .calculator-container .cashing-input ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #4080ff;
+  color: #cbd0d6;
 }
 
 .calculator-container .calculator-numbers {
