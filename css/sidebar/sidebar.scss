@@ -462,3 +462,10 @@
       padding-top: 45% !important;
   }
 }
+
+.clientContainer #removeClientName{
+  position: absolute;
+  left: 5%;
+  top: 28%;
+  transform: rotate(180deg);
+}

@@ -1,3 +1,5 @@
+$('#removeClientName').fadeOut();
+
 let tl = new TimelineMax();
 tl.fromTo('.sidebar ul li', 0.5, { opacity: 0,position:'relative',right:'-70px'}, {opacity: 1,position:'relative',right:0,stagger: 0.1})
 .fromTo('.salesContainer .card', 0.3, {opacity: 0,position:'relative',bottom:'-20px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1},'-=1')
@@ -39,10 +41,19 @@ $('#lang').on('click',function(){
       let client_title = document.getElementById('client_title');
       let userNametext = $( this ).find('#name').text();
       let userPhone = $( this ).find('#userPhone').text();
+      let dropdownClient = document.getElementById('dropdownClient');
+      dropdownClient.style.backgroundColor='#e3f3ff';
+      $('#removeClientName').fadeIn();
       client_title.innerText= userNametext +" - "+ userPhone
       console.log(userPhone);
       tl2.reverse(0.7);
     $('.bill').fadeIn();
+      $('#removeClientName').on('click',function(){
+        tl2.stop();
+      client_title.innerText= 'اضف عميل';
+      
+
+      });
       
     })
   });
