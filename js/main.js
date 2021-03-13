@@ -60,4 +60,7 @@ $( document ).ready(function() {
     img2.style.display='none'
   }
 
-
+  // let s  = document.getElementById('salesContainer ')
+  // s.addEventListener('scroll',function(e){
+  //   console.log(e);
+  // })

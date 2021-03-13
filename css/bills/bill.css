@@ -185,6 +185,7 @@
   padding: 8px 16px 0.5px 8.5px;
   border-radius: 6px;
   background-color: #ffffff;
+  border: 3px solid transparent;
   position: relative;
 }
 
@@ -507,6 +508,7 @@
 .addClienMenu .headerAddClient #closeClientsList {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  z-index: 2132 !important;
 }
 
 .addClienMenu .list-of-Users {
@@ -537,11 +539,11 @@
 }
 
 .addClienMenu .list-of-Users .list-group .clientName #name {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .addClienMenu .list-of-Users .list-group .clientName #userPhone {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .addClienMenu .list-of-Users .list-group .client-price {
