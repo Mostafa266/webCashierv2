@@ -349,3 +349,16 @@ ul{
 .salesContainer .card.selected:hover{
   border: 3px solid #1877f2;
 }
+
+#removeClientName{
+  position: absolute;
+  left: 17px;
+  top: 73px;
+  transform: rotate(180deg);
+  background: #efefef;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

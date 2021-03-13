@@ -130,7 +130,7 @@
 }
 
 .bg-bills .clientContainer {
-  width: 95%;
+  width: 85%;
   height: 51.5px;
   margin: 0 0 0.5px;
   padding: 13px 23.3px 13.5px 0px;
@@ -142,8 +142,9 @@
   top: 56px;
   border-radius: 40px;
   margin: 2px auto;
-  left: 0;
-  right: 0;
+  right: 15px;
+  left: auto;
+  position: absolute;
 }
 
 .bg-bills .clientContainer .clientTitle_container {
@@ -507,21 +508,24 @@
 }
 
 .addClienMenu .headerAddClient {
-  width: 95%;
+  width: 85%;
   height: 52px;
   padding: 14px 15.7px 13px 16px;
   background-color: #e3f3ff;
   border-radius: 40px;
   top: 4px;
+  right: 15px;
+  left: auto;
   position: relative;
-  margin: 0 auto;
 }
 
 .addClienMenu .headerAddClient #closeClientsList {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 2132 !important;
-  position: relative;
+  position: absolute;
+  left: -27px;
+  top: 24px;
 }
 
 .addClienMenu .list-of-Users {

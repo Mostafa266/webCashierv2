@@ -490,12 +490,4 @@
     padding-top: 45% !important;
   }
 }
-
-.clientContainer #removeClientName {
-  position: absolute;
-  left: 5%;
-  top: 28%;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
 /*# sourceMappingURL=sidebar.css.map */

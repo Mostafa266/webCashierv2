@@ -34,29 +34,26 @@ $('#lang').on('click',function(){
 
   })
 
+  let client_title = document.getElementById('client_title');
 
   // to get clicke item value from add client 
   $( "#list-of-Users li" ).each(function( index ) {
     $(this).on('click',function(){
-      let client_title = document.getElementById('client_title');
       let userNametext = $( this ).find('#name').text();
       let userPhone = $( this ).find('#userPhone').text();
       let dropdownClient = document.getElementById('dropdownClient');
       dropdownClient.style.backgroundColor='#e3f3ff';
       $('#removeClientName').fadeIn();
       client_title.innerText= userNametext +" - "+ userPhone
-      console.log(userPhone);
       tl2.reverse(0.7);
     $('.bill').fadeIn();
-      $('#removeClientName').on('click',function(){
-        tl2.stop();
-      client_title.innerText= 'اضف عميل';
-      
-
-      });
       
     })
   });
+
+
+
+
 
   let tl3 = new TimelineMax();
   tl3.fromTo('.billdropdown .item-content',0.5,{opacity: 0,position:'relative',bottom:'-30px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1})
@@ -82,9 +79,7 @@ $('#lang').on('click',function(){
 
   })
 
-
   
-
   // to get clicke item value from add client 
   $( ".billDetails .productNameText" ).each(function( index ) {
       let gettingTitleValue = this.innerText;
@@ -100,14 +95,14 @@ $('#lang').on('click',function(){
       })
   });
 
-
-
-  //   $( ".billDetails .productNameText" ).each(function( index ) {
-  //     tippy('.productNameText', {
-  //         allowHTML: true,
-  //         content: this.innerHTML,
-  //     });
-  // });
+// reset input after click close button
+$('#removeClientName').on('click',function(){
+  client_title.innerText= 'اضف عميل';
+  if(client_title.innerText === 'اضف عميل'){
+   console.log('adef is jer');
+   $('#removeClientName').fadeOut()
+  }
+})
 
 
 
