@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAA;EACA,SAAS,EAAE,IAAI;CAClB;;AAED,UAAU;EACN,WAAW,EAAE,KAAK;EAClB,GAAG,EAAE,6DAA6D,CAAC,kBAAkB;;;AAGvF,UAAU;EACR,WAAW,EAAE,KAAK;EAClB,GAAG,EAAE,8DAA8D,CAAC,kBAAkB;;;AAGxF,UAAU;EACR,WAAW,EAAE,OAAO;EACpB,GAAG,EAAE,4DAA4D,CAAC,kBAAkB;;;AAGtF,UAAU;EACR,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,2DAA2D,CAAC,kBAAkB;;;AAGrF,UAAU;EACR,WAAW,EAAE,UAAU;EACvB,GAAG,EAAE,+DAA+D,CAAC,kBAAkB",
+    "sources": [
+        "style.scss",
+        "scss/helpers/_variables.scss",
+        "scss/common/_common.scss",
+        "scss/pages/_cash-management.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
