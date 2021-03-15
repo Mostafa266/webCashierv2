@@ -54,7 +54,7 @@ body {
 .searchInput {
   position: relative;
   width: 100%;
-  height: 60px;
+  height: 6rem;
   background-color: #ffffff;
   border-radius: 32px;
   display: -webkit-box;
@@ -91,6 +91,147 @@ body {
 
 .searchInput input:focus {
   outline: none;
+}
+
+.filter {
+  position: relative;
+  padding: 15px;
+  padding-right: 0;
+}
+
+.filter ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0;
+}
+
+.filter ul li {
+  width: auto;
+  height: 4.3rem;
+  margin-left: 1.5rem;
+  background-color: transparent;
+  border-radius: 3rem;
+  border: 1px solid #CBD0D6;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 6rem;
+  cursor: pointer;
+}
+
+.filter ul li .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.filter ul li .btn span {
+  font-size: 1.6rem;
+  color: #757575;
+}
+
+.filter .active {
+  background-color: #1877F2;
+}
+
+.filter .active .btn span {
+  color: #ffffff;
+}
+
+.accordion .accordion-body {
+  padding: 0;
+}
+
+.accordion .accordion-item:last-of-type .accordion-collapse {
+  border: none;
+}
+
+.accordion .accordion-button {
+  background-color: #F0F0F0;
+  padding: 20px;
+  border: none;
+}
+
+.accordion .accordion-button::after {
+  left: 20px;
+  position: absolute;
+}
+
+.accordion .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pay-receive-list ul {
+  width: 100%;
+  list-style: none;
+  overflow-y: scroll;
+  max-height: 650px;
+  padding: 0;
+  /* Handle */
+  /* Handle on hover */
+}
+
+.pay-receive-list ul::-webkit-scrollbar {
+  width: 3px;
+  background: #F5F5F5;
+}
+
+.pay-receive-list ul::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 10px;
+}
+
+.pay-receive-list ul::-webkit-scrollbar-thumb:hover {
+  background: #212121;
+}
+
+.pay-receive-list ul li {
+  height: 8.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+
+.pay-receive-proccess-container .searchInput {
+  margin-top: 10px;
+  background-color: #F2F2F2;
+}
+
+.pay-receive-proccess-container .searchInput input::-webkit-input-placeholder {
+  color: #212121;
+}
+
+.pay-receive-proccess-container .searchInput input:-ms-input-placeholder {
+  color: #212121;
+}
+
+.pay-receive-proccess-container .searchInput input::-ms-input-placeholder {
+  color: #212121;
+}
+
+.pay-receive-proccess-container .searchInput input::placeholder {
+  color: #212121;
 }
 
 .sidemenu-btn {
@@ -205,10 +346,11 @@ body {
 
 .layout-right--container {
   width: 100%;
+  min-height: 100vh;
   height: 100%;
 }
 
-.layout-right--container .right-content {
+.layout-right--container .right-content-data {
   padding: 0 24px;
 }
 
@@ -219,6 +361,8 @@ body {
 .layout-left--container {
   height: 100%;
   width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
 .layout-left--container .appbar {
@@ -240,5 +384,9 @@ body {
   font-family: 'bold';
   font-size: 1.4rem;
   color: #ffffff;
+}
+
+.layout-left--container .left-content-data {
+  padding: 0 24px;
 }
 /*# sourceMappingURL=style.css.map */

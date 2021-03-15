@@ -1,0 +1,20 @@
+.accordion{
+    .accordion-body{
+        padding: 0;
+    }
+    .accordion-item:last-of-type .accordion-collapse{
+        border: none;
+    }
+    .accordion-button{
+        background-color: $gray5;
+            padding: 20px;   
+        border: none;
+        &::after {
+            left: 20px;
+            position: absolute;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}

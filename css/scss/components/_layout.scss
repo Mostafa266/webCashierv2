@@ -20,10 +20,11 @@
 
         &--container {
             width: 100%;
+            min-height: 100vh;
             height: 100%;
             // padding: 10px;
               // main right content container this module is reuseable over all site
-              .right-content{
+              .right-content-data{
                 padding: 0 24px;
             }
         }
@@ -31,10 +32,11 @@
 
     &-left {
         padding: 0 !important;
-
         &--container {
             height: 100%;
             width: 100%;
+            min-height: 100vh;
+            background-color: $white;
 
             // padding: 10px;
             .appbar {
@@ -51,8 +53,9 @@
                     color: $white;
                 }
             }
-
-          
+            .left-content-data{
+                padding: 0 24px;
+            }
         }
 
     }

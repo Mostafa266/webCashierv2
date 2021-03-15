@@ -1,0 +1,11 @@
+.pay-receive-proccess-container{
+    .searchInput{
+        margin-top: 10px;
+        background-color: $lightGray2;
+        input{
+            &::placeholder{
+                color: $black;
+            }
+        }
+    }
+}
