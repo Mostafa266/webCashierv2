@@ -1,0 +1,59 @@
+.layout {
+    width: 100%;
+    height: 100%;
+    padding: 0 8.4rem 0 0;
+
+    .navbar {
+        // right navbar style here to make reuseable over all site
+        background-color: $lightGray1;
+        height: 7.2rem;
+
+        .navbar-brand {
+            font-size: 1.4rem;
+            color: $black;
+            font-family: 'bold';
+        }
+    }
+
+    &-right {
+        padding: 0 !important;
+
+        &--container {
+            width: 100%;
+            height: 100%;
+            // padding: 10px;
+              // main right content container this module is reuseable over all site
+              .right-content{
+                padding: 0 24px;
+            }
+        }
+    }
+
+    &-left {
+        padding: 0 !important;
+
+        &--container {
+            height: 100%;
+            width: 100%;
+
+            // padding: 10px;
+            .appbar {
+                background-color: $blue;
+                height: 5.2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0 16px;
+
+                span {
+                    font-family: 'bold';
+                    font-size: 1.4rem;
+                    color: $white;
+                }
+            }
+
+          
+        }
+
+    }
+}

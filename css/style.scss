@@ -3,5 +3,27 @@
 @import './scss/common/common';
 
 
+
+
 // here import componetns
+
+
+
+
+
+
+//inputs
+@import './scss/components/searchInput';
+
+// Buttons
+@import './scss/components/sidemenu-btn';
+// import sidemenu
+@import './scss/components/sidemenu';
+
+//import main layout for system
+@import './scss/components/layout';
+
+
+
+
 @import './scss/pages/cash-management'

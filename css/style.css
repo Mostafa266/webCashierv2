@@ -1,5 +1,16 @@
 html {
   font-size: 10px;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5 !important;
+  direction: rtl;
 }
 
 @font-face {
@@ -25,5 +36,209 @@ html {
 @font-face {
   font-family: "semiBold";
   src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-SemiBold.ttf) format("truetype");
+}
+
+.ltr {
+  direction: rtl !important;
+}
+
+.ltr .sidemenu {
+  right: auto;
+  left: 0;
+}
+
+.ltr .layout {
+  padding: 0 0 0 104px;
+}
+
+.searchInput {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchInput .icon {
+  padding-right: 13px;
+}
+
+.searchInput input {
+  width: 50%;
+  line-height: 0;
+  border-radius: 0;
+  height: 100%;
+  font-family: "NotoSansArabic-Regular";
+  text-align: right;
+  color: #757575;
+  padding-right: 6.7px;
+  padding-top: 0;
+  margin: 0px 0 0px 0px;
+  padding: 0px 12px 0px 16px;
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  font-size: 1.6rem;
+}
+
+.searchInput input:focus {
+  outline: none;
+}
+
+.sidemenu-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 2.4rem 3rem 2rem 4rem;
+}
+
+.sidemenu-btn svg {
+  width: 70%;
+}
+
+.sidemenu {
+  position: fixed;
+  z-index: 222;
+  right: 0;
+  top: 0;
+  width: 72px;
+  font-size: 1rem;
+  height: 100%;
+  margin-top: 6.5rem;
+  background-color: #f9fbfc;
+}
+
+.sidemenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  height: auto;
+  padding: 0;
+  position: relative;
+}
+
+.sidemenu ul li {
+  display: block;
+  font-size: 1.2em;
+  height: 5.6em;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.sidemenu ul li span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.2em;
+  margin-top: -1.3rem;
+  text-decoration: none;
+  position: relative;
+  top: -11px;
+}
+
+.sidemenu ul li svg {
+  height: 4em;
+  width: 4em;
+  fill: #a6cdff;
+  margin-bottom: 16px;
+}
+
+.sidemenu ul li a {
+  color: #8d8d8d;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  padding: 0 8.4rem 0 0;
+}
+
+.layout .navbar {
+  background-color: #F5F5F5;
+  height: 7.2rem;
+}
+
+.layout .navbar .navbar-brand {
+  font-size: 1.4rem;
+  color: #212121;
+  font-family: 'bold';
+}
+
+.layout-right {
+  padding: 0 !important;
+}
+
+.layout-right--container {
+  width: 100%;
+  height: 100%;
+}
+
+.layout-right--container .right-content {
+  padding: 0 24px;
+}
+
+.layout-left {
+  padding: 0 !important;
+}
+
+.layout-left--container {
+  height: 100%;
+  width: 100%;
+}
+
+.layout-left--container .appbar {
+  background-color: #1877F2;
+  height: 5.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+
+.layout-left--container .appbar span {
+  font-family: 'bold';
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

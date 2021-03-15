@@ -1,5 +1,14 @@
 html{
-    font-size: 10px;
+    font-size: 10px;   
+    overflow-x: hidden;
+   
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: $lightGray1 !important;
+    direction: rtl;
 }
 
 @font-face {
@@ -26,3 +35,17 @@ html{
     font-family: "semiBold";
     src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-SemiBold.ttf) format("truetype");
   }
+  
+
+  .ltr{
+     direction: rtl !important;
+  }
+
+  .ltr .sidemenu{
+      right: auto;
+      left: 0;
+  }  
+  .ltr .layout{
+    padding: 0 0 0 104px ;
+
+}
