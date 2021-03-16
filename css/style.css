@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: #F5F5F5 !important;
+  overflow-x: hidden;
   direction: rtl;
 }
 
@@ -153,64 +154,146 @@ body {
   color: #ffffff;
 }
 
-.accordion .accordion-body {
+.accordion-container {
+  height: 100%;
+  min-height: 70em;
+  max-height: 70em;
+  /* background: red; */
+  overflow-y: scroll;
+}
+
+.accordion-container .accordion .accordion-body {
   padding: 0;
 }
 
-.accordion .accordion-item:last-of-type .accordion-collapse {
+.accordion-container .accordion .accordion-item:last-of-type .accordion-collapse {
   border: none;
 }
 
-.accordion .accordion-button {
+.accordion-container .accordion .accordion-button {
   background-color: #F0F0F0;
   padding: 20px;
   border: none;
+  font-size: 1.2rem;
 }
 
-.accordion .accordion-button::after {
+.accordion-container .accordion .accordion-button::after {
   left: 20px;
   position: absolute;
 }
 
-.accordion .accordion-button:focus {
+.accordion-container .accordion .accordion-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.pay-receive-list ul {
+.accordion-container .accordion .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pay-receive {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pay-receive {
+    font-size: 0.8rem;
+  }
+}
+
+.pay-receive-list {
   width: 100%;
   list-style: none;
   overflow-y: scroll;
-  max-height: 650px;
+  max-height: 65em;
   padding: 0;
   /* Handle */
   /* Handle on hover */
 }
 
-.pay-receive-list ul::-webkit-scrollbar {
-  width: 3px;
-  background: #F5F5F5;
+.pay-receive-list::-webkit-scrollbar {
+  width: 0.3em;
+  background: transparent;
 }
 
-.pay-receive-list ul::-webkit-scrollbar-thumb {
-  background: #757575;
+.pay-receive-list::-webkit-scrollbar-thumb {
+  background: transparent;
   border-radius: 10px;
 }
 
-.pay-receive-list ul::-webkit-scrollbar-thumb:hover {
-  background: #212121;
+.pay-receive-list::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
 
-.pay-receive-list ul li {
-  height: 8.8rem;
+.pay-receive-list-item {
+  height: 7.4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
-  padding: 0 20px;
+  margin-bottom: 0.5em;
+  padding: 0 2em;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+}
+
+.pay-receive-list-item span {
+  font-size: 1.6em;
+}
+
+.pay-receive-list-item--budget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.06;
+      -ms-flex-positive: 0.06;
+          flex-grow: 0.06;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.pay-receive-list-item--budget-icon {
+  width: 4.4em;
+  height: 4.4em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pay-receive-list-item--budget-icon img {
+  height: 50%;
+}
+
+.pay-receive-list-item--budget-icon.increase img {
+  padding-right: 3px;
+  padding-top: 5px;
+}
+
+.pay-receive-list-item--budget-icon.decrease img {
+  padding-left: 3px;
+  padding-bottom: 3px;
 }
 
 .pay-receive-proccess-container .searchInput {
