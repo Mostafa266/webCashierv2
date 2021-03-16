@@ -52,6 +52,111 @@ body {
   padding: 0 0 0 104px;
 }
 
+.pushLandR25 {
+  padding: 0 25px;
+}
+
+.increaseicon {
+  width: 4.4em;
+  height: 4.4em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.increaseicon img {
+  padding-right: 3px;
+  padding-top: 5px;
+}
+
+.decreaseicon {
+  width: 4.4em;
+  height: 4.4em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.decreaseicon img {
+  padding-left: 3px;
+  height: 50%;
+  padding-bottom: 3px;
+}
+
+.total-payments {
+  position: relative;
+  height: 15.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #BDBEC3;
+}
+
+.total-payments--paid, .total-payments--received {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.total-payments--paid .number, .total-payments--received .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 1.5em;
+}
+
+.total-payments--paid .number span, .total-payments--received .number span {
+  font-size: 2.5em;
+  font-family: 'bold';
+}
+
+.total-payments--paid .number span:nth-child(2), .total-payments--received .number span:nth-child(2) {
+  font-family: 'thin';
+}
+
 .searchInput {
   position: relative;
   width: 100%;
@@ -156,10 +261,25 @@ body {
 
 .accordion-container {
   height: 100%;
-  min-height: 70em;
-  max-height: 70em;
+  min-height: 70rem;
+  max-height: 70rem;
   /* background: red; */
   overflow-y: scroll;
+  scrollbar-color: #BDBEC3 #F0F0F0;
+  scrollbar-width: thin;
+}
+
+.accordion-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.accordion-container::-webkit-scrollbar-track {
+  background-color: #F0F0F0;
+}
+
+.accordion-container::-webkit-scrollbar-thumb {
+  background-color: #BDBEC3;
+  border-radius: 20px;
 }
 
 .accordion-container .accordion .accordion-body {
@@ -190,6 +310,14 @@ body {
 .accordion-container .accordion .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+.accordion-container .accordion .accordion-collapse {
+  border: none;
+}
+
+.accordion-container .accordion ul {
+  overflow: hidden;
 }
 
 .pay-receive {
@@ -264,36 +392,6 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.pay-receive-list-item--budget-icon {
-  width: 4.4em;
-  height: 4.4em;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pay-receive-list-item--budget-icon img {
-  height: 50%;
-}
-
-.pay-receive-list-item--budget-icon.increase img {
-  padding-right: 3px;
-  padding-top: 5px;
-}
-
-.pay-receive-list-item--budget-icon.decrease img {
-  padding-left: 3px;
-  padding-bottom: 3px;
 }
 
 .pay-receive-proccess-container .searchInput {
@@ -431,10 +529,6 @@ body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-}
-
-.layout-right--container .right-content-data {
-  padding: 0 24px;
 }
 
 .layout-left {

@@ -41,30 +41,30 @@
               align-items: center;
               flex-grow: 0.06;
               flex-direction: row-reverse;
-              &-icon{
-                width: 4.4em;
-                height: 4.4em;
-                background-color: $white;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img{
-                  height: 50%;
-                }
-                &.increase{
-                  img{
-                    padding-right: 3px;
-                    padding-top: 5px;
-                  }
-                }
-                &.decrease{
-                  img{
-                    padding-left: 3px;
-                    padding-bottom: 3px;
-                  }
-                }
-              }
+              // &-icon{
+              //   width: 4.4em;
+              //   height: 4.4em;
+              //   background-color: $white;
+              //   border-radius: 50%;
+              //   display: flex;
+              //   justify-content: center;
+              //   align-items: center;
+              //   img{
+              //     height: 50%;
+              //   }
+              //   &.increase{
+              //     img{
+              //       padding-right: 3px;
+              //       padding-top: 5px;
+              //     }
+              //   }
+              //   &.decrease{
+              //     img{
+              //       padding-left: 3px;
+              //       padding-bottom: 3px;
+              //     }
+              //   }
+              // }
             }
           }
 

@@ -166,44 +166,176 @@
                     <!-- End Navbar -->
                     <!-- STARt dynamic content -->
                     <div class="right-content-data">
-                        <div class="searchInput">
-                            <!-- stylefile name => _searchInput.scss -->
-                            <div class="icon"><img src="imgs/searchIcon.svg"></div>
-                            <input type="search" name="search" placeholder="ابحث باسم العميل او المورد">
-                        </div>
-                        <div class="filter">
-                            <!-- stylefile name => _filter.scss -->
-                            <ul>
-                                <li class="active">
-                                    <div class="btn "><span>الكل</span></div>
-                                </li>
-                                <li>
-                                    <div class="btn"><span>المدفوع</span></div>
-                                </li>
-                                <li>
-                                    <div class="btn"><span>المستلم</span></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="accordion-container">
-                            <!-- this is a standalone component -->
-                            <!-- stylefile name => _accordion.scss -->
-                            <div class="accordion">
+                        <div class="pushLandR25">
+                            <div class="searchInput">
+                                <!-- stylefile name => _searchInput.scss -->
+                                <div class="icon"><img src="imgs/searchIcon.svg"></div>
+                                <input type="search" name="search" placeholder="ابحث باسم العميل او المورد">
+                            </div>
+                            <div class="filter">
+                                <!-- stylefile name => _filter.scss -->
+                                <ul>
+                                    <li class="active">
+                                        <div class="btn "><span>الكل</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="btn"><span>المدفوع</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="btn"><span>المستلم</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion-container">
+                                <!-- this is a standalone component -->
                                 <!-- stylefile name => _accordion.scss -->
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
+                                <div class="accordion">
+                                    <!-- stylefile name => _accordion.scss -->
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    الثلاثاء,22 ديسمبر2020
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="pay-receive">
+                                                        <!-- this is a component -->
+                                                        <!-- stylefile name => _pay-receive-list.scss -->
+                                                        <ul class="pay-receive-list">
+                                                            <li class="pay-receive-list-item">
+                                                                <div class="pay-receive-list-item--details">
+                                                                    <span>عاصم السيد - 0101232393</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--time">
+                                                                    <span> 05:00 م</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--budget">
+                                                                    <div class="pay-receive-list--budget-number">
+                                                                        <span> 00.00</span>
+                                                                    </div>
+    
+                                                                    <!-- this icon is standalone components in 
+                                                                        stylefile => components/small/decreaseicon & increaseicon.scss
+                                                                    -->
+                                                                    <div class="increaseicon  ">
+                                                                        <img src="./imgs/increaseArrow.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="pay-receive-list-item">
+                                                                <div class="pay-receive-list-item--details">
+                                                                    <span>عاصم السيد - 0101232393</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--time">
+                                                                    <span> 05:00 م</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--budget">
+                                                                    <div class="pay-receive-list--budget-number">
+                                                                        <span> 00.00</span>
+                                                                    </div>
+                                                                    <!-- this icon is standalone components in 
+                                                                        stylefile => components/small/decreaseicon & increaseicon.scss
+                                                                    -->
+                                                                    <div class="increaseicon  ">
+                                                                        <img src="./imgs/increaseArrow.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="pay-receive-list-item">
+                                                                <div class="pay-receive-list-item--details">
+                                                                    <span>عاصم السيد - 0101232393</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--time">
+                                                                    <span> 05:00 م</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--budget">
+                                                                    <div class="pay-receive-list--budget-number">
+                                                                        <span> 00.00</span>
+                                                                    </div>
+                                                                    <div class="increaseicon  ">
+                                                                        <img src="./imgs/increaseArrow.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="pay-receive-list-item">
+                                                                <div class="pay-receive-list-item--details">
+                                                                    <span>عاصم السيد - 0101232393</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--time">
+                                                                    <span> 05:00 م</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--budget">
+                                                                    <div class="pay-receive-list--budget-number">
+                                                                        <span> 00.00</span>
+                                                                    </div>
+                                                                    <div class="decreaseicon  ">
+                                                                        <img src="./imgs/decreaseArrow.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="pay-receive-list-item">
+                                                                <div class="pay-receive-list-item--details">
+                                                                    <span>عاصم السيد - 0101232393</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--time">
+                                                                    <span> 05:00 م</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--budget">
+                                                                    <div class="pay-receive-list--budget-number">
+                                                                        <span> 00.00</span>
+                                                                    </div>
+                                                                    <div class="increaseicon  ">
+                                                                        <img src="./imgs/increaseArrow.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="pay-receive-list-item">
+                                                                <div class="pay-receive-list-item--details">
+                                                                    <span>عاصم السيد - 0101232393</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--time">
+                                                                    <span> 05:00 م</span>
+                                                                </div>
+                                                                <div class="pay-receive-list-item--budget">
+                                                                    <div class="pay-receive-list--budget-number">
+                                                                        <span> 00.00</span>
+                                                                    </div>
+                                                                    <div class="increaseicon  ">
+                                                                        <img src="./imgs/increaseArrow.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <!-- new according -->
+                                <div class="accordion">
+                                    <!-- this is a standalone component -->
+                                    <!-- stylefile name => _accordion.scss -->
+                                    <div class="accordion" id="accordingTwo>
+                                        <div class=" accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
+                                                data-bs-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo">
                                                 الثلاثاء,22 ديسمبر2020
                                             </button>
                                         </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordingTwo">
                                             <div class="accordion-body">
                                                 <div class="pay-receive">
-                                                    <!-- this is a component -->
+                                                    <!-- this is standalone  component -->
                                                     <!-- stylefile name => _pay-receive-list.scss -->
                                                     <ul class="pay-receive-list">
                                                         <li class="pay-receive-list-item">
@@ -217,8 +349,7 @@
                                                                 <div class="pay-receive-list--budget-number">
                                                                     <span> 00.00</span>
                                                                 </div>
-                                                                <div
-                                                                    class="pay-receive-list-item--budget-icon increase ">
+                                                                <div class="increaseicon  ">
                                                                     <img src="./imgs/increaseArrow.svg" alt="">
                                                                 </div>
                                                             </div>
@@ -234,8 +365,8 @@
                                                                 <div class="pay-receive-list--budget-number">
                                                                     <span> 00.00</span>
                                                                 </div>
-                                                                <div
-                                                                    class="pay-receive-list-item--budget-icon decrease ">
+                                                                
+                                                                <div class="decreaseicon  ">
                                                                     <img src="./imgs/decreaseArrow.svg" alt="">
                                                                 </div>
                                                             </div>
@@ -251,8 +382,23 @@
                                                                 <div class="pay-receive-list--budget-number">
                                                                     <span> 00.00</span>
                                                                 </div>
-                                                                <div
-                                                                    class="pay-receive-list-item--budget-icon decrease ">
+                                                                <div class="increaseicon  ">
+                                                                    <img src="./imgs/increaseArrow.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="pay-receive-list-item">
+                                                            <div class="pay-receive-list-item--details">
+                                                                <span>عاصم السيد - 0101232393</span>
+                                                            </div>
+                                                            <div class="pay-receive-list-item--time">
+                                                                <span> 05:00 م</span>
+                                                            </div>
+                                                            <div class="pay-receive-list-item--budget">
+                                                                <div class="pay-receive-list--budget-number">
+                                                                    <span> 00.00</span>
+                                                                </div>
+                                                                <div class="decreaseicon  ">
                                                                     <img src="./imgs/decreaseArrow.svg" alt="">
                                                                 </div>
                                                             </div>
@@ -268,9 +414,8 @@
                                                                 <div class="pay-receive-list--budget-number">
                                                                     <span> 00.00</span>
                                                                 </div>
-                                                                <div
-                                                                    class="pay-receive-list-item--budget-icon decrease ">
-                                                                    <img src="./imgs/decreaseArrow.svg" alt="">
+                                                                <div class="increaseicon  ">
+                                                                    <img src="./imgs/increaseArrow.svg" alt="">
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -285,26 +430,8 @@
                                                                 <div class="pay-receive-list--budget-number">
                                                                     <span> 00.00</span>
                                                                 </div>
-                                                                <div
-                                                                    class="pay-receive-list-item--budget-icon decrease ">
-                                                                    <img src="./imgs/decreaseArrow.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="pay-receive-list-item">
-                                                            <div class="pay-receive-list-item--details">
-                                                                <span>عاصم السيد - 0101232393</span>
-                                                            </div>
-                                                            <div class="pay-receive-list-item--time">
-                                                                <span> 05:00 م</span>
-                                                            </div>
-                                                            <div class="pay-receive-list-item--budget">
-                                                                <div class="pay-receive-list--budget-number">
-                                                                    <span> 00.00</span>
-                                                                </div>
-                                                                <div
-                                                                    class="pay-receive-list-item--budget-icon decrease ">
-                                                                    <img src="./imgs/decreaseArrow.svg" alt="">
+                                                                <div class="increaseicon  ">
+                                                                    <img src="./imgs/increaseArrow.svg" alt="">
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -313,140 +440,24 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>
-                            </div>
-                            <!-- new according -->
-                            <div class="accordion">
-                                <!-- this is a standalone component -->
-                                <!-- stylefile name => _accordion.scss -->
-                                <div class="accordion" id="accordingTwo>
-                                    <div class=" accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseTwo" aria-expanded="true"
-                                            aria-controls="collapseTwo">
-                                            الثلاثاء,22 ديسمبر2020
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordingTwo">
-                                        <div class="accordion-body">
-                                            <div class="pay-receive">
-                                                <!-- this is standalone  component -->
-                                                <!-- stylefile name => _pay-receive-list.scss -->
-                                                <ul class="pay-receive-list">
-                                                    <li class="pay-receive-list-item">
-                                                        <div class="pay-receive-list-item--details">
-                                                            <span>عاصم السيد - 0101232393</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--time">
-                                                            <span> 05:00 م</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--budget">
-                                                            <div class="pay-receive-list--budget-number">
-                                                                <span> 00.00</span>
-                                                            </div>
-                                                            <div
-                                                                class="pay-receive-list-item--budget-icon increaseicon  ">
-                                                                <img src="./imgs/increaseArrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pay-receive-list-item">
-                                                        <div class="pay-receive-list-item--details">
-                                                            <span>عاصم السيد - 0101232393</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--time">
-                                                            <span> 05:00 م</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--budget">
-                                                            <div class="pay-receive-list--budget-number">
-                                                                <span> 00.00</span>
-                                                            </div>
-                                                            <div
-                                                                class="pay-receive-list-item--budget-icon decreaseicon ">
-                                                                <img src="./imgs/decreaseArrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pay-receive-list-item">
-                                                        <div class="pay-receive-list-item--details">
-                                                            <span>عاصم السيد - 0101232393</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--time">
-                                                            <span> 05:00 م</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--budget">
-                                                            <div class="pay-receive-list--budget-number">
-                                                                <span> 00.00</span>
-                                                            </div>
-                                                            <div class="pay-receive-list-item--budget-icon decrease ">
-                                                                <img src="./imgs/decreaseArrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pay-receive-list-item">
-                                                        <div class="pay-receive-list-item--details">
-                                                            <span>عاصم السيد - 0101232393</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--time">
-                                                            <span> 05:00 م</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--budget">
-                                                            <div class="pay-receive-list--budget-number">
-                                                                <span> 00.00</span>
-                                                            </div>
-                                                            <div class="pay-receive-list-item--budget-icon decrease ">
-                                                                <img src="./imgs/decreaseArrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pay-receive-list-item">
-                                                        <div class="pay-receive-list-item--details">
-                                                            <span>عاصم السيد - 0101232393</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--time">
-                                                            <span> 05:00 م</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--budget">
-                                                            <div class="pay-receive-list--budget-number">
-                                                                <span> 00.00</span>
-                                                            </div>
-                                                            <div class="pay-receive-list-item--budget-icon decrease ">
-                                                                <img src="./imgs/decreaseArrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="pay-receive-list-item">
-                                                        <div class="pay-receive-list-item--details">
-                                                            <span>عاصم السيد - 0101232393</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--time">
-                                                            <span> 05:00 م</span>
-                                                        </div>
-                                                        <div class="pay-receive-list-item--budget">
-                                                            <div class="pay-receive-list--budget-number">
-                                                                <span> 00.00</span>
-                                                            </div>
-                                                            <div class="pay-receive-list-item--budget-icon decrease ">
-                                                                <img src="./imgs/decreaseArrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="payments-total">
-                            <div class="payments-total--received">
-                                <span>ج</span>
+                        <div class="total-payments">
+                            <div class="total-payments--received">
                                 <div class="number">
-                                    <span>1,500,00</span>
+                                    <span>00,00ج</span>
+                                    <span>اجمالي المدفوع</span>
+                                </div>
+                                <div class="decreaseicon ">
+                                    <img src="./imgs/decreaseArrow.svg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="total-payments--paid">
+                                <div class="number">
+                                    <span>1,500,00ج</span>
                                     <span>اجمالي المستلم</span>
                                 </div>
                                 <div class="increaseicon  ">
@@ -454,7 +465,6 @@
                                 </div>
 
                             </div>
-                            <div class="payments-total--paid"></div>
                         </div>
                         <!-- END dynamic content -->
                     </div>
@@ -473,6 +483,7 @@
                                 <div class="icon"><img src="imgs/addclient_icon.svg"></div>
                                 <input type="search" name="search" placeholder="اختر عميل محل او عميل فرد او مورد">
                             </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,28 @@
 .accordion-container {
     height: 100%;
-    min-height: 70em;
-    max-height: 70em;
+    min-height: 70rem;
+    max-height: 70rem;
     /* background: red; */
+    
     overflow-y: scroll;
+    // for firefox
+    scrollbar-color: $gray6 $gray5;
+    scrollbar-width:thin;
+    // for chrome
+    &::-webkit-scrollbar {
+        width: 5px;
+        
+  }
+  
+  &::-webkit-scrollbar-track {
+        background-color: $gray5;
+  } 
+  &::-webkit-scrollbar-thumb {
+        background-color: $gray6;
+        border-radius: 20px;
+  } 
     .accordion {
+     
         .accordion-body {
             padding: 0;
         }
@@ -12,7 +30,7 @@
         .accordion-item:last-of-type .accordion-collapse {
             border: none;
         }
-
+        
         .accordion-button {
             background-color: $gray5;
             padding: 20px;
@@ -32,6 +50,12 @@
         .accordion-item:first-of-type .accordion-button {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
+        }
+        .accordion-collapse{
+            border: none;
+        }
+        ul{
+            overflow: hidden;
         }
     }
 }
