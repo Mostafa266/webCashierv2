@@ -317,10 +317,6 @@ body {
   border: none;
 }
 
-.accordion-container .accordion ul {
-  overflow: hidden;
-}
-
 .pay-receive {
   font-size: 1rem;
 }
