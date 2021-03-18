@@ -513,7 +513,7 @@ body {
 }
 
 .payments-buttons-pay span {
-  color: #FF545D;
+  font-family: 'med';
 }
 
 .payments-buttons-pay svg {
