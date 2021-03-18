@@ -23,10 +23,11 @@
             flex-direction: column;
             margin-right: 1.5em;
             span{
-                font-size: 2.5em;
+                font-size: 2.3em;
                 font-family: 'bold';
                 &:nth-child(2){
-                    font-family: 'thin';
+                font-size: 1.5em;
+                font-family: 'thin';
                 }
             }
         }

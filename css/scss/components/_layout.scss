@@ -27,10 +27,20 @@
               .right-content-data{
                 max-height: 52vh;
                 overflow-y: scroll;
-                // @media screen  and (min-width:1920px){
-                // max-height: 55vh;
-                    
-                // }
+                scrollbar-color: $gray6 $gray5;
+                scrollbar-width:thin;
+                // for chrome
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+              
+              &::-webkit-scrollbar-track {
+                    background-color: $gray5;
+              } 
+              &::-webkit-scrollbar-thumb {
+                    background-color: $gray6;
+                    border-radius: 20px;
+              } 
             }
         }
     }
@@ -60,6 +70,7 @@
             }
             .left-content-data{
                 padding: 0 24px;
+                height: 94%;
             }
         }
 
