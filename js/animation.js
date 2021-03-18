@@ -1,8 +1,20 @@
 $('#removeClientName').fadeOut();
 
 
+
+
+
+const fadeOut = ele => {
+  let fadeOut = new TimelineMax();
+  fadeOut.to(ele,0.5,{opacity:'0',display:'none'})
+}
+const fadeIn = ele => {
+  let fadeIn = new TimelineMax();
+  fadeIn.to(ele,0.5,{opacity:'1',display:'block'})
+}
+
+
 let client_title = document.getElementById('client_title');
-let dropdownClient = document.getElementById('dropdownClient');
 
 let tl = new TimelineMax();
 
@@ -16,6 +28,10 @@ let productsList = document.getElementById('productsList');
 let clientList = document.getElementById('clientList');
 let listOfUsers = document.querySelectorAll('#list-of-Users li');
 let headerAddClient = document.getElementsByClassName('.headerAddClient');
+let dropdownClient = document.getElementById('dropdownClient');
+let bill = document.getElementsByClassName('bill');
+let bgBills = document.getElementById('bg-bills');
+let closeClientsList = document.getElementById('closeClientsList');
 
 
 tl.fromTo(sidebarItems, 0.5, { opacity: 0,position:'relative',right:'-70px'}, {opacity: 1,position:'relative',right:0,stagger: 0.1})
@@ -40,21 +56,26 @@ $('#lang').on('click',function(){
   tl2.fromTo(headerAddClient,0.3,{opacity:0,top:'40px'},{opacity:1,top:"4px"},'-=1.6')
 
 
-
-  $('#dropdownClient').on('click',function(){
+  dropdownClient.addEventListener('click',()=>{
     tl2.play();
-    $('.bill').fadeOut();
-    $('.bg-bills').addClass('fullAddClientScreen')
-  });
+    fadeOut(bill)
+    bgBills.classList.add('fullAddClientScreen')
+  })
 
-  $('#closeClientsList').on('click',function(){
-    $('.bg-bills').removeClass('fullAddClientScreen');
+  // $('#dropdownClient').on('click',function(){
+  //   tl2.play();
+  //   $('.bill').fadeOut();
+  //   $('.bg-bills').addClass('fullAddClientScreen')
+  // });
+
+
+  closeClientsList.addEventListener('click',()=>{
+    bgBills.classList.remove('fullAddClientScreen')
     tl2.reverse(0.7);
     tl.restart()
     setTimeout(function(){
-      $('.bill').fadeIn();
+      fadeIn(bill)
     },500)
-
   })
 
 
@@ -68,7 +89,7 @@ $('#lang').on('click',function(){
       $('#removeClientName').fadeIn();
       client_title.innerText= userNametext +" - "+ userPhone
       tl2.reverse(0.7);
-      $('.bill').fadeIn();
+      fadeIn(bill)
       dropdownClient.classList.add('stopClick')
 
       // if(client_title.innerText !== 'اضف عميل'){
