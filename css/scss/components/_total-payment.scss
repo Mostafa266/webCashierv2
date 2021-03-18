@@ -1,11 +1,14 @@
 .total-payments{
-    position: relative;
+    position: absolute;
     height: 15.5rem;
     display: flex;
     font-size: 1rem;
     justify-content: space-evenly;
     align-items: center;
     border-top: 1px solid $gray6;
+    bottom: 0;
+    left: 0;
+    right: 0;
     &--paid,
     &--received
     {

@@ -17,15 +17,22 @@
 
     &-right {
         padding: 0 !important;
-
+        max-height: 100vh;
         &--container {
             width: 100%;
             min-height: 100vh;
             height: 100%;
+            position: relative;
             // padding: 10px;
               // main right content container this module is reuseable over all site
               .right-content-data{
-                // padding: 0 24px;
+                max-height: 60vh;
+                overflow-y: scroll;
+                border: 2px solid green;
+                @media screen  and (min-width:1920px){
+                max-height: 65vh;
+                    
+                }
             }
         }
     }

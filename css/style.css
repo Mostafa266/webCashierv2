@@ -100,7 +100,7 @@ body {
 }
 
 .total-payments {
-  position: relative;
+  position: absolute;
   height: 15.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +113,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-top: 1px solid #BDBEC3;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .total-payments--paid, .total-payments--received {
@@ -261,8 +264,6 @@ body {
 
 .accordion-container {
   height: 100%;
-  min-height: 70rem;
-  max-height: 70rem;
   /* background: red; */
   overflow-y: scroll;
   scrollbar-color: #BDBEC3 #F0F0F0;
@@ -523,12 +524,26 @@ body {
 
 .layout-right {
   padding: 0 !important;
+  max-height: 100vh;
 }
 
 .layout-right--container {
   width: 100%;
   min-height: 100vh;
   height: 100%;
+  position: relative;
+}
+
+.layout-right--container .right-content-data {
+  max-height: 60vh;
+  overflow-y: scroll;
+  border: 2px solid green;
+}
+
+@media screen and (min-width: 1920px) {
+  .layout-right--container .right-content-data {
+    max-height: 65vh;
+  }
 }
 
 .layout-left {
