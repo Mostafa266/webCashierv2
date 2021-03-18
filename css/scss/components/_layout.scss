@@ -23,16 +23,15 @@
             min-height: 100vh;
             height: 100%;
             position: relative;
-            // padding: 10px;
               // main right content container this module is reuseable over all site
               .right-content-data{
-                max-height: 60vh;
+                max-height: 55vh;
                 overflow-y: scroll;
-                border: 2px solid green;
-                @media screen  and (min-width:1920px){
-                max-height: 65vh;
+                border: 2px solid rgb(25, 60, 177);
+                // @media screen  and (min-width:1920px){
+                // max-height: 55vh;
                     
-                }
+                // }
             }
         }
     }

@@ -535,15 +535,9 @@ body {
 }
 
 .layout-right--container .right-content-data {
-  max-height: 60vh;
+  max-height: 55vh;
   overflow-y: scroll;
-  border: 2px solid green;
-}
-
-@media screen and (min-width: 1920px) {
-  .layout-right--container .right-content-data {
-    max-height: 65vh;
-  }
+  border: 2px solid #193cb1;
 }
 
 .layout-left {
