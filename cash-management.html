@@ -975,12 +975,31 @@
                     <div class="left-content-data ">
                         <div class="invoice">
                             <!-- stylefile name => _invoice.scss -->
-                            <div class="searchInput">
+
+                            <div class="searchInput " id="invoice_search_input_container">
                                 <!-- stylefile name => _searchInput.scss -->
-                                <div class="icon"><img src="imgs/addclient_icon.svg"></div>
-                                <input type="search" name="search" placeholder="اختر عميل محل او عميل فرد او مورد">
+                                <div class="image-container" id="removeClientNameFromInvoice">
+                                    <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                      <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24" rx="12" fill="#fff" opacity="0"/>
+                                      <g id="Group_4007" data-name="Group 4007" transform="translate(12.206 4) rotate(45)">
+                                        <line id="Line_343" data-name="Line 343" y2="12" transform="translate(6)" fill="none" stroke="#878a90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+                                        <line id="Line_344" data-name="Line 344" y2="12" transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+                                      </g>
+                                    </svg>
+                                    
+                                  </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <g id="Group_5006" transform="translate(-78.263 -102.166)">
+                                            <circle id="Ellipse_485" cx="16" cy="16" r="16" fill="#fff" transform="translate(78.263 102.166)"/>
+                                            <path id="Path_1893" d="M103.424 125.677a9.992 9.992 0 0 1-16.561 0 9.992 9.992 0 0 1 16.561 0z" class="cls-2" transform="translate(-.877 -1.923)"/>
+                                            <circle id="Ellipse_486" cx="3.767" cy="3.767" r="3.767" class="cls-2" transform="translate(90.497 109.787)"/>
+                                        </g>
+                                    </svg>
+                                    
+                                </div>
+                                <input id="invoiceInput" value='' type="search" name="search" placeholder="اختر عميل محل او عميل فرد او مورد">
                             </div>
-                            
                             <div class="invoice--pay-receive">
                                 <!-- invoice--pay-receive is a sub component from Invoice  -->
                                 <!-- stylefile name => _invoice.scs -->

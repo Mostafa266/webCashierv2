@@ -5,6 +5,7 @@ let customerCardPlcaeholder = document.getElementById('customer-card-placeholder
 let customerCardPlcaeholder_bigCircle = document.querySelector('#customer-card-placeholder .big-circle')
 let customerCardPlcaeholder_smallCircle = document.querySelector('#customer-card-placeholder .small')
 let payReceiveItems = document.querySelectorAll('.pay-receive-list .pay-receive-list-item');
+let invoiceSearchInput = document.getElementById('invoice_search_input_container');
 
 
 // ---------------//////---------------
@@ -35,11 +36,25 @@ customerCardTl
 
 payReceiveItems.forEach(element => {
     element.addEventListener('click',()=>{
-        console.log(element);
-        customerCardTl.play()
-        
+        customerCardTl.play();
+        // pay-receive-list-item--details
+        invoiceSearchInput.classList.add('haveUser')
+        let clieckedItemValue = document.querySelector('.pay-receive-list-item--details span');
+        let invoiceInput = document.getElementById('invoiceInput');
+        console.log(clieckedItemValue.innerHTML);
+        invoiceInput.value = clieckedItemValue.innerHTML;
     })
 });
+
+let resetInvoiceSearchInput = document.getElementById('removeClientNameFromInvoice');
+resetInvoiceSearchInput.addEventListener('click',()=>{
+    customerCardTl.reverse(0.5);
+
+    invoiceSearchInput.classList.remove('haveUser')
+    invoiceInput.value = '';
+
+
+})
 // ---------------//////---------------
 
 

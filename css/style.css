@@ -197,6 +197,28 @@ body {
           align-items: center;
 }
 
+.searchInput .image-container {
+  z-index: 11111;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
 .searchInput .icon {
   padding-right: 13px;
 }
@@ -208,7 +230,7 @@ body {
   height: 100%;
   font-family: "NotoSansArabic-Regular";
   text-align: right;
-  color: #757575;
+  color: #212121;
   padding-right: 6.7px;
   padding-top: 0;
   margin: 0px 0 0px 0px;
@@ -223,6 +245,24 @@ body {
 
 .searchInput input:focus {
   outline: none;
+}
+
+.searchInput.haveUser svg .cls-2 {
+  fill: #ffffff;
+}
+
+.searchInput.haveUser svg circle {
+  fill: #4DCDE6;
+}
+
+.searchInput.haveUser {
+  background-color: #F1F9FF !important;
+}
+
+.searchInput.haveUser .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filter {
@@ -467,6 +507,7 @@ body {
 
 .customer-card .content .big-circle svg {
   width: 100%;
+  max-height: 116.422px;
   height: 100%;
 }
 

@@ -6,9 +6,24 @@
     border-radius: 32px;
     display: flex;
     align-items: center;
+    .image-container{
+        z-index: 11111;
+        position: absolute;
+        left: 15px;
+        top: 17px;
+        transform: rotate(180deg);
+        background: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: none;
+    }
     .icon{
         padding-right: 13px;
     }
+    
         input{
             width: 50%;
             line-height: 0;
@@ -16,7 +31,7 @@
             height: 100%;
             font-family: "NotoSansArabic-Regular";
             text-align: right;
-            color: #757575;
+            color: $black;
             padding-right: 6.7px;
             padding-top: 0;
             margin: 0px 0 0px 0px;
@@ -30,5 +45,19 @@
                 outline: none;
             }
 
+    }
+    &.haveUser{
+        svg{
+            .cls-2{fill:$white}
+            circle{
+                fill: $waterBlue;
+            }
+        }
+    }
+    &.haveUser{
+        background-color: $lightBlue  !important;
+        .image-container{
+            display: flex;
+        }
     }
 }
