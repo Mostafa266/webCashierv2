@@ -8,6 +8,9 @@
     height: 100%;
     margin-top: 6.5rem;
     background-color: $gray3;
+    @media screen and(max-width:1024px){
+        display: none;
+    }
     ul{
         display: flex;
         align-content: center;
