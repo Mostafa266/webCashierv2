@@ -1,3 +1,4 @@
+@import url(./v1/bills/bill.css);
 html {
   font-size: 10px;
   overflow-x: hidden;
@@ -247,16 +248,20 @@ body {
   outline: none;
 }
 
+.searchInput input::-webkit-search-cancel-button, .searchInput input::-webkit-search-cancel-button {
+  display: none !important;
+}
+
+.searchInput.haveUser {
+  background-color: #F1F9FF !important;
+}
+
 .searchInput.haveUser svg .cls-2 {
   fill: #ffffff;
 }
 
 .searchInput.haveUser svg circle {
   fill: #4DCDE6;
-}
-
-.searchInput.haveUser {
-  background-color: #F1F9FF !important;
 }
 
 .searchInput.haveUser .image-container {
@@ -1087,5 +1092,9 @@ body {
 .layout-left--container .left-content-data {
   padding: 0 24px;
   height: 94%;
+}
+
+.invoice--customer-list {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

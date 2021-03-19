@@ -6,7 +6,7 @@ let customerCardPlcaeholder_bigCircle = document.querySelector('#customer-card-p
 let customerCardPlcaeholder_smallCircle = document.querySelector('#customer-card-placeholder .small')
 let payReceiveItems = document.querySelectorAll('.pay-receive-list .pay-receive-list-item');
 let invoiceSearchInput = document.getElementById('invoice_search_input_container');
-
+let accordionButton = document.querySelector('.accordion-button')
 
 // ---------------//////---------------
 // Animation for items in pay receive list 
@@ -39,9 +39,8 @@ payReceiveItems.forEach(element => {
         customerCardTl.play();
         // pay-receive-list-item--details
         invoiceSearchInput.classList.add('haveUser')
-        let clieckedItemValue = document.querySelector('.pay-receive-list-item--details span');
+        let clieckedItemValue = element.childNodes[1].childNodes[1]
         let invoiceInput = document.getElementById('invoiceInput');
-        console.log(clieckedItemValue.innerHTML);
         invoiceInput.value = clieckedItemValue.innerHTML;
     })
 });
@@ -57,6 +56,13 @@ resetInvoiceSearchInput.addEventListener('click',()=>{
 })
 // ---------------//////---------------
 
+
+
+// accordionButton.addEventListener('click',()=>{
+//     if(this.Attr('aria-expanded')=== true){
+//         console.log('open');
+//     }
+// })
 
 
 

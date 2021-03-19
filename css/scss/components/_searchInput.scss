@@ -44,20 +44,25 @@
             &:focus{
                 outline: none;
             }
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-cancel-button{
+                display: none !important;
+            }
+            
 
     }
     &.haveUser{
+        background-color: $lightBlue  !important;
+
         svg{
             .cls-2{fill:$white}
             circle{
                 fill: $waterBlue;
             }
         }
-    }
-    &.haveUser{
-        background-color: $lightBlue  !important;
         .image-container{
             display: flex;
         }
     }
+ 
 }
