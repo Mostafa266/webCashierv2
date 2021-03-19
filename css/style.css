@@ -75,6 +75,8 @@ body {
 .increaseicon img {
   padding-right: 3px;
   padding-top: 5px;
+  width: 100%;
+  height: 60%;
 }
 
 .decreaseicon {
@@ -97,6 +99,8 @@ body {
   padding-left: 3px;
   height: 50%;
   padding-bottom: 3px;
+  width: 100%;
+  height: 60%;
 }
 
 .total-payments {
@@ -388,9 +392,139 @@ body {
 }
 
 .customer-card {
-  height: 30.3em;
+  height: 40.3em;
   width: 100%;
-  background-color: #cbb8df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  background-color: #F1F9FF;
+  display: none;
+  border-radius: 16px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5% 5%;
+}
+
+.customer-card .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customer-card .content .big-circle {
+  width: 15em;
+  height: 15em;
+  background-color: #4DCDE6;
+  padding: 5px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-card--user-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.customer-card--user-data-username {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.customer-card--user-data-cost {
+  font-size: 2em;
+  font-family: 'med';
+}
+
+.customer-card--invoice-details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.customer-card--invoice-details--last-payment {
+  color: #212121;
+  font-family: 'med';
+  font-size: 1.4em;
+}
+
+.customer-card--invoice-details--date {
+  color: #757575;
+  font-size: 1.4em;
+}
+
+.customer-card--invoice-details--price {
+  font-size: 1.6em;
+  color: #212121;
+  font-family: 'bold';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.customer-card--invoice-details--price .increaseicon {
+  width: 2em;
+  margin: 0 0.5em;
+  height: 2em;
 }
 
 .customer-card-placeholder {
@@ -405,13 +539,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 30em;
   margin: 0 auto;
+}
+
+.customer-card-placeholder .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .customer-card-placeholder .content .big-circle {
   width: 25em;
-  height: 27em;
+  height: 25em;
   background-color: #F2F2F2;
   padding: 10px;
   border-radius: 50%;
@@ -422,6 +569,15 @@ body {
   height: 100%;
   background-color: #CBD0D6;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .payments-buttons {
@@ -586,6 +742,7 @@ body {
 
 .invoice--pay-receive-details {
   width: 100%;
+  margin-top: 7em;
 }
 
 .invoice--pay-receive-details form {

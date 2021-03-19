@@ -3,13 +3,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 30em;
+        align-items: center;
+    // max-width: 30em;
     margin: 0 auto;
     .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .big-circle{
             width: 25em;
-            height: 27em;
+            height: 25em;
             background-color: $lightGray2;
             padding: 10px;
             border-radius: 50%;
@@ -18,6 +23,9 @@
                 height: 100%;
                 background-color: $gray4;
                 border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

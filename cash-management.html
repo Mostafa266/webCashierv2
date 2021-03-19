@@ -984,10 +984,43 @@
                             <div class="invoice--pay-receive">
                                 <!-- invoice--pay-receive is a sub component from Invoice  -->
                                 <!-- stylefile name => _invoice.scs -->
-                                <div class="customer-card-placeholder">
+                                <div class="customer-card-placeholder" id="customer-card-placeholder">
                                     <div class="content">
                                         <div class="big-circle">
-                                            <div class="small"></div>
+                                            <div class="small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="104.972" height="116.422" viewBox="0 0 104.972 116.422">
+                                                    <g id="Group_5455" data-name="Group 5455" transform="translate(-48.275 -47.333)">
+                                                      <path id="Path_1893" data-name="Path 1893" d="M191.835,149.165a63.334,63.334,0,0,1-104.972,0,63.334,63.334,0,0,1,104.972,0Z" transform="translate(-38.588 -13.299)" fill="#fff"/>
+                                                      <circle id="Ellipse_486" data-name="Ellipse 486" cx="23.874" cy="23.874" r="23.874" transform="translate(76.864 47.333)" fill="#fff"/>
+                                                    </g>
+                                                  </svg>
+                                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customer-card" id="customer-card">
+                                    <div class="content">
+                                        <div class="big-circle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="104.972" height="116.422" viewBox="0 0 104.972 116.422">
+                                                <path id="Path_1893" data-name="Path 1893" d="M191.835,149.165a63.334,63.334,0,0,1-104.972,0,63.334,63.334,0,0,1,104.972,0Z" transform="translate(-86.863 -60.632)" fill="#fff"/>
+                                                <circle id="Ellipse_486" data-name="Ellipse 486" cx="23.874" cy="23.874" r="23.874" transform="translate(28.589)" fill="#fff"/>
+                                              </svg>
+                                              
+                                        </div>
+                                        <div class="customer-card--user-data">
+                                            <span class="customer-card--user-data-username">عاصم السيد - 012392193213 </span>
+                                            <span class="customer-card--user-data-cost">500.00</span>
+                                        </div>
+                                        <div class="customer-card--invoice-details">
+                                            <div class="customer-card--invoice-details--price">
+                                                <span>50.00</span>
+                                                <div class="increaseicon">
+                                                    <img src="./imgs/increaseArrow.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="customer-card--invoice-details--date">23/12/2020, 6:50 م</div>
+                                            <div class="customer-card--invoice-details--last-payment">اخر عمليه دفع</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1044,11 +1077,9 @@
                                                     </g>
                                                 </g>
                                             </svg>
-                                            
                                         </div>
                                         <span>استلام</span>
                                     </div>
-                                 
                                 </div>
                             </div>
                             <div class="invoice--customer-list"></div>
@@ -1060,10 +1091,14 @@
         </div>
     </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+  <script src="./js/pages/cash-management.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
+
+
 </body>
 
 </html>
