@@ -1046,6 +1046,15 @@ body {
   position: fixed;
   top: 21px;
   right: 20px;
+  width: 30px;
+  height: 30px;
+  background: burlywood;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sidemenu-btn svg {

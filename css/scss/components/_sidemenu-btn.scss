@@ -1,10 +1,12 @@
 .sidemenu-btn{
     position: fixed;
-    // top: 0;
-    // right: 0;
-    // margin: 2.4rem 3rem 2rem 4rem;
     top: 21px;
     right: 20px;
+    width: 30px;
+    height: 30px;
+    background: burlywood;
+    display: flex;
+    justify-content: center;
     svg{
         width:70%;
     }
