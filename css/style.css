@@ -172,7 +172,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout-tabs {
     display: block;
   }
@@ -1159,7 +1159,7 @@ body {
   font-family: 'bold';
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout .navbar {
     display: none;
   }
@@ -1177,7 +1177,7 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout-right--container {
     display: none;
   }
@@ -1194,7 +1194,7 @@ body {
   scrollbar-width: thin;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout-right--container .right-content-data {
     max-height: 62vh;
   }
@@ -1225,7 +1225,7 @@ body {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout-left--container {
     display: none;
   }
@@ -1250,7 +1250,7 @@ body {
   padding: 0 16px;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout-left--container .appbar {
     display: none;
   }
@@ -1267,7 +1267,7 @@ body {
   height: 94%;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .layout-left--container .left-content-data {
     height: 88%;
   }
