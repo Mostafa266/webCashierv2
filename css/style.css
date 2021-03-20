@@ -85,6 +85,24 @@ body {
   display: none;
 }
 
+@media (min-width: 1599px) {
+  .col-xl-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .col-xxl-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+}
+
 .increaseicon {
   width: 4.4em;
   height: 4.4em;

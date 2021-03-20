@@ -13,6 +13,7 @@ html {
   @media screen and (max-width:375px) {
     font-size: 6.5px;
   }
+
   @media screen and (max-height:900px) {
     font-size: 9px;
   }
@@ -72,6 +73,32 @@ body {
   padding: 0 25px;
 }
 
-.hide{
+.hide {
   display: none;
 }
+
+
+
+@media (min-width: 1599px){
+.col-xl-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+}
+}
+
+@media (min-width: 1600px){
+  .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
+
+}
+
+
+
+// @media (min-width: 1439px){
+//   .col-xl-5 {
+//       flex: 0 0 auto;
+//       width: 41.6666666667%;
+//   }
+// }
