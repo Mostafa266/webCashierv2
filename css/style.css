@@ -85,16 +85,28 @@ body {
   display: none;
 }
 
-@media (min-width: 1599px) {
+@media (min-width: 992px) {
   .col-xl-5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 41.6666666667%;
   }
+  .col-xl-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
 }
 
 @media (min-width: 1600px) {
+  .col-xxl-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 66.6666666667%;
+  }
   .col-xxl-4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
