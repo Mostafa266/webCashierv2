@@ -898,7 +898,7 @@ body {
 }
 
 .invoice--pay-receive {
-  margin-top: 1em;
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
