@@ -22,6 +22,12 @@ html {
   }
 }
 
+@media screen and (max-height: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -611,6 +617,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-height: 800px) {
+  .customer-card-placeholder {
+    height: 20.3em;
+  }
+}
+
 .customer-card-placeholder .content {
   width: 100%;
   height: 100%;
@@ -813,6 +825,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-height: 900px) {
+  .invoice--pay-receive {
+    margin-top: 5em;
+  }
 }
 
 .invoice--pay-receive-details {
@@ -1049,7 +1067,7 @@ body {
 }
 
 .layout-right--container .right-content-data::-webkit-scrollbar-track {
-  background-color: #F0F0F0;
+  background-color: transparent;
 }
 
 .layout-right--container .right-content-data::-webkit-scrollbar-thumb {

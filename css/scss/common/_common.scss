@@ -1,64 +1,73 @@
-html{
-    font-size: 10px;   
-    overflow-x: hidden;
-    @media screen and (min-width:769px) and (max-width:1024px){
-        font-size: 9px;
-    }
-    @media screen and (min-width:375px) and (max-width:768px){
-      font-size: 7.5px;
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+
+  @media screen and (min-width:769px) and (max-width:1024px) {
+    font-size: 9px;
   }
+
+  @media screen and (min-width:375px) and (max-width:768px) {
+    font-size: 7.5px;
+  }
+
   @media screen and (max-width:375px) {
     font-size: 6.5px;
+  }
+  @media screen and (max-height:900px) {
+    font-size: 9px;
+  }
 }
+
+* {
+  box-sizing: border-box;
 }
-*{
-    box-sizing: border-box;
-}
-body{
-    background-color: $lightGray1 !important;
-    overflow-x: hidden;
-    direction: rtl;
+
+body {
+  background-color: $lightGray1 !important;
+  overflow-x: hidden;
+  direction: rtl;
 }
 
 @font-face {
-    font-family: "med";
-    src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Medium.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: "reg";
-    src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Regular.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: "light";
-    src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Light.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: "bold";
-    src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Bold.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: "semiBold";
-    src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-SemiBold.ttf) format("truetype");
-  }
-  
+  font-family: "med";
+  src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Medium.ttf) format("truetype");
+}
 
-  .ltr{
-     direction: rtl !important;
-  }
+@font-face {
+  font-family: "reg";
+  src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Regular.ttf) format("truetype");
+}
 
-  .ltr .sidemenu{
-      right: auto;
-      left: 0;
-  }  
-  .ltr .layout{
-    padding: 0 0 0 104px ;
+@font-face {
+  font-family: "light";
+  src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "semiBold";
+  src: url(../fonts/NotoSansArabic-hinted/NotoSansArabic-SemiBold.ttf) format("truetype");
+}
+
+
+.ltr {
+  direction: rtl !important;
+}
+
+.ltr .sidemenu {
+  right: auto;
+  left: 0;
+}
+
+.ltr .layout {
+  padding: 0 0 0 104px;
 
 }
 
-.pushLandR25{
+.pushLandR25 {
   padding: 0 25px;
 }

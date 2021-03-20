@@ -1,50 +1,45 @@
 $('#removeClientName').fadeOut();
 
+  const fadeOut = ele => {
+    let fadeOut = new TimelineMax();
+    fadeOut.to(ele,0.5,{opacity:'0',display:'none'})
+  }
+  const fadeIn = ele => {
+    let fadeIn = new TimelineMax();
+    fadeIn.to(ele,0.5,{opacity:'1',display:'block'})
+  }
+
+  let client_title = document.getElementById('client_title');
+
+  let tl = new TimelineMax();
+
+  let sidebarItems = document.querySelectorAll('.sidebar ul li');
+  let salesCard = document.querySelectorAll('.salesContainer .card');
+  let divider = document.querySelectorAll('.divider');
+  let billdivider = document.querySelectorAll('.billdivider');
+  let clientContainer = document.getElementsByClassName('.clientContainer');
+  let billDetails = document.querySelectorAll('.billDetails');
+  let productsList = document.getElementById('productsList');
+  let clientList = document.getElementById('clientList');
+  let listOfUsers = document.querySelectorAll('#list-of-Users li');
+  let headerAddClient = document.getElementsByClassName('.headerAddClient');
+  let dropdownClient = document.getElementById('dropdownClient');
+  let bill = document.getElementsByClassName('bill');
+  let bgBills = document.getElementById('bg-bills');
+  let closeClientsList = document.getElementById('closeClientsList');
 
 
+  tl.fromTo(sidebarItems, 0.5, { opacity: 0,position:'relative',right:'-70px'}, {opacity: 1,position:'relative',right:0,stagger: 0.1})
+  .fromTo(salesCard, 0.3, {opacity: 0,position:'relative',bottom:'-20px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1},'-=1')
+  .fromTo(divider, 0.5, {opacity: 0,position:'relative',width:'0'}, {opacity: 1,position:'relative',width:'100%',stagger: 0.1},'-=2.5')
+  .fromTo(billdivider, 0.5, {opacity: 0,position:'relative',width:'0'}, {opacity: 1,position:'relative',width:'100%',stagger: 0.1},'-=1.5')
+  .fromTo(clientContainer, 0.5, {opacity: 0,top:'100px'}, {opacity: 1,top:'56px'},'-=4.45')
+  .fromTo(billDetails, 0.5, {opacity: 0,position:'relative',bottom:'-20px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1},'-=4.45')
 
 
-const fadeOut = ele => {
-  let fadeOut = new TimelineMax();
-  fadeOut.to(ele,0.5,{opacity:'0',display:'none'})
-}
-const fadeIn = ele => {
-  let fadeIn = new TimelineMax();
-  fadeIn.to(ele,0.5,{opacity:'1',display:'block'})
-}
-
-
-let client_title = document.getElementById('client_title');
-
-let tl = new TimelineMax();
-
-let sidebarItems = document.querySelectorAll('.sidebar ul li');
-let salesCard = document.querySelectorAll('.salesContainer .card');
-let divider = document.querySelectorAll('.divider');
-let billdivider = document.querySelectorAll('.billdivider');
-let clientContainer = document.getElementsByClassName('.clientContainer');
-let billDetails = document.querySelectorAll('.billDetails');
-let productsList = document.getElementById('productsList');
-let clientList = document.getElementById('clientList');
-let listOfUsers = document.querySelectorAll('#list-of-Users li');
-let headerAddClient = document.getElementsByClassName('.headerAddClient');
-let dropdownClient = document.getElementById('dropdownClient');
-let bill = document.getElementsByClassName('bill');
-let bgBills = document.getElementById('bg-bills');
-let closeClientsList = document.getElementById('closeClientsList');
-
-
-tl.fromTo(sidebarItems, 0.5, { opacity: 0,position:'relative',right:'-70px'}, {opacity: 1,position:'relative',right:0,stagger: 0.1})
-.fromTo(salesCard, 0.3, {opacity: 0,position:'relative',bottom:'-20px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1},'-=1')
-.fromTo(divider, 0.5, {opacity: 0,position:'relative',width:'0'}, {opacity: 1,position:'relative',width:'100%',stagger: 0.1},'-=2.5')
-.fromTo(billdivider, 0.5, {opacity: 0,position:'relative',width:'0'}, {opacity: 1,position:'relative',width:'100%',stagger: 0.1},'-=1.5')
-.fromTo(clientContainer, 0.5, {opacity: 0,top:'100px'}, {opacity: 1,top:'56px'},'-=4.45')
-.fromTo(billDetails, 0.5, {opacity: 0,position:'relative',bottom:'-20px'}, {opacity: 1,position:'relative',bottom:0,stagger: 0.1},'-=4.45')
-
-
-$('#lang').on('click',function(){
-    $('body').toggleClass('ltr');
-    tl.restart()
+  $('#lang').on('click',function(){
+      $('body').toggleClass('ltr');
+      tl.restart()
   })
 
 
@@ -79,6 +74,24 @@ $('#lang').on('click',function(){
   })
 
 
+
+
+  // listOfUsers.forEach(element => {
+  //     element.addEventListener('click',()=>{
+
+
+
+
+  //       let userNametext = $( this ).find('#name').text();
+  //       let userPhone = $( this ).find('#userPhone').text();
+  //       dropdownClient.style.backgroundColor='#e3f3ff';
+  //       $('#removeClientName').fadeIn();
+  //       client_title.innerText= userNametext +" - "+ userPhone
+  //       tl2.reverse(0.7);
+  //       fadeIn(bill)
+  //       dropdownClient.classList.add('stopClick')
+  //     })
+  // });
 
   // to get clicke item value from add client 
   $( "#list-of-Users li" ).each(function( index ) {
