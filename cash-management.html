@@ -155,20 +155,28 @@
     </div>
     <div class="layout-tabs">
         <ul class="layout-tabs--buttons">
-            <li class="layout-tabs--buttons-btn active" data-target-tab='cash_tab'>
+            <li class="layout-tabs--buttons-btn active" data-target-id='cash_tab'>
                 <span>سجل النقديه</span>
             </li>
-            <li class="layout-tabs--buttons-btn" data-target-tab="invoice_tab">
+            <li class="layout-tabs--buttons-btn" data-target-id="invoice_tab">
                 <span>عملية نقديه</span>
             </li>
         </ul>
-        <div class="layout-tabs--content" id="cash_tab"></div>
-        <div class="layout-tabs--content" id="invoice_tab"></div>
+        <!-- <div class="layout-tabs--content">
+            <div class="layout-tabs--content-tab" id="cash_tab">
+                content one
+            </div>
+            <div class="layout-tabs--content-tab" id="invoice_tab">
+                content TWO
+            </div>
+        </div> -->
+      
     </div>
     <div class="layout">
         <div class="row">
             <div class="col-md-6 col-lg-8 layout-right">
-                <div class="layout-right--container">
+                <!-- layout-container class used for looop in js in to render it depend oon click in layoutTabs js component -->
+                <div class="layout-container layout-right--container active" id="cash_tab">
                     <!-- Start Navbar -->
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
@@ -982,7 +990,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 layout-left">
-                <div class="layout-left--container">
+                <div class="layout-container layout-left--container"  id="invoice_tab">
                     <!-- appbar style in _layout.scss -->
                     <div class="appbar"> <span>عمليه نقديه</span></div>
                     <div class="left-content-data ">
@@ -1353,11 +1361,11 @@
         </div>
     </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
-  <script src="./js/pages/cash-management.js"></script>
+  <script src="./js/pages/cash-management.module.js" type="module"></script>
 
 
 

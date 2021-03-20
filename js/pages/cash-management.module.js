@@ -1,4 +1,8 @@
 
+// import this module to active tabs functrion in mobile devices
+import '../components/layoutTabs.module.js';
+
+
 
 let customerCard = document.getElementById('customer-card')
 let customerCardPlcaeholder = document.getElementById('customer-card-placeholder')

@@ -3,7 +3,7 @@
     height: 100%;
     position: relative;
     .searchInput{
-        margin-top: 10px;
+        top: 10px;
         background-color: $lightGray2;
         input{
             &::placeholder{

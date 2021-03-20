@@ -15,6 +15,9 @@
             color: $black;
             font-family: 'bold';
         }
+        @media screen and (max-width:470px){
+            display: none;
+    }
     }
 
     &-right {
@@ -25,12 +28,22 @@
             min-height: 100vh;
             height: 100%;
             position: relative;
+             @media screen and (max-width:470px) {
+            display: none;
+
+            }
+            &.active{
+                display: block;
+            }  
               // main right content container this module is reuseable over all site
               .right-content-data{
                 max-height: 52vh;
                 overflow-y: scroll;
                 scrollbar-color: $gray6 $gray5;
                 scrollbar-width:thin;
+                @media screen and (max-width:470px) {
+                    max-height: 62vh;
+                }
                 // for chrome
                 &::-webkit-scrollbar {
                     width: 5px;
@@ -48,13 +61,19 @@
 
     &-left {
         padding: 0 !important;
+        max-height: 100vh;
         &--container {
             height: 100%;
             width: 100%;
             min-height: 100vh;
             background-color: $white;
-
+            @media screen and (max-width:470px) {
+                display: none;
+            }
             // padding: 10px;
+            &.active{
+                display: block;
+            }   
             .appbar {
                 background-color: $blue;
                 height: 5.2rem;
@@ -62,7 +81,9 @@
                 justify-content: flex-start;
                 align-items: center;
                 padding: 0 16px;
-
+                @media screen and (max-width:470px) {
+                    display: none;
+                }
                 span {
                     font-family: 'bold';
                     font-size: 1.4rem;
@@ -72,8 +93,14 @@
             .left-content-data{
                 padding: 0 24px;
                 height: 94%;
+                @media screen and (max-width:470px) {
+                    height: 88%;
+
+                }
+            
             }
         }
 
     }
 }
+
