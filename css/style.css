@@ -12,7 +12,7 @@ html {
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   html {
-    font-size: 7.5px;
+    font-size: 9.5px;
   }
 }
 
@@ -126,6 +126,94 @@ body {
   padding-bottom: 3px;
   width: 100%;
   height: 60%;
+}
+
+.layout-tabs {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  font-size: 1rem;
+  padding: 0 8rem 0 0;
+}
+
+.layout-tabs--buttons {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.layout-tabs--buttons-btn {
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.layout-tabs--buttons-btn span {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.6em;
+  z-index: 4;
+}
+
+.layout-tabs--buttons-btn::before {
+  content: '';
+  width: 100%;
+  height: 0.2em;
+  background-color: #1877F2;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  left: 0;
+}
+
+.layout-tabs--buttons-btn::after {
+  content: '';
+  width: 100%;
+  height: 0%;
+  background-color: #1877F2;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  left: 0;
+}
+
+.layout-tabs--buttons-btn:hover::after {
+  height: 100%;
+}
+
+.layout-tabs--buttons-btn.active::after {
+  height: 100%;
+}
+
+.layout-tabs--buttons-btn.active span {
+  color: #ffffff;
+}
+
+.layout-tabs--buttons-btn:hover span {
+  color: #ffffff;
 }
 
 .total-payments {

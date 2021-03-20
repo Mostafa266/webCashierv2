@@ -76,43 +76,39 @@ $('#removeClientName').fadeOut();
 
 
 
-  // listOfUsers.forEach(element => {
-  //     element.addEventListener('click',()=>{
-
-
-
-
-  //       let userNametext = $( this ).find('#name').text();
-  //       let userPhone = $( this ).find('#userPhone').text();
-  //       dropdownClient.style.backgroundColor='#e3f3ff';
-  //       $('#removeClientName').fadeIn();
-  //       client_title.innerText= userNametext +" - "+ userPhone
-  //       tl2.reverse(0.7);
-  //       fadeIn(bill)
-  //       dropdownClient.classList.add('stopClick')
-  //     })
-  // });
-
-  // to get clicke item value from add client 
-  $( "#list-of-Users li" ).each(function( index ) {
-    $(this).on('click',function(){
-      let userNametext = $( this ).find('#name').text();
-      let userPhone = $( this ).find('#userPhone').text();
-      dropdownClient.style.backgroundColor='#e3f3ff';
-      $('#removeClientName').fadeIn();
-      client_title.innerText= userNametext +" - "+ userPhone
-      tl2.reverse(0.7);
-      fadeIn(bill)
-      dropdownClient.classList.add('stopClick')
-
-      // if(client_title.innerText !== 'اضف عميل'){
-      //   console.log('has value');
-      //   dropdownClient.addClass('stopClick')
-      // }else{
-      //   console.log('not has value');
-      // }
-    })
+  listOfUsers.forEach(element => {
+      element.addEventListener('click',()=>{
+        let userNametext = $( this ).find('#name').text();
+        let userPhone = $( this ).find('#userPhone').text();
+        dropdownClient.style.backgroundColor='#e3f3ff';
+        $('#removeClientName').fadeIn();
+        client_title.innerText= userNametext +" - "+ userPhone
+        tl2.reverse(0.7);
+        fadeIn(bill)
+        dropdownClient.classList.add('stopClick')
+      })
   });
+
+  // // to get clicke item value from add client 
+  // $( "#list-of-Users li" ).each(function( index ) {
+  //   $(this).on('click',function(){
+  //     let userNametext = $( this ).find('#name').text();
+  //     let userPhone = $( this ).find('#userPhone').text();
+  //     dropdownClient.style.backgroundColor='#e3f3ff';
+  //     $('#removeClientName').fadeIn();
+  //     client_title.innerText= userNametext +" - "+ userPhone
+  //     tl2.reverse(0.7);
+  //     fadeIn(bill)
+  //     dropdownClient.classList.add('stopClick')
+
+  //     // if(client_title.innerText !== 'اضف عميل'){
+  //     //   console.log('has value');
+  //     //   dropdownClient.addClass('stopClick')
+  //     // }else{
+  //     //   console.log('not has value');
+  //     // }
+  //   })
+  // });
 
 
 
