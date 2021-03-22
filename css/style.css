@@ -663,6 +663,12 @@ body {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2.3) and (-webkit-max-device-pixel-ratio: 2.8) {
+  .customer-card .content .big-circle svg {
+    padding: 10px;
+  }
+}
+
 .customer-card--user-data {
   display: -webkit-box;
   display: -ms-flexbox;
