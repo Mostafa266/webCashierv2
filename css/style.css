@@ -514,6 +514,12 @@ body {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .pay-receive {
+    font-size: 0.7rem;
+  }
+}
+
 .pay-receive-list {
   width: 100%;
   list-style: none;
