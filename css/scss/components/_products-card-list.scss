@@ -14,13 +14,13 @@
         font-size: 0.91rem;
     }
     @include mediaMixin(lgDesktop){
-        font-size: 0.9rem;
+        font-size:0.69rem;
     }
     @include mediaMixin(desktop){
-        font-size: 0.93rem;
+        font-size:0.69rem;
     }
     @include mediaMixin(tabltes){
-        font-size:0.64rem;
+        font-size:0.76rem;
     }
     @include mediaMixin(smTabltes){
         font-size: 7px;
