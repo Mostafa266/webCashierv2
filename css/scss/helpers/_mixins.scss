@@ -3,8 +3,13 @@
 @mixin mediaMixin($breakpoint) {
 
     // $breakpoint is simply a variable that can have several values
+    @if $breakpoint==xxxlScreen {
+        @media only screen and (min-width: 1930px)   {
+            @content;
+        }
+    }
     @if $breakpoint==xxlScreen {
-        @media only screen and (min-width: 1441px)   {
+        @media only screen and (min-width: 1441px)  and (max-width:1920px) {
             @content;
         }
     }

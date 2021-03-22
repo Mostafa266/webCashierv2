@@ -8,10 +8,10 @@
     align-items: center;
     flex-flow: row wrap;
     @include mediaMixin(xxlScreen){
-        font-size: 11.5px;
+        font-size: 10px;
     }
     @include mediaMixin(lgDesktop){
-        font-size: 8px;
+        font-size: 7.4px;
     }
     @include mediaMixin(desktop){
         font-size: 8px;
@@ -20,7 +20,7 @@
         font-size: 7px;
     }
     @include mediaMixin(smTabltes){
-        font-size: 6px;
+        font-size: 7px;
     }
     @include mediaMixin(mobile){
         font-size: 5px;
