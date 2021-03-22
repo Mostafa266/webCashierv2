@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./v1/bills/bill.css);
 html {
   font-size: 10px;
@@ -1186,6 +1187,42 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+}
+
+@media only screen and (min-width: 1441px) {
+  .products-card-list {
+    font-size: 11.5px;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .products-card-list {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 1025px ) and (max-width: 1200px) {
+  .products-card-list {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .products-card-list {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .products-card-list {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .products-card-list {
+    font-size: 5px;
+  }
 }
 
 .sidemenu-btn {
