@@ -11,10 +11,10 @@
         font-size: 1.15rem;
     }
     @include mediaMixin(xxlScreen){
-        font-size: 1rem;
+        font-size: 0.91rem;
     }
     @include mediaMixin(lgDesktop){
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     @include mediaMixin(desktop){
         font-size: 0.93rem;

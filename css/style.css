@@ -1082,7 +1082,7 @@ body {
   width: 20.16em;
   height: 28.8em;
   background-color: #ffffff;
-  margin: 13px 15px;
+  margin: 13px 5px;
   border-radius: 0.8em;
   position: relative;
   display: -webkit-box;
@@ -1194,15 +1194,15 @@ body {
   }
 }
 
-@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
   .products-card-list {
-    font-size: 1rem;
+    font-size: 0.91rem;
   }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
   .products-card-list {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 

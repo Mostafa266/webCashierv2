@@ -9,7 +9,12 @@
         }
     }
     @if $breakpoint==xxlScreen {
-        @media only screen and (min-width: 1441px)  and (max-width:1920px) {
+        @media only screen and (min-width: 1601px)  and (max-width:1920px) {
+            @content;
+        }
+    }
+    @if $breakpoint==xlgDesktop {
+        @media only screen and (min-width: 1441px)  and (max-width:1600px) {
             @content;
         }
     }
