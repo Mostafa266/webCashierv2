@@ -195,9 +195,9 @@
                                 </li>
                             </ul>
                         </div>
-                    <!-- STARt dynamic content -->
+                        <!-- STARt dynamic content -->
                         <div class="right-content-data">
-               
+
                             <div class="accordion-container">
                                 <!-- this is a standalone component -->
                                 <!-- stylefile name => _accordion.scss -->
@@ -230,7 +230,7 @@
                                                                     <div class="pay-receive-list--budget-number">
                                                                         <span> 00.00</span>
                                                                     </div>
-    
+
                                                                     <!-- this icon is standalone components in 
                                                                         stylefile => components/small/decreaseicon & increaseicon.scss
                                                                     -->
@@ -288,8 +288,8 @@
                                                                     <div class="decreaseicon  ">
                                                                         <img src="./imgs/decreaseArrow.svg" alt="">
                                                                     </div>
-                                                                    
-                                                              </div>
+
+                                                                </div>
                                                             </li>
                                                             <li class="pay-receive-list-item">
                                                                 <div class="pay-receive-list-item--details">
@@ -569,7 +569,7 @@
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                     </div>
                                 </div>
                                 <!-- new according -->
@@ -864,7 +864,7 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        
+
                                                         <li class="pay-receive-list-item">
                                                             <div class="pay-receive-list-item--details">
                                                                 <span>عاصم السيد - 0101232393</span>
@@ -876,7 +876,7 @@
                                                                 <div class="pay-receive-list--budget-number">
                                                                     <span> 00.00</span>
                                                                 </div>
-                                                                
+
                                                                 <div class="decreaseicon  ">
                                                                     <img src="./imgs/decreaseArrow.svg" alt="">
                                                                 </div>
@@ -981,7 +981,7 @@
                 </div>
             </div>
             <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-4  layout-left">
-                <div class="layout-container layout-left--container"  id="invoice_tab">
+                <div class="layout-container layout-left--container" id="invoice_tab">
                     <!-- appbar style in _layout.scss -->
                     <div class="appbar"> <span>عمليه نقديه</span></div>
                     <div class="left-content-data ">
@@ -991,43 +991,61 @@
                             <div class="searchInput " id="invoice_search_input_container">
                                 <!-- stylefile name => _searchInput.scss -->
                                 <div class="image-container" id="removeClientNameFromInvoice">
-                                    <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                      <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24" rx="12" fill="#fff" opacity="0"/>
-                                      <g id="Group_4007" data-name="Group 4007" transform="translate(12.206 4) rotate(45)">
-                                        <line id="Line_343" data-name="Line 343" y2="12" transform="translate(6)" fill="none" stroke="#878a90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
-                                        <line id="Line_344" data-name="Line 344" y2="12" transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
-                                      </g>
+                                    <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24"
+                                            rx="12" fill="#fff" opacity="0" />
+                                        <g id="Group_4007" data-name="Group 4007"
+                                            transform="translate(12.206 4) rotate(45)">
+                                            <line id="Line_343" data-name="Line 343" y2="12" transform="translate(6)"
+                                                fill="none" stroke="#878a90" stroke-linecap="round"
+                                                stroke-miterlimit="10" stroke-width="1" />
+                                            <line id="Line_344" data-name="Line 344" y2="12"
+                                                transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90"
+                                                stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                        </g>
                                     </svg>
-                                    
-                                  </div>
+
+                                </div>
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                                         <g id="Group_5006" transform="translate(-78.263 -102.166)">
-                                            <circle id="Ellipse_485" cx="16" cy="16" r="16" fill="#fff" transform="translate(78.263 102.166)"/>
-                                            <path id="Path_1893" d="M103.424 125.677a9.992 9.992 0 0 1-16.561 0 9.992 9.992 0 0 1 16.561 0z" class="cls-2" transform="translate(-.877 -1.923)"/>
-                                            <circle id="Ellipse_486" cx="3.767" cy="3.767" r="3.767" class="cls-2" transform="translate(90.497 109.787)"/>
+                                            <circle id="Ellipse_485" cx="16" cy="16" r="16" fill="#fff"
+                                                transform="translate(78.263 102.166)" />
+                                            <path id="Path_1893"
+                                                d="M103.424 125.677a9.992 9.992 0 0 1-16.561 0 9.992 9.992 0 0 1 16.561 0z"
+                                                class="cls-2" transform="translate(-.877 -1.923)" />
+                                            <circle id="Ellipse_486" cx="3.767" cy="3.767" r="3.767" class="cls-2"
+                                                transform="translate(90.497 109.787)" />
                                         </g>
                                     </svg>
-                                    
+
                                 </div>
-                                <input id="invoiceInput" value='' type="search" name="search" placeholder="اختر عميل محل او عميل فرد او مورد" disabled>
+                                <input id="invoiceInput" value='' type="search" name="search"
+                                    placeholder="اختر عميل محل او عميل فرد او مورد" disabled>
                             </div>
                             <div class="invoice--pay-receive">
                                 <!-- invoice--pay-receive is a sub component from Invoice  -->
                                 <!-- stylefile name => _invoice.scs -->
                                 <div class="customer-card-placeholder" id="customer-card-placeholder">
-                                <!-- This is a placeholder card with   -->
-                                <!-- stylefile name => _customer-card-placeholder.scs -->
+                                    <!-- This is a placeholder card with   -->
+                                    <!-- stylefile name => _customer-card-placeholder.scs -->
                                     <div class="content">
                                         <div class="big-circle">
                                             <div class="small">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="104.972" height="116.422" viewBox="0 0 104.972 116.422">
-                                                    <g id="Group_5455" data-name="Group 5455" transform="translate(-48.275 -47.333)">
-                                                      <path id="Path_1893" data-name="Path 1893" d="M191.835,149.165a63.334,63.334,0,0,1-104.972,0,63.334,63.334,0,0,1,104.972,0Z" transform="translate(-38.588 -13.299)" fill="#fff"/>
-                                                      <circle id="Ellipse_486" data-name="Ellipse 486" cx="23.874" cy="23.874" r="23.874" transform="translate(76.864 47.333)" fill="#fff"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="104.972" height="116.422"
+                                                    viewBox="0 0 104.972 116.422">
+                                                    <g id="Group_5455" data-name="Group 5455"
+                                                        transform="translate(-48.275 -47.333)">
+                                                        <path id="Path_1893" data-name="Path 1893"
+                                                            d="M191.835,149.165a63.334,63.334,0,0,1-104.972,0,63.334,63.334,0,0,1,104.972,0Z"
+                                                            transform="translate(-38.588 -13.299)" fill="#fff" />
+                                                        <circle id="Ellipse_486" data-name="Ellipse 486" cx="23.874"
+                                                            cy="23.874" r="23.874" transform="translate(76.864 47.333)"
+                                                            fill="#fff" />
                                                     </g>
-                                                  </svg>
-                                                  
+                                                </svg>
+
                                             </div>
                                         </div>
                                     </div>
@@ -1037,14 +1055,19 @@
                                     <!-- stylefile name => _customer-card.scs -->
                                     <div class="content">
                                         <div class="big-circle">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="104.972" height="116.422" viewBox="0 0 104.972 116.422">
-                                                <path id="Path_1893" data-name="Path 1893" d="M191.835,149.165a63.334,63.334,0,0,1-104.972,0,63.334,63.334,0,0,1,104.972,0Z" transform="translate(-86.863 -60.632)" fill="#fff"/>
-                                                <circle id="Ellipse_486" data-name="Ellipse 486" cx="23.874" cy="23.874" r="23.874" transform="translate(28.589)" fill="#fff"/>
-                                              </svg>
-                                              
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="104.972" height="116.422"
+                                                viewBox="0 0 104.972 116.422">
+                                                <path id="Path_1893" data-name="Path 1893"
+                                                    d="M191.835,149.165a63.334,63.334,0,0,1-104.972,0,63.334,63.334,0,0,1,104.972,0Z"
+                                                    transform="translate(-86.863 -60.632)" fill="#fff" />
+                                                <circle id="Ellipse_486" data-name="Ellipse 486" cx="23.874" cy="23.874"
+                                                    r="23.874" transform="translate(28.589)" fill="#fff" />
+                                            </svg>
+
                                         </div>
                                         <div class="customer-card--user-data">
-                                            <span class="customer-card--user-data-username">عاصم السيد - 012392193213 </span>
+                                            <span class="customer-card--user-data-username">عاصم السيد - 012392193213
+                                            </span>
                                             <span class="customer-card--user-data-cost">500.00</span>
                                         </div>
                                         <div class="customer-card--invoice-details">
@@ -1055,7 +1078,8 @@
                                                 </div>
                                             </div>
                                             <div class="customer-card--invoice-details--date">23/12/2020, 6:50 م</div>
-                                            <div class="customer-card--invoice-details--last-payment">اخر عمليه دفع</div>
+                                            <div class="customer-card--invoice-details--last-payment">اخر عمليه دفع
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1070,43 +1094,55 @@
                                         <div class="inputs-group">
                                             <label for="input-comment"> تعليق</label>
                                             <!-- <input class="comment" type="text" name="write-comment" id="input-comment" placeholder="اكتب تعليق"> -->
-                                            <textarea aria-valuemax="100" aria-valuemin="20" id="input-comment"  name="input-comment" rows="2" cols="50" placeholder="اكتب تعليقك"></textarea>
+                                            <textarea aria-valuemax="100" aria-valuemin="20" id="input-comment"
+                                                name="input-comment" rows="2" cols="50"
+                                                placeholder="اكتب تعليقك"></textarea>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="payments-buttons">
                                     <div class="payments-buttons-pay">
                                         <div class="decreaseicon  ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502" viewBox="0 0 18.246 18.502">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502"
+                                                viewBox="0 0 18.246 18.502">
                                                 <g id="Group_4759" transform="translate(-4.038 1.327)">
                                                     <g id="Group_4233" transform="rotate(-45 14.15 5.861)">
                                                         <g id="Group_4232">
                                                             <g id="Group_3881">
-                                                                <path id="Line_318" d="M0 0L16.076 0" class="cls-1" transform="translate(0 6.711)"/>
-                                                                <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061" class="cls-1" transform="translate(11.523)"/>
+                                                                <path id="Line_318" d="M0 0L16.076 0" class="cls-1"
+                                                                    transform="translate(0 6.711)" />
+                                                                <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061"
+                                                                    class="cls-1" transform="translate(11.523)" />
                                                             </g>
                                                         </g>
                                                     </g>
                                                 </g>
                                             </svg>
-                                            
+
                                         </div>
                                         <span>دفع</span>
                                     </div>
                                     <div class="payments-buttons-receive">
                                         <div class="increaseicon  ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502" viewBox="0 0 18.246 18.502">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502"
+                                                viewBox="0 0 18.246 18.502">
                                                 <defs>
                                                     <style>
-                                                        .cls-1{fill:none;stroke:#fff;stroke-width:2px}
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-width: 2px
+                                                        }
                                                     </style>
                                                 </defs>
                                                 <g id="Group_4759" transform="translate(-4.038 1.327)">
                                                     <g id="Group_4233" transform="rotate(-45 14.15 5.861)">
                                                         <g id="Group_4232">
                                                             <g id="Group_3881">
-                                                                <path id="Line_318" d="M0 0L16.076 0" class="cls-1" transform="translate(0 6.711)"/>
-                                                                <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061" class="cls-1" transform="translate(11.523)"/>
+                                                                <path id="Line_318" d="M0 0L16.076 0" class="cls-1"
+                                                                    transform="translate(0 6.711)" />
+                                                                <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061"
+                                                                    class="cls-1" transform="translate(11.523)" />
                                                             </g>
                                                         </g>
                                                     </g>
@@ -1119,231 +1155,252 @@
                             </div>
                             <div class="invoice--customer-list">
                                 <div id="Dropdown">
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active " id="nav-home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">أفراد</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">محلات</a>
-                </li>
-              </ul>
-              <!-- Tab panes -->
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <div data-toggle="modal" style="cursor: pointer;" data-target="#addNew_client" class="addNewClient d-flex justify-content-center align-items-center">
-                    <p>
-                      + اضافة عميل جديد
-                    </p>
-                  </div>
-                  <div class="list-of-Users">
-                    <ul class="list-group" id="list-of-Users">
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">يوسف العوضي</span>
-                              <br>
-                              <span id="userPhone">05912345700</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">محمود محمد</span>
-                              <br>
-                              <span id="userPhone">05487793158</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">حسن المهدي</span>
-                              <br>
-                              <span id="userPhone">0111155528</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">ابو بكر</span>
-                              <br>
-                              <span id="userPhone">0123456789</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">11.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">احمد محمد</span>
-                              <br>
-                              <span id="userPhone">0987654321</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center" style="bottom: 0px; opacity: 1; display: block;">
-                        <div class="d-flex">
-                          <img src="imgs/clientPhoto.svg" style="float: left;">
-                          <p>
-                            <span class="clientName">
-                              <span id="name">عاصم الجزيرى</span>
-                              <br>
-                              <span id="userPhone">01013875831</span>
-                            </span>
-                          </p>
-                        </div>
-                        <span class="client-price">00.00</span>
-                      </li>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active " id="nav-home-tab" data-toggle="tab" href="#home"
+                                                role="tab" aria-controls="home" aria-selected="true">أفراد</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#profile"
+                                                role="tab" aria-controls="profile" aria-selected="false">محلات</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="nav-home-tab">
+                                            <div data-toggle="modal" style="cursor: pointer;"
+                                                data-target="#addNew_client"
+                                                class="addNewClient d-flex justify-content-center align-items-center">
+                                                <p>
+                                                    + اضافة عميل جديد
+                                                </p>
+                                            </div>
+                                            <div class="list-of-Users">
+                                                <ul class="list-group" id="list-of-Users">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">يوسف العوضي</span>
+                                                                    <br>
+                                                                    <span id="userPhone">05912345700</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">محمود محمد</span>
+                                                                    <br>
+                                                                    <span id="userPhone">05487793158</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">حسن المهدي</span>
+                                                                    <br>
+                                                                    <span id="userPhone">0111155528</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">ابو بكر</span>
+                                                                    <br>
+                                                                    <span id="userPhone">0123456789</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">11.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">احمد محمد</span>
+                                                                    <br>
+                                                                    <span id="userPhone">0987654321</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                        style="bottom: 0px; opacity: 1; display: block;">
+                                                        <div class="d-flex">
+                                                            <img src="imgs/clientPhoto.svg" style="float: left;">
+                                                            <p>
+                                                                <span class="clientName">
+                                                                    <span id="name">عاصم الجزيرى</span>
+                                                                    <br>
+                                                                    <span id="userPhone">01013875831</span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <span class="client-price">00.00</span>
+                                                    </li>
 
-                    </ul>
-                  </div>
-                </div>
-                <div class="tab-pane fade show p-2" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show p-2" id="profile" role="tabpanel"
+                                            aria-labelledby="nav-profile-tab">
 
-                </div>
+                                        </div>
 
 
-              </div>
-            </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1352,11 +1409,15 @@
         </div>
     </div>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
-  <script src="./js/pages/cash-management.module.js" type="module"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
+    <script src="./js/pages/cash-management.module.js" type="module"></script>
 
 
 

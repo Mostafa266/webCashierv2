@@ -30,8 +30,11 @@
             align-items: center;
             svg{
                 width: 100%;
-                    max-height: 116.422px;
-                    height: 100%;
+                max-height: 116.422px;
+                height: 100%;
+                @media (-webkit-min-device-pixel-ratio: 1.25) and  (-webkit-max-device-pixel-ratio: 1.50){ 
+                    padding: 10px;
+                }
             }
             // .small{
             //     width: 100%;

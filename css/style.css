@@ -657,6 +657,12 @@ body {
   height: 100%;
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.25) and (-webkit-max-device-pixel-ratio: 1.5) {
+  .customer-card .content .big-circle svg {
+    padding: 10px;
+  }
+}
+
 .customer-card--user-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1064,6 +1070,35 @@ body {
 .invoice .payments-buttons {
   position: absolute;
   bottom: 2%;
+}
+
+.product-card {
+  width: 19.3em;
+  height: 21.7em;
+  background-color: royalblue;
+  margin: 10px;
+}
+
+.products-card-list {
+  position: relative;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid gold;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 1rem;
 }
 
 .sidemenu-btn {
