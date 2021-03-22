@@ -1,0 +1,36 @@
+
+
+@mixin mediaMixin ($breakpoint) {
+
+    // $breakpoint is simply a variable that can have several values
+    @if $breakpoint==xlScreen {
+        @media only screen and (min-width: 1441px)   {
+            @content;
+        }
+    }
+    @if $breakpoint==lgDesktop {
+        @media only screen and (min-width: 1201px)  and (max-width: 1440px) {
+            @content;
+        }
+    }
+    @if $breakpoint==desktop {
+        @media only screen and (min-width: 1025px ) and (max-width: 1200px)  {
+            @content;
+        }
+    }
+    @if $breakpoint==tabltes {
+        @media only screen and (min-width: 769px) and (max-width: 1024px)  {
+            @content;
+        }
+    }
+    @if $breakpoint==smTabltes {
+        @media only screen and (min-width: 481px) and (max-width: 768px)  {
+            @content;
+        }
+    }
+    @if $breakpoint==mobile {
+        @media only screen and (max-width: 480px) {
+        @content;
+        }
+    }
+}

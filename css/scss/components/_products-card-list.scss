@@ -2,11 +2,24 @@
     position: relative;
     font-size: 1rem;
     width: 100%;
-    border: 1px solid gold;
-    padding: 15px;
+    font-size: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    font-size: 1rem;
+    @include mediaMixin(lgDesktop){
+        font-size: 9px;
+    }
+    @include mediaMixin(desktop){
+        font-size: 8px;
+    }
+    @include mediaMixin(tabltes){
+        font-size: 7px;
+    }
+    @include mediaMixin(smTabltes){
+        font-size: 6px;
+    }
+    @include mediaMixin(mobile){
+        font-size: 5px;
+    }
 }
