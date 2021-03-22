@@ -7,17 +7,20 @@
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    @include mediaMixin(xxxlScreen){
+        font-size: 1.15rem;
+    }
     @include mediaMixin(xxlScreen){
-        font-size: 10px;
+        font-size: 1rem;
     }
     @include mediaMixin(lgDesktop){
-        font-size: 7.4px;
+        font-size: 0.8rem;
     }
     @include mediaMixin(desktop){
-        font-size: 8px;
+        font-size: 0.93rem;
     }
     @include mediaMixin(tabltes){
-        font-size: 7px;
+        font-size: 0.93rem;
     }
     @include mediaMixin(smTabltes){
         font-size: 7px;
