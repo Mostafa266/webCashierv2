@@ -11,7 +11,15 @@
     flex-direction: column;
     overflow: hidden;
     padding: 2px;
- 
+    &--selected-card{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        background-color: $blue;
+    }
+
   
     &--btn{
         position: absolute;
@@ -53,7 +61,7 @@
         padding: 0 10px;
         &-title{
             text-align: right;
-            font-size: 1.6em;
+            font-size: 1.8em;
        
         }
         &-price{
