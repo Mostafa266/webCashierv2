@@ -34,12 +34,12 @@
         }
     }
     @else if $breakpoint==smTabltes {
-        @media only screen and (min-width: 481px) and (max-width: 768px)  {
+        @media only screen and (min-width: 571px) and (max-width: 768px)  {
             @content;
         }
     }
     @else if $breakpoint==mobile {
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 570px) {
         @content;
         }
     }
