@@ -1158,6 +1158,10 @@ body {
   background-color: #E3E6E9;
 }
 
+.product-card--btn svg {
+  height: 50%;
+}
+
 .product-card--image {
   height: 50%;
   width: 100%;
@@ -1286,7 +1290,7 @@ body {
   z-index: 222;
   right: 0;
   top: 0;
-  width: 72px;
+  width: 7.2rem;
   font-size: 1rem;
   height: 100%;
   margin-top: 6.5rem;
