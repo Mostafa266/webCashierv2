@@ -9,4 +9,13 @@
     .left-content-data {
         overflow: hidden;
     }
+    .layout-left--container{
+        @include mediaMixin(mobile){
+            min-height: 90vh !important;
+            max-height: 90vh !important;
+        }
+     
+
+    }
+
 }

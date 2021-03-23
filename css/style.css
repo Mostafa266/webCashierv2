@@ -1821,4 +1821,11 @@ body {
 .sales .left-content-data {
   overflow: hidden;
 }
+
+@media only screen and (max-width: 480px) {
+  .sales .layout-left--container {
+    min-height: 90vh !important;
+    max-height: 90vh !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
