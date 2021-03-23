@@ -9,16 +9,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 2px;
     &--selected-card{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 40px;
-        height: 40px;
-        background-color: $blue;
+        display: none;
     }
+    &.selected{
+        border: 3px solid $blue;
+        .product-card--selected-card{
+            position: absolute;
+            left: -8px;
+            top: -10px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                color: $white;
+                font-family: 'med';
+                font-size: 1.4em;
+            }
+        }
+    }
+   
 
   
     &--btn{
