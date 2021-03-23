@@ -1131,7 +1131,7 @@ body {
 .product-card.selected .product-card--selected-card span {
   color: #ffffff;
   font-family: 'med';
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 .product-card--btn {
@@ -1202,7 +1202,7 @@ body {
 
 .products-card-list {
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 100%;
   font-size: 0.9rem;
   display: -webkit-box;
