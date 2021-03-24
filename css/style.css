@@ -2098,7 +2098,7 @@ body {
   max-height: 100%;
 }
 
-.sales-page .searchInput {
+.sales-page .layout-right--container .searchInput {
   width: 90%;
 }
 
