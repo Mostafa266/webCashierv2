@@ -15,5 +15,33 @@
     }
     &.invoice{
         justify-content: space-between;
+        .appbar{
+            &-number{
+            @include flexCenter;
+            font-size: 1.4em;
+            width: 15%;
+            justify-content: space-evenly;
+               &--box{
+                    width: 3em;
+                    height: 3em;
+                    border: 1px solid $white;
+                    border-radius: 6px;
+                    @include flexCenter;
+               }
+            }
+            &-close{
+                width: 4em;
+                height: 4em;
+                border-radius: 50%;
+                @include flexCenter;
+                cursor: pointer;
+                svg{
+                    transform: rotate(90deg);
+                }
+                &:hover{
+                    background-color: $lightGray2;
+                }
+            }
+        }
     }
 }
