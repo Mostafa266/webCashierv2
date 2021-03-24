@@ -155,11 +155,12 @@
         </svg>
     </div>
     <div class="layout-tabs">
+        <!-- to control mainb layout tabs from JS [layout-tabs--main] -->
         <ul class="layout-tabs--buttons">
-            <li class="layout-tabs--buttons-btn active" data-target-id='cash_tab'>
+            <li class="layout-tabs--buttons-btn main-layout-tab-btn active" data-target-id='cash_tab'>
                 <span>سجل النقديه</span>
             </li>
-            <li class="layout-tabs--buttons-btn" data-target-id="invoice_tab">
+            <li class="layout-tabs--buttons-btn main-layout-tab-btn" data-target-id="invoice_tab">
                 <span>عملية نقديه</span>
             </li>
         </ul>
@@ -1716,13 +1717,13 @@
                         
                             <div class="layout-tabs">
                                 <ul class="layout-tabs--buttons">
-                                    <li class="layout-tabs--buttons-btn active" data-target-id='client_list_individuals'>
+                                    <li class="layout-tabs--buttons-btn clients-tabs-btn active" data-target-id='client_list_individuals'>
                                         <span>افراد</span>
                                     </li>
-                                    <li class="layout-tabs--buttons-btn" data-target-id="client_list_shope">
+                                    <li class="layout-tabs--buttons-btn clients-tabs-btn" data-target-id="client_list_shope">
                                         <span>محلات</span>
                                     </li>
-                                    <li class="layout-tabs--buttons-btn" data-target-id="client_list_suppliers">
+                                    <li class="layout-tabs--buttons-btn clients-tabs-btn" data-target-id="client_list_suppliers">
                                         <span>موردين</span>
                                     </li>
                                 </ul>
@@ -1732,7 +1733,7 @@
                                 </div>
                             </div>
                             <div class="clients-list--container">
-                                <div class="clients-list--individuals layout-container active" id="client_list_individuals">
+                                <div class="clients-list--individuals customers-tab-content active"id="client_list_individuals">
                                     
                                     <ul class="clients-list-users">
                                         <!-- you can use this component only stylefile  => _Clients-list.scss -->
@@ -1964,7 +1965,7 @@
                                                 <span>00.00</span>
                                             </div>
                                         </li>
-                                           <li  class="clients-list-users-item">
+                                        <li  class="clients-list-users-item">
                                             <div class="clients-list-users-item-data">
                                                 <div class="clients-list-users-item-data--photo">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="25.97" height="28.803" viewBox="0 0 25.97 28.803">
@@ -2002,15 +2003,13 @@
                                                 <span>00.00</span>
                                             </div>
                                         </li>
-
                                     </ul>
-
                                 </div>
-                                <div class="clients-list--shope layout-container" id="client_list_shope">
-                                    <h1>shjop</h1>
+                                <div class="clients-list--shope customers-tab-content" id="client_list_shope">
+                                   
                                 </div>
-                                <div class="clients-list--suppliers layout-container" id="client_list_suppliers">
-                                    <h1>supp</h1>
+                                <div class="clients-list--suppliers customers-tab-content" id="client_list_suppliers">
+                                    
                                 </div>
                             </div>
                         </div>
