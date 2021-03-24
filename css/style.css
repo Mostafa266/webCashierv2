@@ -112,6 +112,26 @@ body {
   }
 }
 
+.thinFont {
+  font-family: 'reg',Arial, Helvetica, sans-serif !important;
+}
+
+.regFont {
+  font-family: 'reg',Arial, Helvetica, sans-serif !important;
+}
+
+.medFont {
+  font-family: 'med',Arial, Helvetica, sans-serif !important;
+}
+
+.semiBold {
+  font-family: 'semiBold',Arial, Helvetica, sans-serif !important;
+}
+
+.boldFont {
+  font-family: 'bold',Arial, Helvetica, sans-serif !important;
+}
+
 @media (min-width: 1500px) {
   .col-xxl-8 {
     -webkit-box-flex: 0;
@@ -1565,8 +1585,149 @@ body {
 
 .bill {
   width: 100%;
-  height: 23%;
-  background-color: #b37aed;
+  height: 25%;
+  position: relative;
+  font-size: 1rem;
+  z-index: 20;
+}
+
+.bill-list {
+  width: 100%;
+  height: 80%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.bill-list--item {
+  width: 100%;
+  height: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  border-width: 3px;
+  border-bottom: 1px dashed #CBD0D6;
+}
+
+.bill-list--item .bill-name {
+  font-size: 1.3em;
+  font-family: 'med';
+}
+
+.bill-list--item .bill-price {
+  font-size: 1.8em;
+}
+
+.bill-list--item .final-price {
+  font-size: 2.2em;
+  font-family: 'bold';
+}
+
+.bill-list--item-invoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bill-list--item-invoice div {
+  margin: 0.5em 0;
+}
+
+.bill-list--item-invoice-discount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bill-list--item-invoice-discount-number {
+  width: 3.5em;
+  border-radius: 52px;
+  background-color: #FFE9F0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 4;
+  left: -15%;
+  position: relative;
+}
+
+.bill-list--item-invoice-discount-number span {
+  font-size: 1.2em;
+  color: #FF8591;
+}
+
+.bill-list--item-invoice-delivery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bill-btn-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rebeccapurple;
 }
 
 .sidemenu-btn {
@@ -1812,20 +1973,20 @@ body {
   display: none;
 }
 
-.sales .right-content-data {
+.sales-page .right-content-data {
   margin-top: 1rem;
   height: 82vh;
   max-height: 100%;
 }
 
-.sales .left-content-data {
+.sales-page .left-content-data {
   overflow: hidden;
 }
 
 @media only screen and (max-width: 570px) {
-  .sales .layout-left--container {
-    min-height: 90vh !important;
-    max-height: 90vh !important;
+  .sales-page .layout-left--container {
+    min-height: 93vh !important;
+    max-height: 93vh !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
