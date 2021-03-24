@@ -1,4 +1,5 @@
 .clients-list{
+    height: 94vh;
     .layout-tabs{
         display: flex;
         padding: 0;
@@ -54,8 +55,9 @@
         align-items: center;
         border-radius: 50%;
         cursor: pointer;
+      
         &:hover{
-        background-color: rgb(238, 238, 238);
+        background-color: $gray9;
 
         }
         svg{
@@ -80,6 +82,73 @@
         display: none;
         &.active{
             display: block;
+        }
+    }
+    &--container{
+        height: 77%; 
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+      
+      &::-webkit-scrollbar-track {
+            background-color: $gray5;
+      } 
+      &::-webkit-scrollbar-thumb {
+            background-color: $gray6;
+            border-radius: 20px;
+      } 
+    }
+    &-users{
+        padding: 0;
+        margin: 0;
+        
+        &-item{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 7em;
+            margin-bottom: 6px;
+            cursor: pointer;
+            padding: 0 11px;
+            border-radius: 8px;
+            &:last-child{
+                margin-bottom: 4%;
+                position: relative;
+            }
+            &:hover{
+                background-color: rgb(238, 238, 238);
+            }
+            &-data{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &--name{
+                    span{
+                        font-size: 1.6em;
+                    }
+                }
+                &--photo{
+                    width: 5em;
+                    height: 5em;
+                    background-color: $waterBlue;
+                    border-radius: 50%;
+                    margin-left: 1em;
+                    @include flexCenter;
+                    svg{
+                        height: 50%;
+                        width: 100%;
+                    }
+
+                }
+            }
+            &-price{
+                span{
+                    font-size: 1.6em;
+                    font-family: 'bold';
+                }
+            }
         }
     }
 
