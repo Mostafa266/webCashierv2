@@ -11,9 +11,12 @@
 
 @import './scss/helpers/mixins';
 
+// buttons
+@import './scss/components/btns/btn-receive-cash';
+@import './scss/components/btns/btn-receive-payment';
+@import './scss/components/sidemenu-btn';
 
 
-//inputs
 @import './scss/components/small/increaseicon';
 @import './scss/components/small/decreaseicon';
 @import './scss/components/layout-tabs';
@@ -31,8 +34,7 @@
 @import './scss/components/products-list';
 @import './scss/components/bill';
 
-// Buttons
-@import './scss/components/sidemenu-btn';
+
 // import sidemenu
 @import './scss/components/sidemenu';
 
