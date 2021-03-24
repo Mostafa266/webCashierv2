@@ -1077,6 +1077,7 @@ body {
   font-size: 1rem;
   height: 100%;
   position: relative;
+  display: none;
 }
 
 @media screen and (min-height: 800px) and (max-height: 890px) {
@@ -1892,6 +1893,140 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.clients-list .layout-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  height: 13em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.clients-list .layout-tabs--buttons {
+  margin: 0;
+  border-bottom: 1px solid #F0F2F5;
+}
+
+.clients-list .layout-tabs .add-client {
+  position: relative;
+  width: 100%;
+  height: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.clients-list .layout-tabs .add-client span {
+  font-size: 1.8em;
+  color: #1877F2;
+  font-family: 'med';
+}
+
+.clients-list .layout-tabs .add-client:hover {
+  background-color: #F0F2F5;
+  border-radius: 12px;
+}
+
+.clients-list .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.clients-list .search-container .searchInput {
+  margin-top: 10px;
+  width: 90%;
+  background-color: #E3F3FF;
+}
+
+.clients-list .search-container .searchInput input::-webkit-input-placeholder {
+  color: #212121;
+}
+
+.clients-list .search-container .searchInput input:-ms-input-placeholder {
+  color: #212121;
+}
+
+.clients-list .search-container .searchInput input::-ms-input-placeholder {
+  color: #212121;
+}
+
+.clients-list .search-container .searchInput input::placeholder {
+  color: #212121;
+}
+
+.clients-list .search-container .back-btn {
+  width: 4em;
+  height: 4em;
+  padding: 8px;
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.clients-list .search-container .back-btn:hover {
+  background-color: #eeeeee;
+}
+
+.clients-list .search-container .back-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+.clients-list--individuals {
+  display: none;
+}
+
+.clients-list--individuals.active {
+  display: block;
+}
+
+.clients-list--shope {
+  display: none;
+}
+
+.clients-list--shope.active {
+  display: block;
+}
+
+.clients-list--suppliers {
+  display: none;
+}
+
+.clients-list--suppliers.active {
+  display: block;
 }
 
 .sidemenu {
