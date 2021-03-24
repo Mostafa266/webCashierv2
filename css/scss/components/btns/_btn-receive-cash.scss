@@ -1,6 +1,6 @@
 .btn--receive-cash{
     position: relative;
-    width: 40.4em;
+    width: 47.5em;
     height: 7em;
     background-color: $blue;
     border-radius: 50px;
@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
     span{
         font-size: 1.8em;
         color: $white;

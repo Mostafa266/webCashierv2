@@ -5,15 +5,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NEW Sales</title>
+    <title>New Sales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet"  href="css/style.css" />
 
 </head>
-
+<!-- 
+    you can found stylefile in scss/pages/sales.scss
+    sales-page
+    this classs used to override the components used in the page
+-->
 <body class="sales-page">
     <div class="sidemenu">
         <ul>
@@ -175,10 +177,42 @@
                     </nav>
                     <!-- End Navbar -->
                     <div class="pushLandR25">
-                        <div class="searchInput">
-                            <!-- stylefile name => _searchInput.scss -->
-                            <div class="icon"><img src="imgs/searchIcon.svg"></div>
-                            <input type="search" name="search" placeholder="ابحث باسم العميل او المورد">
+                        <div class="flex-container">
+                            <div class="features-btns">
+                                <!-- Stylefile name => _features-btns.scss -->
+                                <div class="features-btns--favorite-btn ">
+                                    <!-- add classs active to make it red -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.291" height="21.18" viewBox="0 0 24.291 21.18">
+                                        <g id="Group_3939" data-name="Group 3939" transform="translate(0 0)">
+                                          <g id="Group_3959" data-name="Group 3959">
+                                            <g id="Path_1781" data-name="Path 1781" transform="translate(-222.084 -92.178)" fill="#212121">
+                                              <path d="M 234.232421875 112.3620834350586 L 224.4167633056641 102.4386901855469 C 222.8281860351563 100.8302307128906 222.3550567626953 98.50901794433594 223.1823883056641 96.38128662109375 C 223.5594635009766 95.41153717041016 224.1791839599609 94.57724761962891 224.9745635986328 93.96861267089844 C 225.822509765625 93.31973266601563 226.8576049804688 92.94741821289063 227.9679565429688 92.89192962646484 L 227.9760131835938 92.89151763916016 L 227.9840545654297 92.89093780517578 C 228.1032104492188 92.88221740722656 228.2145538330078 92.87799072265625 228.3244323730469 92.87799072265625 C 230.4254302978516 92.87799072265625 232.3770599365234 93.81941223144531 233.6789093017578 95.46086120605469 L 234.2263336181641 96.15107727050781 L 234.7750244140625 95.46185302734375 C 236.0822296142578 93.81977081298828 238.0360260009766 92.87799072265625 240.1354370117188 92.87799072265625 C 240.2453460693359 92.87799072265625 240.3566741943359 92.88221740722656 240.4758148193359 92.89093780517578 L 240.4838562011719 92.89151763916016 L 240.4919128417969 92.89192962646484 C 241.6022644042969 92.94741821289063 242.6373596191406 93.31973266601563 243.4853363037109 93.96861267089844 C 244.2807159423828 94.57726287841797 244.9004364013672 95.41155242919922 245.2774963378906 96.38130950927734 C 246.1048126220703 98.50902557373047 245.6316833496094 100.8302307128906 244.042724609375 102.4390716552734 L 234.232421875 112.3620834350586 Z" stroke="none"/>
+                                              <path d="M 234.2322845458984 111.3665542602539 L 243.544677734375 101.9471817016602 C 245.2089538574219 100.262077331543 245.1940155029297 98.09818267822266 244.6250762939453 96.63498687744141 C 243.9210052490234 94.82421875 242.3628234863281 93.68630218505859 240.4569854736328 93.59104919433594 L 240.4408569335938 93.59024810791016 L 240.4247589111328 93.58907318115234 C 240.3227844238281 93.58161163330078 240.2281494140625 93.57798767089844 240.1354370117188 93.57798767089844 C 238.2505035400391 93.57798767089844 236.4963073730469 94.42353820800781 235.3226623535156 95.8978271484375 L 234.2253265380859 97.27629089355469 L 233.1304626464844 95.89583587646484 C 231.9622039794922 94.42280578613281 230.2104644775391 93.57798767089844 228.3244323730469 93.57798767089844 C 228.2317504882813 93.57798767089844 228.1371002197266 93.58161926269531 228.0350952148438 93.58907318115234 L 228.0189971923828 93.59024810791016 L 228.0028839111328 93.59104919433594 C 226.0970458984375 93.68630218505859 224.5388946533203 94.82421875 223.8348083496094 96.63497161865234 C 223.265869140625 98.09816741943359 223.2509155273438 100.2620697021484 224.9144439697266 101.9464263916016 L 234.2322845458984 111.3665542602539 M 234.2325439453125 113.3576126098633 L 223.9190979003906 102.9309616088867 C 220.13671875 99.10121917724609 222.5591430664063 92.46137237548828 227.9330139160156 92.19280242919922 C 228.0647277832031 92.18316650390625 228.1927490234375 92.17798614501953 228.3244323730469 92.17798614501953 C 230.7143249511719 92.17798614501953 232.8489074707031 93.28784942626953 234.2273559570313 95.02587890625 C 235.6109619140625 93.28784942626953 237.7455749511719 92.17798614501953 240.1354370117188 92.17798614501953 C 240.2671203613281 92.17798614501953 240.3951721191406 92.18316650390625 240.52685546875 92.19280242919922 C 245.9007263183594 92.46137237548828 248.3231811523438 99.10121917724609 244.540771484375 102.9309616088867 L 234.2325439453125 113.3576126098633 Z" stroke="none" fill="#212121"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                      
+                                </div>
+                                <div class="features-btns--layout-view-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.081" height="21.4" viewBox="0 0 24.081 21.4">
+                                        <g id="Group_4382" data-name="Group 4382" transform="translate(0.826 0.308)">
+                                          <circle id="Ellipse_412" data-name="Ellipse 412" cx="2" cy="2" r="2" transform="translate(-0.126 0.392)" fill="none" stroke="#212121" stroke-width="1.4"/>
+                                          <circle id="Ellipse_413" data-name="Ellipse 413" cx="2" cy="2" r="2" transform="translate(-0.126 8.392)" fill="none" stroke="#212121" stroke-width="1.4"/>
+                                          <circle id="Ellipse_414" data-name="Ellipse 414" cx="2" cy="2" r="2" transform="translate(-0.126 16.392)" fill="none" stroke="#212121" stroke-width="1.4"/>
+                                          <line id="Line_382" data-name="Line 382" x2="17.888" transform="translate(5.367 2.013)" fill="none" stroke="#212121" stroke-width="1.4"/>
+                                          <line id="Line_383" data-name="Line 383" x2="17.888" transform="translate(5.367 10.063)" fill="none" stroke="#212121" stroke-width="1.4"/>
+                                          <line id="Line_384" data-name="Line 384" x2="17.888" transform="translate(5.367 18.113)" fill="none" stroke="#212121" stroke-width="1.4"/>
+                                        </g>
+                                      </svg>
+                                      
+                                </div>
+                            </div>
+                            <div class="searchInput">
+                                <!-- Stylefile name => _searchInput.scss -->
+                                <div class="icon"><img src="imgs/searchIcon.svg"></div>
+                                <input type="search" name="search" placeholder="ابحث باسم العميل او المورد">
+                            </div>
                         </div>
                         <!-- STARt dynamic content -->
                         <div class="right-content-data">
@@ -592,7 +626,15 @@
             <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-4  layout-left">
                 <div class="layout-container layout-left--container" id="invoice_tab">
                     <!-- appbar style in _layout.scss -->
-                    <div class="appbar"> <span>عمليه نقديه</span></div>
+                    <div class="appbar invoice">
+                        <!-- have have class invoice this to allow show invoice title and number and menu btn  -->
+                        <!-- appbar style in components/small/_appbar.scss -->
+                        <div class="appbar-title">
+                            <span>الفاتوره 1005#</span>
+                        </div>
+                        <div class="appbar-number">cohasd</div>
+                        <div class="appbar-number">...</div>
+                    </div>
                     <div class="left-content-data ">
                         <div class="invoice">
                             <!-- stylefile name => _invoice.scss -->

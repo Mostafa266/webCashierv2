@@ -149,7 +149,7 @@ body {
 
 .btn--receive-cash {
   position: relative;
-  width: 40.4em;
+  width: 47.5em;
   height: 7em;
   background-color: #1877F2;
   border-radius: 50px;
@@ -163,6 +163,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn--receive-cash span {
@@ -208,6 +209,65 @@ body {
 
 .sidemenu-btn svg {
   width: 70%;
+}
+
+.features-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 18%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.features-btns--favorite-btn {
+  width: 5.4em;
+  height: 5.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.features-btns--favorite-btn:hover {
+  background-color: #eeeeee;
+}
+
+.features-btns--favorite-btn.active svg g path {
+  fill: #FF545D;
+  stroke: #F2F2F2;
+}
+
+.features-btns--layout-view-btn {
+  width: 5.4em;
+  height: 5.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+}
+
+.features-btns--layout-view-btn:hover {
+  background-color: #eeeeee;
 }
 
 .increaseicon {
@@ -1692,6 +1752,10 @@ body {
   border-bottom: 1px dashed #CBD0D6;
 }
 
+.bill-list--item:last-child {
+  border: none;
+}
+
 .bill-list--item .bill-name {
   font-size: 1.3em;
   font-family: 'med';
@@ -1795,6 +1859,39 @@ body {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   padding-top: 8px;
+}
+
+.appbar {
+  background-color: #1877F2;
+  height: 5.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .appbar {
+    display: none;
+  }
+}
+
+.appbar span {
+  font-family: 'bold';
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.appbar.invoice {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sidemenu {
@@ -1980,33 +2077,6 @@ body {
   display: block;
 }
 
-.layout-left--container .appbar {
-  background-color: #1877F2;
-  height: 5.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 16px;
-}
-
-@media screen and (max-width: 767px) {
-  .layout-left--container .appbar {
-    display: none;
-  }
-}
-
-.layout-left--container .appbar span {
-  font-family: 'bold';
-  font-size: 1.4rem;
-  color: #ffffff;
-}
-
 .layout-left--container .left-content-data {
   padding: 0 24px;
   height: 94%;
@@ -2026,5 +2096,25 @@ body {
   margin-top: 1rem;
   height: 82vh;
   max-height: 100%;
+}
+
+.sales-page .searchInput {
+  width: 90%;
+}
+
+.sales-page .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 /*# sourceMappingURL=style.css.map */

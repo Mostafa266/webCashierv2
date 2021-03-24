@@ -74,22 +74,7 @@
             &.active{
                 display: block;
             }   
-            .appbar {
-                background-color: $blue;
-                height: 5.2rem;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                padding: 0 16px;
-                @media screen and (max-width:767px) {
-                    display: none;
-                }
-                span {
-                    font-family: 'bold';
-                    font-size: 1.4rem;
-                    color: $white;
-                }
-            }
+
             .left-content-data{
                 padding: 0 24px;
                 height: 94%;
