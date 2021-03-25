@@ -1654,6 +1654,15 @@ body {
   stroke: #FF8591;
 }
 
+.product-item-in-list--discount.add-discount {
+  background-color: #ffffff;
+}
+
+.product-item-in-list--discount.add-discount svg path,
+.product-item-in-list--discount.add-discount svg circle {
+  stroke: #757575;
+}
+
 .product-item-in-list--discount.number {
   width: 3.5em;
   border-radius: 52px;
@@ -1789,7 +1798,7 @@ body {
           align-items: center;
   font-size: 1rem;
   border-width: 3px;
-  border-bottom: 1px dashed #CBD0D6;
+  border-bottom: 1px dashed rgba(203, 208, 214, 0.3);
 }
 
 .bill-list--item:last-child {

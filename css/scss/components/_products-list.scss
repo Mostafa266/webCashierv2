@@ -172,7 +172,16 @@
                 stroke: $lightRed2;
             }
         }
+        &.add-discount{
+        background-color: $white;
+        svg {
 
+            path,
+            circle {
+                stroke: $darkGray;
+            }
+        }
+        }
         &.number {
             width: 3.5em;
             border-radius: 52px;
