@@ -2448,6 +2448,121 @@ body {
   }
 }
 
+.popup--order-discount {
+  position: absolute;
+  width: 32.9em;
+  height: 33.8em;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999999;
+  margin: 0 auto;
+  -webkit-transform: translate(0%, 75%);
+          transform: translate(0%, 75%);
+  border-radius: 12px;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  display: none;
+}
+
+.popup--order-discount--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5em;
+  border-bottom: 0.5px solid #F0F0F0;
+}
+
+.popup--order-discount--header h4 {
+  font-family: 'reg';
+}
+
+.popup--order-discount--body {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup--order-discount--body-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup--order-discount--body-value-title {
+  font-size: 1.6em;
+}
+
+.popup--order-discount--body-value--inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup--order-discount--body-value--inputs-container {
+  border-bottom: 1px solid #BDBEC3;
+}
+
+.popup--order-discount--body-value--inputs-container input {
+  border: none;
+  text-align: right;
+  font-weight: 500;
+  text-align: center;
+  color: #212121;
+  border-radius: initial;
+  height: 29px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.16);
+  display: none;
+}
+
 .invoice--customer-list {
   display: none;
 }

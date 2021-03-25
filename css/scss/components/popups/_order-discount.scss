@@ -1,0 +1,67 @@
+.popup--order-discount{
+    position: absolute;
+    width: 32.9em;
+    height: 33.8em;
+    background-color: $white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 999999;
+    margin: 0 auto;
+    transform: translate(0%,75%);
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    display: none;
+    &--header{
+        @include flexCenter;
+        height: 5em;
+        border-bottom: 0.5px solid $gray5;
+        h4{
+            font-family: 'reg';
+        }
+    }
+    &--body{
+        height: 85%;
+        @include flexCenter;
+        justify-content: space-around;
+        flex-direction: column;
+        &-value{
+            @include flexCenter;
+            flex-direction: column;
+            &-title{
+                font-size: 1.6em;
+            }
+            &--inputs{
+                @include flexCenter;
+                &-container{
+                    border-bottom: 1px solid $gray6;
+                    input{
+                        border: none;
+                        // border-bottom: 1px solid #ced4da;
+                        text-align: right;
+                        font-weight: 500;
+                        text-align: center;
+                        color: #212121;
+                        border-radius: initial;
+                        height: 29px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.16);
+    display: none;
+}
