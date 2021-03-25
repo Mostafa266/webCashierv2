@@ -1,6 +1,6 @@
 .appbar {
     background-color: $blue;
-    height: 5.2rem;
+    height: 6.2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -24,22 +24,27 @@
                &--box{
                     width: 3em;
                     height: 3em;
-                    border: 1px solid $white;
+                    border: 2px solid $white;
                     border-radius: 6px;
                     @include flexCenter;
                }
             }
             &-close{
-                width: 4em;
-                height: 4em;
+                width: 5em;
+                height: 5em;
                 border-radius: 50%;
                 @include flexCenter;
                 cursor: pointer;
                 svg{
+                    circle{
+                        fill: $white;
+                    }
                     transform: rotate(90deg);
+                    width: 50%;
+                    height: 50%;
                 }
                 &:hover{
-                    background-color: $lightGray2;
+                    background-color: $darkBlue;
                 }
             }
         }

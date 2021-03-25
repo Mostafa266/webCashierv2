@@ -1608,10 +1608,23 @@ body {
   cursor: pointer;
   display: none;
   z-index: 4;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product-item-in-list--counter--minus svg, .product-item-in-list--counter--plus svg {
   width: 2em;
+}
+
+.product-item-in-list--counter--minus:hover, .product-item-in-list--counter--plus:hover {
+  background-color: #F2F2F2;
 }
 
 .product-item-in-list--discount {
@@ -1690,19 +1703,29 @@ body {
   opacity: 0;
   visibility: hidden;
   z-index: 4;
+  width: 3em;
+  height: 3em;
 }
 
 .product-item-in-list--delete svg {
   height: 100%;
-  width: 50%;
+  width: 40%;
+}
+
+.product-item-in-list--delete:hover {
+  background-color: #F2F2F2;
 }
 
 .product-item-in-list:hover .product-item-in-list--counter--minus {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-item-in-list:hover .product-item-in-list--counter--plus {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-item-in-list:hover .product-item-in-list--discount {
@@ -1880,7 +1903,7 @@ body {
 
 .appbar {
   background-color: #1877F2;
-  height: 5.2rem;
+  height: 6.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1931,7 +1954,7 @@ body {
 .appbar.invoice .appbar-number--box {
   width: 3em;
   height: 3em;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1945,8 +1968,8 @@ body {
 }
 
 .appbar.invoice .appbar-close {
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1963,10 +1986,16 @@ body {
 .appbar.invoice .appbar-close svg {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  width: 50%;
+  height: 50%;
+}
+
+.appbar.invoice .appbar-close svg circle {
+  fill: #ffffff;
 }
 
 .appbar.invoice .appbar-close:hover {
-  background-color: #F2F2F2;
+  background-color: #0065E8;
 }
 
 .clients-list {
