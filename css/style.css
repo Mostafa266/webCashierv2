@@ -1442,6 +1442,19 @@ body {
   overflow-y: scroll;
 }
 
+.products-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.products-list::-webkit-scrollbar-track {
+  background-color: #F0F0F0;
+}
+
+.products-list::-webkit-scrollbar-thumb {
+  background-color: #BDBEC3;
+  border-radius: 20px;
+}
+
 .product-item-in-list {
   width: 100%;
   height: auto;
