@@ -1,4 +1,9 @@
 import '../components/layoutTabs.module.js';
+import '../components/modal.module.js';
+
+
+
+
 
 let clientsList = document.getElementById('clientsList');
 let salesInvoice = document.getElementById('salesInvoice');
@@ -16,4 +21,4 @@ invoice_search_input_container.addEventListener('click',()=>{
 })
 backBtn.addEventListener('click',()=>{
     tl.reverse()
-})
+});

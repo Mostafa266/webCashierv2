@@ -27,8 +27,16 @@ html {
 
 * {
   box-sizing: border-box;
+  outline: none !important;
+  *:focus{
+    outline: none !important;
+  }
 }
-
+button{
+&:focus{
+  box-shadow: none !important;
+}
+}
 body {
   background-color: $lightGray1 !important;
   overflow: hidden;
