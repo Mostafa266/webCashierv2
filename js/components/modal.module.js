@@ -1,15 +1,12 @@
 let getAlltargetsBtn = document.querySelectorAll('[data-target-modal]');
 
-let tl = new TimelineMax({
-    paused: true
-});
+let tl = new TimelineMax({paused: true });
 let popOpened = false;
 
 getAlltargetsBtn.forEach(element => {
 
     element.addEventListener('click', (e) => {
         if(popOpened === false){
-            console.log('start  popup',popOpened);
         let x;
         let y;
         if (e.pageX || e.pageY) {
@@ -27,7 +24,7 @@ getAlltargetsBtn.forEach(element => {
         .fromTo(popUpName, 0.3, {display: 'none',opacity: 0}, {display: 'block',opacity: 1,onComplete:()=>{popOpened = true;}})
         tl.play();
         }
-        
+
     })
 });
 

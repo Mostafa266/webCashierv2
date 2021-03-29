@@ -1,5 +1,6 @@
 import '../components/layoutTabs.module.js';
 import '../components/modal.module.js';
+import '../components/appBar-menu.module.js';
 
 
 

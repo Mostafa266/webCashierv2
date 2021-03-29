@@ -1994,7 +1994,7 @@ body {
           align-items: center;
 }
 
-.appbar.invoice .appbar-close {
+.appbar.invoice .appbar-menu-btn {
   width: 5em;
   height: 5em;
   border-radius: 50%;
@@ -2010,19 +2010,104 @@ body {
   cursor: pointer;
 }
 
-.appbar.invoice .appbar-close svg {
+.appbar.invoice .appbar-menu-btn svg {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   width: 50%;
   height: 50%;
 }
 
-.appbar.invoice .appbar-close svg circle {
+.appbar.invoice .appbar-menu-btn svg circle {
   fill: #ffffff;
 }
 
-.appbar.invoice .appbar-close:hover {
+.appbar.invoice .appbar-menu-btn:hover {
   background-color: #0065E8;
+}
+
+.appbar-menu {
+  display: none;
+  width: 32em;
+  height: 45.2em;
+  z-index: 2222;
+  top: 102%;
+  left: 0px;
+  border-radius: 0.8em;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.appbar-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.appbar-menu ul li {
+  width: 100%;
+  cursor: pointer;
+  height: 7.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em 0 0;
+}
+
+.appbar-menu ul li:hover {
+  background-color: #E3F3FF;
+}
+
+.appbar-menu ul li a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.appbar-menu ul li a span {
+  color: #212121;
+  font-family: 'reg';
+  padding: 0 0.5em 0 0;
+}
+
+.appbar-menu ul li a span.delete {
+  color: #FF545D;
 }
 
 .clients-list {
