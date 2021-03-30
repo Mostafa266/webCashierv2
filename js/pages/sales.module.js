@@ -23,3 +23,33 @@ invoice_search_input_container.addEventListener('click',()=>{
 backBtn.addEventListener('click',()=>{
     tl.reverse()
 });
+
+document.getElementById('save_invoice').addEventListener('click',(e)=>{
+    e.preventDefault()
+    iziToast.show({
+        title: 'تم بنجاح',
+        message: 'تم حفظ الفاتورة بنجاح',
+        color:'green',
+        transitionIn:'fadeInUp',
+    });
+})
+
+document.getElementById('print_price').addEventListener('click',(e)=>{
+    e.preventDefault()
+    iziToast.show({
+        title: 'تمت الطباعه ',
+        message: 'تم طباعة عرض السعر بنجاح',
+        color:'green',
+        transitionIn:'fadeInUp',
+    });
+})
+
+document.getElementById('delete_invoice').addEventListener('click',(e)=>{
+    e.preventDefault()
+    iziToast.show({
+        title: 'تم بنجاح',
+        message: 'تم مسح الفاتورة بنجاح',
+        color:'red',
+        transitionIn:'fadeInUp',
+    });
+})

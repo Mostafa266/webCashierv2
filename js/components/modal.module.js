@@ -20,8 +20,10 @@ getAlltargetsBtn.forEach(element => {
         let getData = element.getAttribute('data-target-modal');
         // let get the pop up name
         let popUpName = document.querySelector('.' + getData);
-        tl.to(popUpName, 0.3, { top: y,left: x})
+        let overlay = document.querySelector('.overlay');
+        tl.to(popUpName, 0, { top: y,left: x})
         .fromTo(popUpName, 0.3, {display: 'none',opacity: 0}, {display: 'block',opacity: 1,onComplete:()=>{popOpened = true;}})
+        .fromTo(overlay, 0.3, {display: 'none',opacity: 0}, {display: 'block',opacity: 1},'-=0.3')
         tl.play();
         }
 
