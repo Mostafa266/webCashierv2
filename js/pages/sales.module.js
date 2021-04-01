@@ -42,18 +42,6 @@ document.getElementById('delete_invoice').addEventListener('click',(e)=>{
     });
 })
 
-document.getElementById('delete_invoice').addEventListener('click',(e)=>{
-    e.preventDefault()
-    tl3.play()
-    iziToast.show({
-        title: 'تم بنجاح',
-        message: 'تم مسح الفاتورة بنجاح',
-        color:'red',
-        transitionIn:'fadeInUp',
-    });
-})
-
-
 
 document.getElementById('btn--receive-cash').addEventListener('click',(e)=>{
     e.preventDefault()
