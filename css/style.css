@@ -2082,6 +2082,7 @@ body {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   padding-top: 8px;
+  font-family: 'reg';
 }
 
 .appbar {
