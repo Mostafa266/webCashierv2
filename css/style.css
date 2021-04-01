@@ -2004,6 +2004,7 @@ body {
   z-index: 4;
   left: -15%;
   position: relative;
+  height: 2.5em;
 }
 
 .bill-list--item-invoice-discount-number span {
