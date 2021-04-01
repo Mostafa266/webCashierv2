@@ -41,13 +41,13 @@ itemsClick.forEach(element => {
         
     })
 });
-let layoutContainerRight = document.querySelector('.layout-right--container'); 
-let invoice = document.querySelector('#salesInvoice'); 
-layoutContainerRight.addEventListener('click',()=>{
-    tl.reverse(0.5)
+// let layoutContainerRight = document.querySelector('.layout-right--container'); 
+// let invoice = document.querySelector('#salesInvoice'); 
+// layoutContainerRight.addEventListener('click',()=>{
+//     tl.reverse(0.5)
 
-})
-invoice.addEventListener('click',()=>{
-    tl.reverse(0.5)
+// })
+// invoice.addEventListener('click',()=>{
+//     tl.reverse(0.5)
 
-})
+// })
