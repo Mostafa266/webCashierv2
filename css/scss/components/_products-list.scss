@@ -41,7 +41,7 @@
     border-radius: 0.8em;
     border-bottom: 1px solid $gray5;
     position: relative;
-    transition: all 0.2s ease-in-out;
+    // transition: all 0.2s ease-in-out;
  
     &::before{
         width: 0%;
@@ -127,8 +127,24 @@
             align-items: center;
             border-radius: 0.6em;
 
-            span {
+            input {
+                width: 100%;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                height: 100%;
+                text-align: center;
                 font-size: 1.6em;
+                padding: 0;
+                margin: 0;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                &[type=number] {
+                    -moz-appearance: textfield;
+                  }
             }
         }
 

@@ -12,7 +12,7 @@ let backBtn = document.getElementById('backBtn');
 
 
 
-let tl = new TimelineMax({paused:true});
+export let tl = new TimelineMax({paused:true});
 tl.to(salesInvoice,0.4,{opacity:0,display:'none'})
 .to(clientsList,0.4,{opacity:1,display:'block'})
 
