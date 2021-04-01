@@ -2097,6 +2097,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 16px;
+  font-size: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -2115,6 +2116,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.appbar.invoice .appbar {
+  font-size: 10px;
 }
 
 .appbar.invoice .appbar-number {

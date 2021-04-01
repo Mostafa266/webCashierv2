@@ -5,6 +5,8 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0 16px;
+    font-size: 10px;
+
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -17,6 +19,7 @@
     &.invoice {
         justify-content: space-between;
         .appbar {
+            font-size: 10px;
             &-number {
                 @include flexCenter;
                 font-size: 1.4em;
