@@ -15,8 +15,8 @@
         .remove_search_input{
             position: relative;
             left: 1rem;
-            width: 3.6em;
-            height: 3.6em;
+            width:4em;
+            height: 4em;
             background-color: transparent;
             border-radius: 50%;
             display: flex;
@@ -24,7 +24,7 @@
             align-items: center;
             cursor: pointer;
             &:hover{
-                background-color: #f3f3f3;
+                background-color: $white;
             }
             svg{
                 height: 50%;

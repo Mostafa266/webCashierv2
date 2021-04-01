@@ -557,8 +557,8 @@ body {
 .searchInput.have_value .remove_search_input {
   position: relative;
   left: 1rem;
-  width: 3.6em;
-  height: 3.6em;
+  width: 4em;
+  height: 4em;
   background-color: transparent;
   border-radius: 50%;
   display: -webkit-box;
@@ -574,7 +574,7 @@ body {
 }
 
 .searchInput.have_value .remove_search_input:hover {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
 }
 
 .searchInput.have_value .remove_search_input svg {
