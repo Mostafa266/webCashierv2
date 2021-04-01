@@ -44,6 +44,10 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
 }
 
 * *:focus {
@@ -201,6 +205,57 @@ body {
 
 .btn--receive-payment svg {
   height: 100%;
+}
+
+.new-btns-container {
+  padding-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-btns-container .btn-apply {
+  width: 156px;
+  height: 48px;
+  padding: 10px 60px 9px;
+  border-radius: 26px;
+  border: solid 1px #1877f2;
+  background-color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: right;
+  color: #1877f2;
+}
+
+.new-btns-container .btn-apply:hover {
+  color: #ffffff;
+  background-color: #1877F2;
+}
+
+.new-btns-container .btn-cancel {
+  width: 111px;
+  height: 48px;
+  margin: 0px 12px 0 17px;
+  padding: 10px 43px 9px;
+  padding: 0;
+  text-align: center;
+  border-radius: 26px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.4em;
+  font-weight: 500;
+  border: 2px solid transparent;
+  color: #65676b;
+}
+
+.new-btns-container .btn-cancel:hover {
+  border: 2px solid #FF545D;
 }
 
 .sidemenu-btn {
@@ -3063,48 +3118,6 @@ body {
   color: #212121;
 }
 
-.deliver-container .btns-container {
-  padding-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.deliver-container .btns-container .btn-apply {
-  width: 156px;
-  height: 48px;
-  padding: 10px 60px 9px;
-  border-radius: 26px;
-  border: solid 1px #1877f2;
-  background-color: #ffffff;
-  font-family: "NotoSansArabic-Medium";
-  font-size: 1.4em;
-  font-weight: 500;
-  text-align: right;
-  color: #1877f2;
-}
-
-.deliver-container .btns-container .btn-cancel {
-  width: 111px;
-  height: 48px;
-  margin: 0px 12px 0 17px;
-  padding: 10px 43px 9px;
-  border-radius: 26px;
-  border: none;
-  background-color: transparent;
-  font-family: "NotoSansArabic-Medium";
-  font-size: 1.4em;
-  font-weight: 500;
-  text-align: right;
-  color: #65676b;
-}
-
 .discountTabsContainer {
   padding: 16px 41px 24px 41px;
 }
@@ -3290,6 +3303,88 @@ select {
   pointer-events: none;
   -webkit-transition: 0.25s all ease;
   transition: 0.25s all ease;
+}
+
+#addNew_client {
+  font-size: 1rem;
+  z-index: 999999999;
+  top: 15% !important;
+  left: 0 !important;
+}
+
+#addNew_client p, #addNew_client span {
+  font-family: 'reg',Arial, Helvetica, sans-serif;
+  font-family: lighter;
+  font-size: 1.4em;
+}
+
+#addNew_client .select input {
+  cursor: pointer;
+}
+
+#addNew_client input {
+  height: 44px;
+  margin: 0px 0 0px 0px;
+  padding: 0px 12px 0px 16px;
+  border: solid 1px #4080ff;
+  background-color: #ffffff;
+  position: relative;
+  letter-spacing: 0.11px;
+  text-align: right;
+  color: #65676b;
+  font-size: 1.4em;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  border: solid 1px #cbd0d6;
+}
+
+#addNew_client .modal-dialog {
+  width: 58.4em;
+  max-width: 58.4em;
+  top: 5rem;
+}
+
+#addNew_client .modal-header {
+  height: 6rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#addNew_client .modal-header .modal-title {
+  font-family: 'bold',Arial, Helvetica, sans-serif;
+}
+
+#addNew_client .deliver-container {
+  padding: 1.72em 2.8em 2.4em 2.8em;
+}
+
+#addNew_client .addnew_address {
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: right;
+  color: #1877f2;
+  direction: ltr;
+}
+
+#addNew_client .btns-container .btn-apply {
+  width: 15.6em;
+  height: 4.8em;
+  border: solid 1px #1877f2;
+  background-color: #1877f2;
+  color: #fff;
+}
+
+#addNew_client .address-content {
+  top: 12px;
 }
 
 .invoice--customer-list {

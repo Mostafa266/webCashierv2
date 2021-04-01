@@ -30,11 +30,15 @@ getAlltargetsBtn.forEach(element => {
     })
 });
 
-let close_popup = document.querySelector('.popup--discount-each-product .cancel-submit-btn');
-close_popup.addEventListener('click',()=>{
-    tl.reverse(0.3);
-    tl.eventCallback("onReverseComplete", ()=>{
-        tl.clear();
-    });
-    popOpened = false;
-})
+let close_popup = document.querySelectorAll('.cancel-submit-btn');
+
+close_popup.forEach(element => {
+    element.addEventListener('click',()=>{
+        console.log('close btn clicked!');
+        tl.reverse(0.3);
+        tl.eventCallback("onReverseComplete", ()=>{
+            tl.clear();
+        });
+        popOpened = false;
+    })
+});

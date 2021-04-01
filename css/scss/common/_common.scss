@@ -31,6 +31,7 @@ html {
   *:focus{
     outline: none !important;
   }
+  user-select: none !important;
 }
 button{
 &:focus{

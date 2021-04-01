@@ -2848,7 +2848,7 @@
                                 </ul>
                                 <!-- // add client -->
                                 <div class="add-client">
-                                    <span>+ اضافه عميل</span>
+                                    <span  data-target-modal='addNew_client-class'>+ اضافه عميل</span>
                                 </div>
                             </div>
                             <div class="clients-list--container">
@@ -3222,6 +3222,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+<!-- Start POPUP -->
+    <!-- START discount-on-each-product -->
     <div class="popup--discount-each-product">
         <!-- appbar style in _discount-each-product.scss -->
         <div class="popup--discount-each-product--header">
@@ -3281,119 +3289,232 @@
             </div>
         </div>
     </div>
+    <!-- END discount-on-each-product -->
 
-
-
-
-
-
-<!-- Start POPUP -->
-
-  <!-- Inventory popup -->
-  <div class="modal fade inverntory-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- override Modal style in filestyle _products-card-list.scss -->
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-         
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- START Inventory popup -->
+    <div class="modal fade inverntory-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- override Modal style in filestyle _products-card-list.scss -->
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="content">
+                <div class="modal-body-img">
+                    
+                </div>
+                <div class="modal-body-data">
+                    <div class="modal-body-data--product">
+                        <span>المنتج</span>
+                        <h5> صابون استجحمام مقاس كبير م</h5>
+                    </div>
+                    <div class="modal-body-data--price">
+                        <span>سعر المنتج</span>
+                        <h5>4.00</h5>
+                    </div>
+                    <div class="modal-body-data--quantity">
+                        <span>الكميه المتاحه</span>
+                        <div class="blue-box">
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
         </div>
-        <div class="modal-body">
-          <div class="content">
-              <div class="modal-body-img">
-                  
-              </div>
-              <div class="modal-body-data">
-                  <div class="modal-body-data--product">
-                      <span>المنتج</span>
-                      <h5> صابون استجحمام مقاس كبير م</h5>
-                  </div>
-                  <div class="modal-body-data--price">
-                      <span>سعر المنتج</span>
-                      <h5>4.00</h5>
-                  </div>
-                  <div class="modal-body-data--quantity">
-                      <span>الكميه المتاحه</span>
-                      <div class="blue-box">
-                          <span>12</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
-      </div>
     </div>
-  </div>
+    <!-- END Inventory popup -->
 
-<!-- Delivery Popup -->
-<div class="modal fade " id="order_delivring" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-modal="true" >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <p class="modal-title" id="myModalLabel"><img src="imgs/deliver.svg">&nbsp;التوصيل</p>
+
+    <!-- START Delivery Popup -->
+    <div class="modal fade " id="order_delivring" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-modal="true" >
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <p class="modal-title" id="myModalLabel"><img src="imgs/deliver.svg">&nbsp;التوصيل</p>
+            </div>
+            <div class="modal-body deliver-container">
+            <div class="input-group">
+                <input type="text" class="form-control client-info" placeholder="عاصم السيد - 01013875.81">
+                <span class="input-group-btn pic"> <img src="imgs/clientPhoto.svg"> </span>
+
+            </div>
+
+            <p>
+                العنوان
+            </p>
+            <div class="input-group">
+                <input type="text" class="form-control address" placeholder="شقة 4, دور 3, 7 ش حسن المأمون,مصر الجديدة, القاهرة">
+                <span class="input-group-btn update">
+                تعديل </span>
+            </div>
+            <input disabled="" type="text" class="form-control address-content" placeholder="شقة 4, دور 3, 7 ش حسن المأمون,مصر الجديدة, القاهرة">
+            <p>
+                اختر طيار
+            </p>
+            <div class="select form-conterol">
+                <select name="slct" class="form-control" id="slct">
+                <option selected="" disabled=""> اختر طيار</option>
+                <option value="1"></option>
+
+                </select>
+            </div>
+            <p>
+                قيمة الديلفرى
+            </p>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="0.00">
+                <span class="input-group-btn">
+                جـ.م
+                </span>
+            </div>
+
+            <p>
+                اضف تعليق
+            </p>
+            <input type="text" class="form-control" placeholder="اكتب تعليق">
+
+            <div class="new-btns-container">
+                <button type="button" class="btn-apply" data-bs-dismiss="modal">تطبيق</button>
+                <button type="button" class="btn-cancel" data-bs-dismiss="modal">الغاء</button>
+            </div>
+            </div>
+
         </div>
-        <div class="modal-body deliver-container">
-          <div class="input-group">
-            <input type="text" class="form-control client-info" placeholder="عاصم السيد - 01013875.81">
-            <span class="input-group-btn pic"> <img src="imgs/clientPhoto.svg"> </span>
-
-          </div>
-
-          <p>
-            العنوان
-          </p>
-          <div class="input-group">
-            <input type="text" class="form-control address" placeholder="شقة 4, دور 3, 7 ش حسن المأمون,مصر الجديدة, القاهرة">
-            <span class="input-group-btn update">
-              تعديل </span>
-          </div>
-          <input disabled="" type="text" class="form-control address-content" placeholder="شقة 4, دور 3, 7 ش حسن المأمون,مصر الجديدة, القاهرة">
-          <p>
-            اختر طيار
-          </p>
-          <div class="select form-conterol">
-            <select name="slct" class="form-control" id="slct">
-              <option selected="" disabled=""> اختر طيار</option>
-              <option value="1"></option>
-
-            </select>
-          </div>
-          <p>
-            قيمة الديلفرى
-          </p>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="0.00">
-            <span class="input-group-btn">
-              جـ.م
-            </span>
-          </div>
-
-          <p>
-            اضف تعليق
-          </p>
-          <input type="text" class="form-control" placeholder="اكتب تعليق">
-
-          <div class="btns-container">
-            <button type="button" class="btn-apply" data-bs-dismiss="modal">تطبيق</button>
-            <button type="button" class="btn-cancel" data-bs-dismiss="modal">الغاء</button>
-          </div>
         </div>
-
-      </div>
     </div>
-</div>
+    <!-- END Delivery Popup -->
+
+    <!-- START modal for adding new client -->
+    <div class="modal fade addNew_client-class" id="addNew_client" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <p class="modal-title" id="myModalLabel"><img src="imgs/client_icon.svg">&nbsp; &nbsp;اضافة عميل</p>
+            </div>
+            <div class="modal-body deliver-container">
+
+            <div class="d-flex">
+                <div class="col-md-6" style="padding-left: 8px;">
+                <p>
+                    اسم العميل </p>
+                <input type="text" id="client-name" class="form-control" placeholder="اكتب تعليق" tabindex="1">
+                </div>
+                <div class="col-md-6" style="padding-right: 8px;">
+                <p>
+                    رقم الموبيل </p>
+                <input type="text" class="form-control" placeholder="اكتب تعليق">
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-md-6" style="padding-left: 6px;">
+                <p>
+                    كود العميل </p>
+                <input type="text" class="form-control" placeholder="اكتب تعليق">
+                </div>
+                <div class="col-md-2 mt-4">
+                <input disabled type="text" class="form-control address-content text-center" placeholder="تغيير">
+                </div>
+            </div>
+            <div class="divider mt-3"></div>
 
 
 
+            <p>
+                <span>
+                (اختيارى)
+                </span>
+                العنوان1
+            </p>
+            <div class="d-flex">
+                <div class="col-md-4">
+                <p>
+                    المحافظة
+                </p>
+                <div class="select" style="padding-left: 11px;">
+                    <input placeholder="اسوان" list="choose_country" name="choose_country" id="choose_country_input">
+                    <datalist id="choose_country">
+                    <option value="القاهرة">
+                    <option value="طنطا">
+                    <option value="سوهاج">
+                    <option value="اسوان">
+                    <option value="الشرقيه">
+                    </datalist>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <p>
+                    المدينة </p>
+                    <div class="select" style="padding-left: 11px;">
+                        <input placeholder="مدينة نصر" list="choose_city" name="choose_city" id="choose_city_input">
+                        <datalist id="choose_city">
+                        <option value="مدينه نصر">
+                        <option value="شيراتون">
+                        <option value="مصر الجديد">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <p>
+                    المنطقة </p>
+                    <div class="select">
+                        <input placeholder="الحي السابع" list="choose_city" name="choose_city" id="choose_city_input">
+                        <datalist id="choose_city">
+                        <option value="مدينه نصر">
+                        <option value="شيراتون">
+                        <option value="مصر الجديد">
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="col-md-6">
+                <p>
+                    الشارع
+                </p>
+                <input type="text" class="form-control" placeholder="صلاح سالم">
+                </div>
+                <div class="col-md-2" style="padding-right: 8px;">
+                <p>
+                    العمارة </p>
+                <input type="number" class="form-control" placeholder="1">
+                </div>
+                <div class="col-md-2" style="padding-right: 8px;">
+                <p>
+                    الدور </p>
+                <input type="number" class="form-control" placeholder="2">
+                </div>
+                <div class="col-md-2" style="padding-right: 8px;">
+                <p>
+                    الشقة </p>
+                <input type="number" class="form-control" placeholder="1">
+                </div>
+            </div>
 
-<!-- Discount on invoice -  Popup -->
-  
-<!-- Start POPUP -->
 
+            <div class="divider mt-3"></div>
+
+            <p class="addnew_address">
+                + اضافة عنوان
+            </p>
+        
+            <div class="new-btns-container">
+                <button type="button" class="btn-apply" data-bs-dismiss="modal">حفظ</button>
+                <button type="button" class="btn-cancel cancel-submit-btn">الغاء</button>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <!-- END modal of add new client  -->
 
 
 
