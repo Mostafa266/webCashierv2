@@ -2132,11 +2132,13 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  left: 33px;
+  position: relative;
 }
 
 .appbar.invoice .appbar-number--box {
-  width: 3em;
-  height: 3em;
+  width: 3.214em;
+  height: 3.571em;
   border: 2px solid #ffffff;
   border-radius: 6px;
   display: -webkit-box;

@@ -22,10 +22,11 @@
                 font-size: 1.4em;
                 width: 15%;
                 justify-content: space-evenly;
-
+                left: 33px;
+                position: relative;
                 &--box {
-                    width: 3em;
-                    height: 3em;
+                    width: 3.214em;
+                    height: 3.571em;
                     border: 2px solid $white;
                     border-radius: 6px;
                     @include flexCenter;
