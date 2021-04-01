@@ -1,28 +1,14 @@
 import '../components/layoutTabs.module.js';
+// to enable popup and positioning popup 
 import '../components/modal.module.js';
+// to enbale menu in appbar
 import '../components/appBar-menu.module.js';
+// to enable function to get clicked client to get value and show in input in prdouct list 
+import './../components/client-list.module.js'
 
 
 
 
-
-let clientsList = document.getElementById('clientsList');
-let salesInvoice = document.getElementById('salesInvoice');
-let invoice_search_input_container = document.getElementById('invoice_search_input_container');
-let backBtn = document.getElementById('backBtn');
-
-let tl = new TimelineMax({paused:true});
-
-tl.to(salesInvoice,0.4,{opacity:0,display:'none'})
-.to(clientsList,0.4,{opacity:1,display:'block'})
-
-
-invoice_search_input_container.addEventListener('click',()=>{
-    tl.play()
-})
-backBtn.addEventListener('click',()=>{
-    tl.reverse()
-});
 
 document.getElementById('save_invoice').addEventListener('click',(e)=>{
     e.preventDefault()
@@ -46,6 +32,10 @@ document.getElementById('print_price').addEventListener('click',(e)=>{
 
 document.getElementById('delete_invoice').addEventListener('click',(e)=>{
     e.preventDefault()
+    let tl3 = new TimelineMax({paused:true});
+    let productsListContainer = document.querySelector('.products-list-container')
+    tl3.to(productsListContainer,0.3,{opacity:'0'})
+    tl3.play()
     iziToast.show({
         title: 'تم بنجاح',
         message: 'تم مسح الفاتورة بنجاح',

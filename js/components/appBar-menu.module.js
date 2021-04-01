@@ -1,5 +1,7 @@
 let appbar_menu_btn = document.querySelector('.appbar-menu-btn');
 let appbar_menu = document.querySelector('.appbar-menu');
+
+
 let tl = new TimelineMax({
     paused: true
 });
@@ -15,3 +17,13 @@ tl.reverse()
 appbar_menu_btn.addEventListener('click', () => {
     tl.reversed(!tl.reversed())
 })
+
+
+let itemsClick = document.querySelectorAll('.appbar-menu ul li');
+
+itemsClick.forEach(element => {
+    element.addEventListener('click',()=>{
+tl.reverse()
+        
+    })
+});

@@ -1567,7 +1567,6 @@ body {
   height: auto;
   min-height: 7.2em;
   max-height: auto;
-  margin: 2.5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1678,7 +1677,7 @@ body {
 }
 
 .product-item-in-list--counter {
-  width: 140px;
+  width: 105px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1876,6 +1875,7 @@ body {
   position: relative;
   font-size: 1rem;
   z-index: 20;
+  border-top: 1px solid #BDBEC3;
 }
 
 .bill-list {
@@ -1900,6 +1900,7 @@ body {
 }
 
 .bill-list--item {
+  padding: 0 0 0 7em;
   width: 100%;
   height: 7em;
   display: -webkit-box;
@@ -2179,6 +2180,7 @@ body {
 }
 
 .appbar-menu ul li a {
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2863,6 +2865,8 @@ body {
 .inverntory-popup .modal-header {
   height: 27px;
   border-bottom: none;
+  top: 1rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2890,6 +2894,10 @@ body {
 
 .inverntory-popup .modal-content {
   border-radius: 10px;
+}
+
+.inverntory-popup .modal-body {
+  padding: 2rem;
 }
 
 .inverntory-popup .modal-body .content {
@@ -3387,8 +3395,220 @@ select {
   top: 12px;
 }
 
+.popup--invoice {
+  position: absolute;
+  width: 37.9em;
+  height: 33.8em;
+  background-color: #ffffff;
+  z-index: 999999;
+  margin: 0 auto;
+  border-radius: 12px;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  display: none;
+  padding: 0 2.5rem;
+  top: 25% !important;
+  left: 0 !important;
+  right: 0;
+}
+
+.popup--invoice--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5em;
+  border-bottom: 0.5px solid #F0F0F0;
+}
+
+.popup--invoice--header h4 {
+  font-family: 'reg';
+}
+
+.popup--invoice--body {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup--invoice--body-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup--invoice--body-value-title {
+  font-size: 1.6em;
+}
+
+.popup--invoice--body-value--inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup--invoice--body-value--inputs-container {
+  border-bottom: 1px solid #BDBEC3;
+}
+
+.popup--invoice--body-value--inputs-container input {
+  border: none;
+  text-align: right;
+  font-weight: 500;
+  text-align: center;
+  color: #212121;
+  border-radius: initial;
+  height: 29px;
+}
+
+.popup--invoice--body-value--inputs-container input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.popup--invoice--body-value .transfer-icon {
+  width: 2rem;
+}
+
+.popup--invoice--body-value .transfer-icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+.popup--invoice--body-comment {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup--invoice--body-comment label {
+  margin-bottom: 1rem;
+  font-size: 1.4em;
+}
+
+.popup--invoice--body-comment input {
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+  font-weight: 500;
+  text-align: right;
+  color: #212121;
+  border-radius: 8px;
+  border: 1px solid #BDBEC3;
+  padding: 1.5em;
+}
+
+.popup--invoice--body-comment input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.popup--invoice--body-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.36);
+  display: none;
+}
+
+.submit-btn {
+  border: 2px solid #1877F2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 19.5rem;
+  border-radius: 10rem;
+  font-size: 1.4em;
+  color: #1877F2;
+  padding: 1.1em;
+}
+
+.submit-btn:hover {
+  color: #ffffff;
+  background-color: #1877F2;
+}
+
+.cancel-submit-btn {
+  font-size: 1.4em;
+  color: #212121;
+  padding: 0.8em 2em;
+  border-radius: 3rem;
+}
+
+.cancel-submit-btn:hover {
+  border: 2px solid #FF545D;
+}
+
 .invoice--customer-list {
   display: none;
+}
+
+.sales-page .searchInput {
+  margin-bottom: 10px;
 }
 
 .sales-page .right-content-data {
@@ -3419,5 +3639,12 @@ select {
 
 .sales-page .clients-list {
   display: none;
+}
+
+@media screen and (max-height: 850px) {
+  .sales-page #salesInvoice {
+    font-size: 7px;
+    height: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 .sales-page{
-
+.searchInput{
+    margin-bottom: 10px;
+}
     .right-content-data{
         margin-top: 1rem;
         height: 82vh;
@@ -31,4 +33,11 @@
    .clients-list{
        display: none;
    }
+   #salesInvoice{
+    @media screen and (max-height:850px) {
+        font-size: 7px;
+        height: 95%;
+    }
+   }
 }
+

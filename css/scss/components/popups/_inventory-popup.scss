@@ -6,6 +6,8 @@
     .modal-header{
         height: 27px;
         border-bottom: none;
+        top: 1rem;
+        position: relative;
         @include flexCenter;
         justify-content: flex-end;
         padding: 0 1.5rem;
@@ -21,9 +23,11 @@
 
     }
     .modal-content{
-        border-radius: 10px
+        border-radius: 10px;
+    
     }
     .modal-body{
+        padding: 2rem;
         .content{
             @include flexCenter;
             flex-direction: column;

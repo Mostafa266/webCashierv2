@@ -22,9 +22,9 @@ $( document ).ready(function() {
   });
       //focus on first input in add new client modal
 
-  $('#addNew_client').on('shown.bs.modal', function() {
-    $('client-name').focus();
-  })
+  // $('#addNew_client').on('shown.bs.modal', function() {
+  //   $('client-name').focus();
+  // })
   // function toggleClientsList(){
   //   var x = document.getElementById("clientList");
   //   var y =  document.getElementById('productsList');
