@@ -41,7 +41,13 @@ itemsClick.forEach(element => {
         
     })
 });
+let layoutContainerRight = document.querySelector('.layout-right--container'); 
+let invoice = document.querySelector('#salesInvoice'); 
+layoutContainerRight.addEventListener('click',()=>{
+    tl.reverse(0.5)
 
-// document.body.addEventListener('click', ()=>{
-//     tl.reverse(0.9)
-// }, true); 
+})
+invoice.addEventListener('click',()=>{
+    tl.reverse(0.5)
+
+})
