@@ -2161,6 +2161,7 @@ body {
   .appbar.invoice .appbar-number--box {
     width: 5rem;
     height: 5.643rem;
+    left: 30px;
   }
 }
 
