@@ -1310,6 +1310,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 3px solid transparent;
   cursor: pointer;
   padding: 2px;
 }
