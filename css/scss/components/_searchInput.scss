@@ -7,6 +7,30 @@
     display: flex;
     cursor: pointer;
     align-items: center;
+    .remove_search_input{
+        display: none;
+    }
+    &.have_value{
+        background-color: $veryLightBlue !important;
+        .remove_search_input{
+            position: relative;
+            left: 1rem;
+            width: 3.6em;
+            height: 3.6em;
+            background-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                background-color: #f3f3f3;
+            }
+            svg{
+                height: 50%;
+            }
+        }
+    }
     .image-container{
         z-index: 11111;
         position: absolute;

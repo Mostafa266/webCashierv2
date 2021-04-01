@@ -93,7 +93,9 @@ body {
 }
 
 
-
+.preventClick {
+  pointer-events: none !important;
+}
 @media (min-width: 992px)
 {
   .col-xl-5 {
