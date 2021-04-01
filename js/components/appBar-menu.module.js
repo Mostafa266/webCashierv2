@@ -27,7 +27,7 @@ tl.fromTo(appbar_menu, 0.1, {
     ease:Back.easeOut.config(1.7)
   
 },'-=0.1')
-tl.reverse(0.5)
+tl.reverse()
 appbar_menu_btn.addEventListener('click', () => {
     tl.reversed(!tl.reversed())
 })

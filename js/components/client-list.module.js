@@ -19,7 +19,6 @@ tl.to(salesInvoice,0.4,{opacity:0,display:'none'})
 
 invoiceInput.addEventListener('click',()=>{
     tl.play();
-    console.log('asd');
 })
 backBtn.addEventListener('click',()=>{
     tl.reverse()
@@ -31,8 +30,6 @@ clientsListUsersItem.forEach(element => {
         invoiceInput.value = getName + ' - ' + getNumber
         tl.reverse(0.5);
         invoice_search_input_container.classList.add('have_value')
-        // invoice_search_input_container.classList.add('preventClick')
-   
     })
 });
 

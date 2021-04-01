@@ -8,7 +8,6 @@
     @media screen and (max-width:767px) {
         display: none;
     }
-
     span {
         font-family: 'bold';
         font-size: 1.4rem;
@@ -17,7 +16,6 @@
 
     &.invoice {
         justify-content: space-between;
-
         .appbar {
             &-number {
                 @include flexCenter;
