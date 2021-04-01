@@ -1493,7 +1493,7 @@ body {
 .product-card--details-title {
   text-align: right;
   font-size: 1.8em;
-  font-family: 'bold',Arial, Helvetica, sans-serif;
+  font-family: 'med',Arial, Helvetica, sans-serif;
 }
 
 .product-card--details-price {
