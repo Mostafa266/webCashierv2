@@ -42,3 +42,6 @@ itemsClick.forEach(element => {
     })
 });
 
+// document.body.addEventListener('click', ()=>{
+//     tl.reverse(0.9)
+// }, true); 

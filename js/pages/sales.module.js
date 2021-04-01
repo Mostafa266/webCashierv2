@@ -81,7 +81,7 @@ tl1.play()
 
 cards.forEach(card => {
     card.addEventListener('click',()=>{
-        card.classList.add('selected')
+        card.classList.toggle('selected')
     })
 })
 
