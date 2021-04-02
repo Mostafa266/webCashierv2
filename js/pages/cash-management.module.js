@@ -1,8 +1,8 @@
 
 // import this module to active tabs functrion in mobile devices
 import '../components/layoutTabs.module.js';
-
-
+import './../components/client-list.module.js';
+import './../components/modal.module.js'
 
 let customerCard = document.getElementById('customer-card')
 let customerCardPlcaeholder = document.getElementById('customer-card-placeholder')
@@ -11,6 +11,7 @@ let customerCardPlcaeholder_smallCircle = document.querySelector('#customer-card
 let payReceiveItems = document.querySelectorAll('.pay-receive-list .pay-receive-list-item');
 let invoiceSearchInput = document.getElementById('invoice_search_input_container');
 let accordionButton = document.querySelector('.accordion-button')
+let invoiceInput2 = document.getElementById('invoiceInput2');
 
 // ---------------//////---------------
 // Animation for items in pay receive list 
@@ -23,8 +24,7 @@ payReceiveItems.forEach(element => {
         // pay-receive-list-item--details
         invoiceSearchInput.classList.add('haveUser')
         let clieckedItemValue = element.childNodes[1].childNodes[1]
-        let invoiceInput = document.getElementById('invoiceInput');
-        invoiceInput.value = clieckedItemValue.innerHTML;
+        invoiceInput2.value = clieckedItemValue.innerHTML;
     })
 });
 
@@ -54,20 +54,21 @@ let resetInvoiceSearchInput = document.getElementById('removeClientNameFromInvoi
     // reset card animation and iinput bar
     customerCardTl.reverse(0.5);
     invoiceSearchInput.classList.remove('haveUser')
-    invoiceInput.value = '';
+    invoiceInput2.value = '';
 })
 // ---------------//////---------------
 
-
-
-// accordionButton.addEventListener('click',()=>{
-//     if(this.Attr('aria-expanded')=== true){
-//         console.log('open');
-//     }
+// let invoicePayReceive = document.querySelector('.invoice--pay-receive')
+// let invoiceContainer = document.querySelector('.invoice')
+//  let tl3 = new TimelineMax({paused:true})
+//  tl3.to(invoiceContainer,0.3,{
+//     opacity:0,
+//     display:'none'
 // })
 
-
-
+//  invoiceInput2.addEventListener('click',()=>{
+//   tl3.play()
+// })
 
 
 

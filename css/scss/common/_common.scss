@@ -17,9 +17,11 @@ html {
   @media screen and (max-height:900px) {
     font-size: 9px;
   }
+
   @media screen and (max-height:767px) {
     font-size: 8px;
   }
+
   @media screen and (max-height:570px) {
     font-size: 7px;
   }
@@ -28,20 +30,29 @@ html {
 * {
   box-sizing: border-box;
   outline: none !important;
-  *:focus{
+  font-family: 'reg', Arial, Helvetica, sans-serif;
+
+  *:focus {
     outline: none !important;
   }
+
   user-select: none !important;
 }
-button{
-&:focus{
-  box-shadow: none !important;
+
+button {
+  &:focus {
+    box-shadow: none !important;
+  }
 }
-}
+
 body {
   background-color: $lightGray1 !important;
   overflow: hidden;
   direction: rtl;
+}
+
+input {
+  font-family: 'reg', Arial, Helvetica, sans-serif !important;
 }
 
 @font-face {
@@ -96,34 +107,37 @@ body {
 .preventClick {
   pointer-events: none !important;
 }
-@media (min-width: 992px)
-{
+
+@media (min-width: 992px) {
   .col-xl-5 {
     flex: 0 0 auto;
     width: 41.6666666667%;
-}
-.col-xl-7 {
-  flex: 0 0 auto;
-  width: 58.3333333333%;
-}
-}
+  }
 
-.thinFont{
-  font-family: 'reg',Arial, Helvetica, sans-serif !important;
-}
-.regFont{
-  font-family: 'reg',Arial, Helvetica, sans-serif !important;
-}
-.medFont{
-  font-family: 'med',Arial, Helvetica, sans-serif !important;
+  .col-xl-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
 }
 
-.semiBold{
-  font-family: 'semiBold',Arial, Helvetica, sans-serif !important;
+.thinFont {
+  font-family: 'reg', Arial, Helvetica, sans-serif !important;
 }
 
-.boldFont{
-  font-family: 'bold',Arial, Helvetica, sans-serif !important;
+.regFont {
+  font-family: 'reg', Arial, Helvetica, sans-serif !important;
+}
+
+.medFont {
+  font-family: 'med', Arial, Helvetica, sans-serif !important;
+}
+
+.semiBold {
+  font-family: 'semiBold', Arial, Helvetica, sans-serif !important;
+}
+
+.boldFont {
+  font-family: 'bold', Arial, Helvetica, sans-serif !important;
 }
 
 
@@ -134,15 +148,16 @@ body {
 
 
 
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
   .col-xxl-8 {
     flex: 0 0 auto;
     width: 66.6666666667%;
-}
-.col-xxl-4 {
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-}
+  }
+
+  .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
 
 
 }

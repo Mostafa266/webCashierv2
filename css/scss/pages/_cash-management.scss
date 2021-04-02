@@ -2,3 +2,30 @@
     display: none;
     @import url(./v1/bills/bill.css);
 }
+
+.cash-management{
+    *{
+        font-family: 'reg',Arial, Helvetica, sans-serif !important;
+    }
+    .invoice{
+        padding: 0 24px;
+        top: 10px;
+    }
+    .searchInput{
+        width: 100%;
+    }
+    #clientsList{
+        display: none;
+    }
+    
+    .invoice--pay-receive-details{
+        margin-top: 5em;
+        @include mediaMixin(smTabltes){
+            margin-top: 0em;
+          }
+          @include mediaMixin(mobile){
+            margin-top: 0em;
+          }
+    }
+  
+}

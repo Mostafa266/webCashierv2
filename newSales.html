@@ -1815,8 +1815,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <input id="invoiceInput" value='' type="search" name="search" placeholder="اضف عميل"
-                                    >
+                                <input id="invoiceInput" value='' type="search" name="search" placeholder="اضف عميل">
                                     <div class="remove_search_input" id='remove_search_input'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12.022" height="12.023" viewBox="0 0 12.022 12.023">
                                             <g id="Group_3933" data-name="Group 3933" transform="translate(6.01 -5.303) rotate(45)">
@@ -1824,7 +1823,6 @@
                                               <line id="Line_338" data-name="Line 338" x2="16" transform="translate(0 8)" fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="1"/>
                                             </g>
                                           </svg>
-                                          
                                     </div>
                             </div>
                             <!-- Start work in added products list -->
@@ -2681,35 +2679,70 @@
                                     <!-- End item -->
                                 </ul>
                             </div>
+                        
                             <div class="bill">
                                 <ul class="bill-list">
                                     <!-- stylefile style in _bill.scss -->
-                                    <li class="bill-list--item">
+                                    <li class="bill-list--item push-left-10">
                                         <span class="bill-name">الاجمالي</span>
-                                        <span class="bill-price medFont">320.00</span>
+                                        <span class="bill-price medFont bill-price--priceNumber">320.00</span>
                                     </li>
-                                    <li class="bill-list--item bill-list--item-invoice">
-                                        <div class="bill-list--item-invoice-discount">
-                                            <span class="bill-name">خصم علي الفاتورة</span>
+                                    <li class="bill-list--item red-font">
+                                        <span class="bill-name">الخصم الكلي</span>
+                                        <div class="custom-container">
+                                            <div class="bill-price medFont">
+                                                <span class="bill-price--priceNumber">320.00</span>
                                             <div class="bill-list--item-invoice-discount-number ">
                                                 <span>10%</span>
                                             </div>
-                                            <span class="bill-price">25.00</span>
                                         </div>
-                                        <div class="bill-list--item-invoice-delivery">
-                                            <span class="bill-name">التوصيل</span>
-                                            <span class="bill-price">25.00</span>
+                                            <div class="bill-list--item--delete-row">
+                                                <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24">
+                                                <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24"
+                                                    rx="12" fill="#fff" opacity="0" />
+                                                <g id="Group_4007" data-name="Group 4007"
+                                                    transform="translate(12.206 4) rotate(45)">
+                                                    <line id="Line_343" data-name="Line 343" y2="12"
+                                                        transform="translate(6)" fill="none" stroke="#878a90"
+                                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                                    <line id="Line_344" data-name="Line 344" y2="12"
+                                                        transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90"
+                                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                                </g>
+                                            </svg>
+                                            </div>
                                         </div>
+                                      
                                     </li>
                                     <li class="bill-list--item">
-                                        <span class="bill-name">الاجمالي الكلي</span>
+                                        <span class="bill-name">التوصيل</span>
+                                        <div class="custom-container">
                                         <span class="final-price">360.00</span>
+                                            <div class="bill-list--item--delete-row">
+                                                <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24">
+                                                <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24"
+                                                    rx="12" fill="#fff" opacity="0" />
+                                                <g id="Group_4007" data-name="Group 4007"
+                                                    transform="translate(12.206 4) rotate(45)">
+                                                    <line id="Line_343" data-name="Line 343" y2="12"
+                                                        transform="translate(6)" fill="none" stroke="#878a90"
+                                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                                    <line id="Line_344" data-name="Line 344" y2="12"
+                                                        transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90"
+                                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                                </g>
+                                            </svg>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                                 <div class="bill-btn-container">
                                     <a href="#" class="btn--receive-cash" id='btn--receive-cash'>
                                         <!-- stylefile style in components/btns/ _btn-receive-cash.scss -->
                                         <span>استلام كاش</span>
+                                        <span>385.00</span>
                                     </a>
                                     <a class="btn--receive-payment">
                                         <!-- stylefile style in components/btns/ _btn-receive-payments.scss -->
@@ -3522,7 +3555,7 @@
         <div class="popup--invoice">
             <!-- appbar style in _discount-each-product.scss -->
             <div class="popup--invoice--header">
-                <h4>جونسون صابو استحمام 50 مللم</h4>
+                <h4>خصم الفاتورة/h4>
             </div>
             <div class="popup--invoice--body">
                 <div class="popup--invoicet--body-value">

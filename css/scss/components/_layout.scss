@@ -2,59 +2,65 @@
     width: 100%;
     height: 100%;
     padding: 0 8.4rem 0 0;
-    @media screen and(max-width:1024px){
+    @media screen and(max-width:1024px) {
         padding: 0;
     }
     .navbar {
         // right navbar style here to make reuseable over all site
         background-color: $lightGray1;
         height: 7.2rem;
-
         .navbar-brand {
-            font-size: 1.6rem;
+            font-size: 2rem;
             color: $black;
-            font-family: 'bold';
+            font-family: 'med';
         }
-        @media screen and (max-width:767px){
+        @media screen and (max-width:767px) {
             display: none;
+        }
     }
-    }
-
     &-right {
         padding: 0 !important;
         max-height: 100vh;
+
         &--container {
             width: 100%;
             min-height: 100vh;
             height: 100%;
             position: relative;
-             @media screen and (max-width:767px) {
-            display: none;
+
+            @media screen and (max-width:767px) {
+                display: none;
 
             }
-            &.active{
+
+            &.active {
                 display: block;
-            }  
-              // main right content container this module is reuseable over all site
-              .right-content-data{
+            }
+
+            // main right content container this module is reuseable over all site
+            .right-content-data {
                 max-height: 52vh;
                 overflow-y: scroll;
                 scrollbar-color: $gray6 $gray5;
-                scrollbar-width:thin;
+                scrollbar-width: thin;
+
                 @media screen and (max-width:767px) {
                     max-height: 62vh;
                 }
+
                 // for chrome
                 &::-webkit-scrollbar {
                     width: 5px;
                 }
+
                 &::-webkit-scrollbar-track {
-                        background-color: transparent;
-                } 
+                    background-color: transparent;
+                }
+
                 &::-webkit-scrollbar-thumb {
-                        background-color: $gray6;
-                        border-radius: 20px;
-                } 
+                    background-color: $gray6;
+                    border-radius: 20px;
+                }
             }
         }
     }
@@ -62,30 +68,35 @@
     &-left {
         padding: 0 !important;
         max-height: 100vh;
+
         &--container {
             height: 100%;
             width: 100%;
             min-height: 100vh;
             background-color: $white;
+
             @media screen and (max-width:767px) {
                 display: none;
             }
-            // padding: 10px;
-            &.active{
-                display: block;
-            }   
 
-            .left-content-data{
-                padding: 0 24px;
+            // padding: 10px;
+            &.active {
+                display: block;
+            }
+
+            .left-content-data {
+                // padding: 0 24px;
                 height: 94%;
+                @media screen and (max-height:950px) {
+                    height: 91%;
+                }
                 @media screen and (max-width:767px) {
                     height: 88%;
 
                 }
-            
+
             }
         }
 
     }
 }
-

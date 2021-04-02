@@ -44,6 +44,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none !important;
+  font-family: 'reg', Arial, Helvetica, sans-serif;
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
       -ms-user-select: none !important;
@@ -63,6 +64,10 @@ body {
   background-color: #F5F5F5 !important;
   overflow: hidden;
   direction: rtl;
+}
+
+input {
+  font-family: 'reg', Arial, Helvetica, sans-serif !important;
 }
 
 @font-face {
@@ -131,23 +136,23 @@ body {
 }
 
 .thinFont {
-  font-family: 'reg',Arial, Helvetica, sans-serif !important;
+  font-family: 'reg', Arial, Helvetica, sans-serif !important;
 }
 
 .regFont {
-  font-family: 'reg',Arial, Helvetica, sans-serif !important;
+  font-family: 'reg', Arial, Helvetica, sans-serif !important;
 }
 
 .medFont {
-  font-family: 'med',Arial, Helvetica, sans-serif !important;
+  font-family: 'med', Arial, Helvetica, sans-serif !important;
 }
 
 .semiBold {
-  font-family: 'semiBold',Arial, Helvetica, sans-serif !important;
+  font-family: 'semiBold', Arial, Helvetica, sans-serif !important;
 }
 
 .boldFont {
-  font-family: 'bold',Arial, Helvetica, sans-serif !important;
+  font-family: 'bold', Arial, Helvetica, sans-serif !important;
 }
 
 @media (min-width: 1500px) {
@@ -174,9 +179,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 0 0 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -557,7 +562,7 @@ body {
 .searchInput.have_value .remove_search_input {
   position: relative;
   left: 1rem;
-  width: 4em;
+  width: 5em;
   height: 4em;
   background-color: transparent;
   border-radius: 50%;
@@ -967,12 +972,12 @@ body {
 .customer-card--invoice-details--last-payment {
   color: #212121;
   font-family: 'med';
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .customer-card--invoice-details--date {
   color: #757575;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .customer-card--invoice-details--price {
@@ -1196,6 +1201,8 @@ body {
 .invoice .searchInput {
   margin-top: 10px;
   background-color: #F2F2F2;
+  margin: 10px auto;
+  width: 92%;
 }
 
 .invoice .searchInput input::-webkit-input-placeholder {
@@ -1239,7 +1246,7 @@ body {
 
 .invoice--pay-receive-details {
   width: 100%;
-  margin-top: 5em;
+  margin-top: 10em;
 }
 
 .invoice--pay-receive-details form {
@@ -1326,7 +1333,7 @@ body {
 
 .invoice .payments-buttons {
   position: absolute;
-  bottom: 2%;
+  bottom: 5%;
 }
 
 .product-card {
@@ -1565,6 +1572,7 @@ body {
 .products-list-container {
   width: 100%;
   height: 65%;
+  padding: 0 24px;
 }
 
 .products-list {
@@ -1628,10 +1636,10 @@ body {
   height: 100%;
   background-color: #FAFAFA;
   position: absolute;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   content: '';
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 1;
 }
@@ -1960,7 +1968,7 @@ body {
 }
 
 .bill-list--item {
-  padding: 0 0 0 7em;
+  padding: 0 0 0 3em;
   width: 100%;
   height: 7em;
   display: -webkit-box;
@@ -1977,17 +1985,77 @@ body {
   border-bottom: 1px dashed rgba(203, 208, 214, 0.3);
 }
 
+.bill-list--item.push-left-10 {
+  padding: 0 0 0 9em;
+}
+
+.bill-list--item .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .bill-list--item:last-child {
   border: none;
+}
+
+.bill-list--item--delete-row {
+  width: 2em;
+  height: 2em;
+  margin: 0 2em;
+  border: 1px solid #BDBEC3;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bill-list--item--delete-row:hover {
+  border: 1px solid #1877F2;
+}
+
+.bill-list--item--delete-row:hover svg g line {
+  stroke: #1877F2;
 }
 
 .bill-list--item .bill-name {
   font-size: 1.3em;
   font-family: 'med';
+  font-size: 2em;
 }
 
 .bill-list--item .bill-price {
-  font-size: 1.8em;
+  width: 18em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.bill-list--item .bill-price--priceNumber {
+  font-size: 2.4em;
 }
 
 .bill-list--item .final-price {
@@ -2029,7 +2097,7 @@ body {
 }
 
 .bill-list--item-invoice-discount-number {
-  width: 3.5em;
+  width: 5.8em;
   border-radius: 52px;
   background-color: #FFE9F0;
   padding: 0;
@@ -2047,11 +2115,11 @@ body {
   z-index: 4;
   left: -15%;
   position: relative;
-  height: 2.5em;
+  height: 3.5em;
 }
 
 .bill-list--item-invoice-discount-number span {
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #FF8591;
 }
 
@@ -2066,6 +2134,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bill-list--item.red-font {
+  color: #FF8591;
 }
 
 .bill-btn-container {
@@ -2111,8 +2183,8 @@ body {
 }
 
 .appbar span {
-  font-family: 'bold';
-  font-size: 1.6rem;
+  font-family: 'med';
+  font-size: 2rem;
   color: #ffffff;
 }
 
@@ -2280,6 +2352,7 @@ body {
   color: #212121;
   font-family: 'reg';
   padding: 0 0.5em 0 0;
+  font-size: 1.6em;
 }
 
 .appbar-menu ul li a span.delete {
@@ -2635,9 +2708,9 @@ body {
 }
 
 .layout .navbar .navbar-brand {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #212121;
-  font-family: 'bold';
+  font-family: 'med';
 }
 
 @media screen and (max-width: 767px) {
@@ -2717,8 +2790,13 @@ body {
 }
 
 .layout-left--container .left-content-data {
-  padding: 0 24px;
   height: 94%;
+}
+
+@media screen and (max-height: 950px) {
+  .layout-left--container .left-content-data {
+    height: 91%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2813,7 +2891,7 @@ body {
 }
 
 .popup--discount-each-product--body-value--inputs-container {
-  border-bottom: 1px solid #BDBEC3;
+  width: 80%;
 }
 
 .popup--discount-each-product--body-value--inputs-container input {
@@ -2824,6 +2902,9 @@ body {
   color: #212121;
   border-radius: initial;
   height: 29px;
+  width: 85%;
+  border-bottom: 1px solid gray;
+  font-size: 1.4em;
 }
 
 .popup--discount-each-product--body-value--inputs-container input:focus {
@@ -2871,6 +2952,7 @@ body {
   font-weight: 500;
   text-align: right;
   color: #212121;
+  font-size: 1.4em;
   border-radius: 8px;
   border: 1px solid #BDBEC3;
   padding: 1.5em;
@@ -3486,9 +3568,9 @@ select {
   overflow: hidden;
   display: none;
   padding: 0 2.5rem;
-  top: 25% !important;
+  top: 15% !important;
   left: 0 !important;
-  right: 0;
+  right: 0 !important;
 }
 
 .popup--invoice--header {
@@ -3561,7 +3643,7 @@ select {
 }
 
 .popup--invoice--body-value--inputs-container {
-  border-bottom: 1px solid #BDBEC3;
+  width: 80%;
 }
 
 .popup--invoice--body-value--inputs-container input {
@@ -3572,6 +3654,9 @@ select {
   color: #212121;
   border-radius: initial;
   height: 29px;
+  width: 85%;
+  border-bottom: 1px solid gray;
+  font-size: 1.4em;
 }
 
 .popup--invoice--body-value--inputs-container input:focus {
@@ -3619,6 +3704,7 @@ select {
   font-weight: 500;
   text-align: right;
   color: #212121;
+  font-size: 1.4em;
   border-radius: 8px;
   border: 1px solid #BDBEC3;
   padding: 1.5em;
@@ -3682,6 +3768,39 @@ select {
 
 .invoice--customer-list {
   display: none;
+}
+
+.cash-management * {
+  font-family: 'reg',Arial, Helvetica, sans-serif !important;
+}
+
+.cash-management .invoice {
+  padding: 0 24px;
+  top: 10px;
+}
+
+.cash-management .searchInput {
+  width: 100%;
+}
+
+.cash-management #clientsList {
+  display: none;
+}
+
+.cash-management .invoice--pay-receive-details {
+  margin-top: 5em;
+}
+
+@media only screen and (min-width: 571px) and (max-width: 768px) {
+  .cash-management .invoice--pay-receive-details {
+    margin-top: 0em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .cash-management .invoice--pay-receive-details {
+    margin-top: 0em;
+  }
 }
 
 .sales-page .searchInput {
