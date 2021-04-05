@@ -2177,6 +2177,7 @@ input[type=number] {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding: 0 16px;
   padding-top: 8px;
   font-family: 'reg';
 }
