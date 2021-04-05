@@ -4029,7 +4029,12 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 4em;
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+  .cash-management .invoice--pay-receive {
+    margin-top: 0em !important;
+  }
 }
 
 .cash-management .checkout {
