@@ -1590,6 +1590,12 @@ input[type=number] {
   padding: 0 24px;
 }
 
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+  .products-list-container {
+    height: 68%;
+  }
+}
+
 .products-list {
   width: 100%;
   height: 100%;
