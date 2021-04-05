@@ -1958,6 +1958,7 @@ input[type=number] {
   border-top: 1px solid #BDBEC3;
   background: white;
   border-radius: 18px;
+  padding: 0 17px;
 }
 
 .bill-list {
