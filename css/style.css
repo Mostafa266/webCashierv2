@@ -2004,6 +2004,7 @@ input[type=number] {
 .bill-list--item.total-final-row {
   background-color: #F1F2F5;
   font-weight: bold;
+  height: 10em;
   font-family: 'bold',Arial, Helvetica, sans-serif !important;
 }
 
