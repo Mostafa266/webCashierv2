@@ -175,7 +175,10 @@ input{
 }
 }
 
-
+.padding-10-lr {
+  padding: 0 25px !important;
+  width: 100% !important;
+}
 // @media (min-width: 992px) {
 //   .col-xl-5 {
 //     flex: 0 0 auto;

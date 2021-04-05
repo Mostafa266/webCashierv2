@@ -1,4 +1,5 @@
 import './../components/layoutTabs.module.js';
+import '../components/appBar-menu.module.js';
 
 
 document.getElementById('btn--receive-cash').addEventListener('click',(e)=>{

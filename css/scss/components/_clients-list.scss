@@ -37,7 +37,8 @@
         flex-direction: row-reverse;
     .searchInput{
         margin-top: 10px;
-        width: 90%;
+        width: 85%;
+        margin: 14px 10px 0px 0;
         background-color: $veryLightBlue;
         input{
             &::placeholder{
@@ -55,7 +56,8 @@
         align-items: center;
         border-radius: 50%;
         cursor: pointer;
-      
+        right: -1rem;
+        position: relative;
         &:hover{
         background-color: $gray9;
 
@@ -113,10 +115,10 @@
             cursor: pointer;
             padding: 0 11px;
             border-radius: 8px;
-            &:last-child{
-                margin-bottom: 4%;
-                position: relative;
-            }
+            // &:last-child{
+            //     // margin-bottom: 4%;
+            //     position: relative;
+            // }
             &:hover{
                 background-color: rgb(238, 238, 238);
             }

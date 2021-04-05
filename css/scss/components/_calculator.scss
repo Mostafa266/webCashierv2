@@ -10,7 +10,8 @@
     }
 
     &--select-paymentMethod {
-        input {
+            position: relative;
+            input {
             width: 100%;
             padding: 15px;
             border-radius: 10px;
@@ -20,6 +21,12 @@
             border: 1px solid $gray6;
             font-size: 1.6em;
             margin-bottom: 3em;
+        }
+        &--caret{
+            position: absolute;
+            left: 2em;
+            top: 4.8em;
+
         }
     }
 
@@ -54,16 +61,20 @@
             justify-content: flex-end;
             align-items: center;
 
-            input {
-                height: 67%;
-                border: 1px solid gray;
+            &-number {
+                width: 5em;
+                height: 3em;
+                border-radius: 8px;
+                background-color: #E2E2E4;
+                overflow: hidden;
+                margin: 10px 0;
+                cursor: pointer;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 font-size: 1.6em;
-                width: 30%;
-            color: $darkGray;
-            border-radius: 8px;
-                background: transparent;
             }
-
             label {
                 margin-left: 1em;
                 color: $blue;
@@ -73,10 +84,16 @@
 
     &--buttons-container{
         @include flexCenter;
-        flex-wrap: wrap;
-        direction: ltr;
-        justify-content: space-between;
+        // flex-wrap: wrap;
+        flex-direction: column;
         margin-top: 10px;
+        direction: ltr;
+        .cal-row{
+            @include flexCenter;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
         .btn-calc{
             width: 10.8em;
             height: 6.4em;

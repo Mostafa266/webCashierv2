@@ -1,68 +1,87 @@
-.invoice--customer-list{
+.invoice--customer-list {
     display: none;
     @import url(./v1/bills/bill.css);
 }
 
-.cash-management{
-    *{
-        font-family: 'reg',Arial, Helvetica, sans-serif !important;
+.cash-management {
+    * {
+        font-family: 'reg', Arial, Helvetica, sans-serif !important;
     }
-    .invoice{
-        padding: 0 ;
-        top: 10px;
-         @media screen and (max-height:800px) {
-            font-size: 5px;
-        }
+
+    .invoice {
+        padding: 0;
+        // top: 10px;
+
+        // @media screen and (max-height:800px) {
+        //     font-size: 5px;
+        // }
+
         @media screen and (min-height:891px) and (max-height:970px) {
-            font-size: 7px;
+            font-size: 8.2px;
         }
     }
-    .searchInput{
+
+    .searchInput {
         width: 100%;
     }
-    #clientsList{
+
+    #clientsList {
         display: none;
     }
-    
-    .invoice--pay-receive-details{
+
+    .invoice--pay-receive-details {
         margin-top: 5em;
-        @include mediaMixin(smTabltes){
+
+        @include mediaMixin(smTabltes) {
             margin-top: 0em;
-          }
-          @include mediaMixin(mobile){
+        }
+
+        @include mediaMixin(mobile) {
             margin-top: 0em;
-          }
+        }
     }
-    .invoice--pay-receive{
-        height:85%;
+
+    .invoice--pay-receive {
+        height: 85%;
         justify-content: space-between;
         margin-top: 4em;
     }
-    .checkout{
+
+    .checkout {
         width: 100%;
         border-top: 1px solid $gray6;
         border-radius: 10px;
         margin: 0 auto;
-        .payments-buttons{
+
+        .payments-buttons {
             position: relative;
             bottom: auto;
+            display: flex;
+            justify-content: space-between;
         }
     }
-   .padding-10-lr{
-       padding: 0 25px;
-       width: 100%;
-   }
-   .clients-list-users-item:last-child{
-       margin: 0;
-   }
-   .customer-card{
-    @media screen and (min-height:700px) and (max-height:920px) {
-      height: 50em;
+
+   
+
+    .clients-list-users-item:last-child {
+        margin: 0;
     }
-}
-    .customer-card-placeholder{
-        @media screen and (min-height:700px) and (max-height:920px) {
-          height: 50em;
-        }
-   }
+    
+    .invoice--pay-receive-details form .inputs-group textarea,
+    .invoice--pay-receive-details form .inputs-group input,
+    .invoice--pay-receive-details form .inputs-group label{
+        font-size: 1.6em;
+    }
+    
+    // .customer-card {
+    //     @media screen and (min-height:700px) and (max-height:920px) {
+    //         height: 50em;
+    //     }
+    // }
+
+    // .customer-card-placeholder {
+    //     @media screen and (min-height:700px) and (max-height:920px) {
+    //         height: 50em;
+    //     }
+    // }
 }

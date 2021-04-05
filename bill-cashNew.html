@@ -208,6 +208,12 @@
                                     <label for="choose_paymentMethod">طريقة الدفع</label>
                                     <input placeholder="VISA" list="choose_paymentMethod_list"
                                         name="choose_paymentMethod" id="choose_paymentMethod">
+                                        <span class="calculator--select-paymentMethod--caret">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6">
+                                                <path id="Path_1983" data-name="Path 1983" d="M15.4,45.7l6,6,6-6Z" transform="translate(-15.4 -45.7)" fill="#cbd0d6"/>
+                                              </svg>
+                                              
+                                        </span>
                                     <datalist id="choose_paymentMethod_list">
                                         <option value="VISA">
                                         <option value="Wallet">
@@ -221,24 +227,32 @@
                                         placeholder="00.00">
                                     <div class="calculator--received-amount-currency">
                                         <label>جم</label>
-                                        <input type="number" name="amount" id="received_amount-currency"
-                                            placeholder="350.00">
+                                        <div class="calculator--received-amount-currency-number">
+                                            23.55
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="calculator--buttons-container">
-                                    <div class="btn-calc"><input type="text" placeholder="7" value="7" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="8" value="8" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="9" value="9" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="4" value="4" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="5" value="5" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="6" value="6" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="1" value="1" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="2" value="2" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="3" value="3" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="0.20" value="0.20" disabled>
+                                    <div class="cal-row">
+                                        <div class="btn-calc"><input type="text" placeholder="7" value="7" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="8" value="8" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="9" value="9" disabled></div>
                                     </div>
-                                    <div class="btn-calc"><input type="text" placeholder="0" value="0" disabled></div>
-                                    <div class="btn-calc"><input type="text" placeholder="00" value="00" disabled></div>
+                                    <div class="cal-row">
+                                        <div class="btn-calc"><input type="text" placeholder="4" value="4" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="5" value="5" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="6" value="6" disabled></div>
+                                    </div>
+                                    <div class="cal-row">
+                                        <div class="btn-calc"><input type="text" placeholder="1" value="1" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="2" value="2" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="3" value="3" disabled></div>
+                                    </div>
+                                    <div class="cal-row">
+                                        <div class="btn-calc"><input type="text" placeholder="0.20" value="0.20" disabled> </div>
+                                        <div class="btn-calc"><input type="text" placeholder="0" value="0" disabled></div>
+                                        <div class="btn-calc"><input type="text" placeholder="00" value="00" disabled></div>
+                                    </div>
                                     <div class="bill-btn-container">
                                         <a href="#" class="btn--receive-cash" id='btn--receive-cash'>
                                             <!-- stylefile style in components/btns/ _btn-receive-cash.scss -->
@@ -527,7 +541,7 @@
                                         </div>
                                     </li>
                                     <li class="bill-list--item push-left-10 total-final-row">
-                                        <span class="bill-name">الاجمالي الكلي</span>
+                                        <span class="bill-name ">الاجمالي الكلي</span>
                                         <span
                                             class="bill-price medFont bill-price--priceNumber total-final">394.00</span>
                                     </li>
