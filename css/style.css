@@ -2004,7 +2004,7 @@ input[type=number] {
 .bill-list--item.total-final-row {
   background-color: #F1F2F5;
   font-weight: bold;
-  height: 10em;
+  height: 12em;
   font-family: 'bold',Arial, Helvetica, sans-serif !important;
 }
 
@@ -2082,7 +2082,7 @@ input[type=number] {
 }
 
 .bill-list--item .final-price {
-  font-size: 2.2em;
+  font-size: 2.4em;
   font-family: 'bold';
 }
 
