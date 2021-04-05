@@ -8,8 +8,14 @@
         font-family: 'reg',Arial, Helvetica, sans-serif !important;
     }
     .invoice{
-        padding: 0 24px;
+        padding: 0 ;
         top: 10px;
+         @media screen and (max-height:800px) {
+            font-size: 5px;
+        }
+        @media screen and (min-height:891px) and (max-height:970px) {
+            font-size: 7px;
+        }
     }
     .searchInput{
         width: 100%;
@@ -27,5 +33,35 @@
             margin-top: 0em;
           }
     }
-  
+    .invoice--pay-receive{
+        height:85%;
+        justify-content: space-between;
+        margin-top: 4em;
+    }
+    .checkout{
+        width: 100%;
+        border-top: 1px solid $gray6;
+        border-radius: 10px;
+        margin: 0 auto;
+        .payments-buttons{
+            position: relative;
+            bottom: auto;
+        }
+    }
+   .padding-10-lr{
+       padding: 0 25px;
+   }
+   .clients-list-users-item:last-child{
+       margin: 0;
+   }
+   .customer-card{
+    @media screen and (min-height:700px) and (max-height:920px) {
+      height: 50em;
+    }
+}
+    .customer-card-placeholder{
+        @media screen and (min-height:700px) and (max-height:920px) {
+          height: 50em;
+        }
+   }
 }
