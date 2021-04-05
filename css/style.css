@@ -4052,6 +4052,10 @@ select {
   font-size: 1.6em;
 }
 
+.sales-page .final-price {
+  font-family: 'reg',Arial, Helvetica, sans-serif;
+}
+
 .sales-page .searchInput {
   margin-bottom: 10px;
 }
