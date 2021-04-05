@@ -170,6 +170,19 @@ input {
   }
 }
 
+input {
+  /* Firefox */
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .btn--receive-cash {
   position: relative;
   width: 38.5em;
@@ -2612,6 +2625,145 @@ input {
   font-family: 'bold';
 }
 
+.calculator {
+  max-width: 368px;
+  margin: auto;
+  margin-top: 65.5px;
+  direction: rtl;
+  font-size: 1rem;
+}
+
+.calculator label {
+  font-size: 1.4em;
+  font-family: 'reg', Arial, Helvetica, sans-serif;
+}
+
+.calculator--select-paymentMethod input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #BDBEC3;
+  font-size: 1.6em;
+  margin-bottom: 3em;
+}
+
+.calculator--received-amount {
+  position: relative;
+  width: 100%;
+  height: 7em;
+  border: 1px solid #BDBEC3;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6px;
+  padding: 0 1em;
+}
+
+.calculator--received-amount:focus, .calculator--received-amount:hover {
+  border: 1px solid #1877F2;
+}
+
+.calculator--received-amount input {
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1.6em;
+  width: 40%;
+  color: #757575;
+}
+
+.calculator--received-amount-currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator--received-amount-currency input {
+  height: 67%;
+  border: 1px solid gray;
+  font-size: 1.6em;
+  width: 30%;
+  color: #757575;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.calculator--received-amount-currency label {
+  margin-left: 1em;
+  color: #1877F2;
+}
+
+.calculator--buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  direction: ltr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.calculator--buttons-container .btn-calc {
+  width: 10.8em;
+  height: 6.4em;
+  border-radius: 8px;
+  background-color: #E2E2E4;
+  overflow: hidden;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.calculator--buttons-container .btn-calc input {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-size: 1.6em;
+  text-align: center;
+  color: #212121;
+}
+
+.calculator--buttons-container .btn-calc:hover {
+  background-color: #CBD0D6;
+}
+
+.calculator .bill-btn-container {
+  width: 100%;
+}
+
+.calculator .btn--receive-cash {
+  width: 100%;
+  direction: rtl;
+}
+
 .sidemenu {
   position: fixed;
   z-index: 222;
@@ -3848,5 +4000,39 @@ select {
     font-size: 7px;
     height: 95%;
   }
+}
+
+.bill-cash-page .layout-right--container .right-content-data {
+  max-height: 100vh;
+}
+
+.bill-cash-page .invoice .searchInput {
+  top: 1rem;
+}
+
+.bill-cash-page .bill {
+  border-top: none;
+  height: 35%;
+}
+
+.bill-cash-page .bill span {
+  font-family: 'reg',Arial, Helvetica, sans-serif !important;
+}
+
+.bill-cash-page .bill .custom-container .bill-price--priceNumber {
+  width: auto;
+}
+
+.bill-cash-page .bill .bill-price--priceNumber {
+  width: 5em;
+}
+
+.bill-cash-page .bill .total-final {
+  font-family: 'med';
+}
+
+.bill-cash-page .bill .remaining-amount {
+  font-family: 'bold' !important;
+  color: #1877F2;
 }
 /*# sourceMappingURL=style.css.map */
