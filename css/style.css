@@ -4053,10 +4053,6 @@ select {
   max-height: 100vh;
 }
 
-.bill-cash-page .invoice .searchInput {
-  top: 1rem;
-}
-
 .bill-cash-page .bill {
   border-top: none;
   height: 35%;
