@@ -30,7 +30,10 @@
     }
 
     .invoice--pay-receive-details {
-        margin-top: 5em;
+       
+        @include mediaMixin(xlgDesktop){
+            margin-top: 0em !important;
+            }
 
         @include mediaMixin(smTabltes) {
             margin-top: 0em;

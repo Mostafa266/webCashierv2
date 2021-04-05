@@ -4006,8 +4006,10 @@ select {
   display: none;
 }
 
-.cash-management .invoice--pay-receive-details {
-  margin-top: 5em;
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+  .cash-management .invoice--pay-receive-details {
+    margin-top: 0em !important;
+  }
 }
 
 @media only screen and (min-width: 571px) and (max-width: 768px) {
