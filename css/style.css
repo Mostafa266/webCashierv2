@@ -3989,6 +3989,7 @@ select {
 
 .cash-management .padding-10-lr {
   padding: 0 25px;
+  width: 100%;
 }
 
 .cash-management .clients-list-users-item:last-child {
