@@ -4124,4 +4124,8 @@ select {
   font-family: 'bold' !important;
   color: #1877F2;
 }
+
+.bill-cash-page .bill-btn-container {
+  padding: 0 !important;
+}
 /*# sourceMappingURL=style.css.map */
