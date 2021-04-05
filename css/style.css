@@ -4031,7 +4031,7 @@ select {
 }
 
 .cash-management .invoice--pay-receive {
-  height: 85%;
+  height: 90%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
