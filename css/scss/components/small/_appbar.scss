@@ -18,6 +18,7 @@
 
     &.invoice {
         justify-content: space-between;
+        flex-direction: row;
         .appbar {
             font-size: 10px;
             &-number {

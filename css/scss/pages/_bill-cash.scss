@@ -9,32 +9,5 @@
     .invoice .searchInput{
         // top: 1rem;
     }
-    .bill{
-        border-top: none;
-        height: 35%;
-        span{
-            font-family: 'reg',Arial, Helvetica, sans-serif !important;
-        }
-        .custom-container{
-            .bill-price--priceNumber{
-                width: auto;
-            }
-        }
-        .bill-price--priceNumber{
-          width: 5em;
-        }
-        // .total-final-row{
-        //     background-color: $gray5;
-        // }
-        .total-final{
-            font-family: 'med';
-        }
-        .remaining-amount{
-            font-family: 'bold' !important;
-            color: $blue;
-        }
-    }
-    .bill-btn-container{
-        padding: 0 !important;
-    }
+   
 }
