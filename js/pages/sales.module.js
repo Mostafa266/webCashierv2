@@ -43,16 +43,16 @@ document.getElementById('delete_invoice').addEventListener('click',(e)=>{
 })
 
 
-// document.getElementById('btn--receive-cash').addEventListener('click',(e)=>{
-//     e.preventDefault()
-//     tl3.play()
-//     iziToast.show({
-//         title: 'تم بنجاح',
-//         message: 'تم استلام المبلغ بنجاح',
-//         color:'green',
-//         transitionIn:'fadeInUp',
-//     });
-// })
+document.getElementById('btn--receive-cash').addEventListener('click',(e)=>{
+    e.preventDefault()
+    tl3.play()
+    iziToast.show({
+        title: 'تم بنجاح',
+        message: 'تم استلام المبلغ بنجاح',
+        color:'green',
+        transitionIn:'fadeInUp',
+    });
+})
 
 
 

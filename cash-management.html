@@ -1190,80 +1190,76 @@
                                     </div>
                                 </div>
                                 <div class="checkout">
-                                    <div class="padding-10-lr">
-                                        <div class="invoice--pay-receive-details">
-                                            <form action="">
-                                                <div class="inputs-group">
-                                                    <!-- inputs group is a custome class created by me not a bootstrap class -->
-                                                    <label for="received-budget">المبلغ المستلم</label>
-                                                    <input type="text" name="" id="received-budget" placeholder="00.00">
-                                                    <span>جم</span>
-                                                </div>
-                                                <div class="inputs-group">
-                                                    <label for="input-comment"> تعليق</label>
-                                                    <!-- <input class="comment" type="text" name="write-comment" id="input-comment" placeholder="اكتب تعليق"> -->
-                                                    <textarea aria-valuemax="100" aria-valuemin="20" id="input-comment"
-                                                        name="input-comment" rows="2" cols="50"
-                                                        placeholder="اكتب تعليقك"></textarea>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="payments-buttons">
-                                            <div class="payments-buttons-pay">
-                                                <div class="decreaseicon  ">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502"
-                                                        viewBox="0 0 18.246 18.502">
-                                                        <g id="Group_4759" transform="translate(-4.038 1.327)">
-                                                            <g id="Group_4233" transform="rotate(-45 14.15 5.861)">
-                                                                <g id="Group_4232">
-                                                                    <g id="Group_3881">
-                                                                        <path id="Line_318" d="M0 0L16.076 0" class="cls-1"
-                                                                            transform="translate(0 6.711)" />
-                                                                        <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061"
-                                                                            class="cls-1" transform="translate(11.523)" />
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-        
-                                                </div>
-                                                <span>دفع</span>
+                                    <!-- stylefile name => _checkout.scss -->
+                                      <div class="checkout-operations">
+                                        <div class="checkout-operations--group">
+                                            <label for="">المبلغ</label>
+                                            <div class="checkout-operations--group-input--container">
+                                                <span>جم</span>
+                                                <input type="text" placeholder="00.00">
                                             </div>
-                                            <div class="payments-buttons-receive">
-                                                <span>استلام</span>
-                                                <div class="increaseicon  ">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502"
-                                                        viewBox="0 0 18.246 18.502">
-                                                        <defs>
-                                                            <style>
-                                                                .cls-1 {
-                                                                    fill: none;
-                                                                    stroke: #fff;
-                                                                    stroke-width: 2px
-                                                                }
-                                                            </style>
-                                                        </defs>
-                                                        <g id="Group_4759" transform="translate(-4.038 1.327)">
-                                                            <g id="Group_4233" transform="rotate(-45 14.15 5.861)">
-                                                                <g id="Group_4232">
-                                                                    <g id="Group_3881">
-                                                                        <path id="Line_318" d="M0 0L16.076 0" class="cls-1"
-                                                                            transform="translate(0 6.711)" />
-                                                                        <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061"
-                                                                            class="cls-1" transform="translate(11.523)" />
-                                                                    </g>
+                                        </div>
+                                        <div class="checkout-operations--group">
+                                            <label for="">التعليق</label>
+                                            <div class="checkout-operations--group-input--container  textarea-group">
+                                               <textarea name="comment" id="" cols="30" rows="10" placeholder="اكتب تعليقك"></textarea>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="payments-buttons">
+                                        <!-- stylefile name => btns/_payment-buttons.scss -->
+                                        <div class="payments-buttons-pay">
+                                            <div class="decreaseicon  ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502"
+                                                    viewBox="0 0 18.246 18.502">
+                                                    <g id="Group_4759" transform="translate(-4.038 1.327)">
+                                                        <g id="Group_4233" transform="rotate(-45 14.15 5.861)">
+                                                            <g id="Group_4232">
+                                                                <g id="Group_3881">
+                                                                    <path id="Line_318" d="M0 0L16.076 0" class="cls-1"
+                                                                        transform="translate(0 6.711)" />
+                                                                    <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061"
+                                                                        class="cls-1" transform="translate(11.523)" />
                                                                 </g>
                                                             </g>
                                                         </g>
-                                                    </svg>
-                                                </div>
+                                                    </g>
+                                                </svg>
+    
+                                            </div>
+                                            <span>دفع</span>
+                                        </div>
+                                        <div class="payments-buttons-receive">
+                                            <span>استلام</span>
+                                            <div class="increaseicon  ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.246" height="18.502"
+                                                    viewBox="0 0 18.246 18.502">
+                                                    <defs>
+                                                        <style>
+                                                            .cls-1 {
+                                                                fill: none;
+                                                                stroke: #fff;
+                                                                stroke-width: 2px
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <g id="Group_4759" transform="translate(-4.038 1.327)">
+                                                        <g id="Group_4233" transform="rotate(-45 14.15 5.861)">
+                                                            <g id="Group_4232">
+                                                                <g id="Group_3881">
+                                                                    <path id="Line_318" d="M0 0L16.076 0" class="cls-1"
+                                                                        transform="translate(0 6.711)" />
+                                                                    <path id="Path_1761" d="M0 0l5.055 6.531L0 13.061"
+                                                                        class="cls-1" transform="translate(11.523)" />
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
-                                
-                                </div>
-                          
+                                   </div>
                             </div>
                             <div class="invoice--customer-list">
                                 <div id="Dropdown">
