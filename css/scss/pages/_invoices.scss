@@ -19,7 +19,21 @@
             fill:#757575
         }
     }
-
+    .flex-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
     .appbar{
         background-color: $white;
         span{
@@ -73,6 +87,9 @@
     .checkout-list--item {
         opacity: 0;
         display: none;
+        .red-text{
+              padding-left: 7.5%;
+        }
         &.total-final{
         opacity: 1;
         display: flex;
@@ -89,5 +106,24 @@
                 display: none;
             }
         }
+    }
+    .total-payments--paid .number span,
+    .total-payments--received .number span{
+        font-family: 'reg',Arial, Helvetica, sans-serif;
+
+    }
+    .total-payments--paid .number span:nth-child(2),
+    .total-payments--received .number span:nth-child(2){
+        font-family: 'reg',Arial, Helvetica, sans-serif;
+    }
+
+    .total-payments--received .number .title{
+        color: #757575 !important;
+        font-family: 'reg';
+    }
+    .total-payments--received .number .price{
+        color: $black !important;
+        font-family: 'reg';
+        font-size: 2rem;
     }
 }

@@ -4469,6 +4469,22 @@ select {
   fill: #757575;
 }
 
+.invoices-page .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
 .invoices-page .appbar {
   background-color: #ffffff;
 }
@@ -4531,6 +4547,10 @@ select {
   display: none;
 }
 
+.invoices-page .checkout-list--item .red-text {
+  padding-left: 7.5%;
+}
+
 .invoices-page .checkout-list--item.total-final {
   opacity: 1;
   display: -webkit-box;
@@ -4549,5 +4569,26 @@ select {
 
 .invoices-page .checkout-list--item:nth-last-child(1)::before {
   display: none;
+}
+
+.invoices-page .total-payments--paid .number span,
+.invoices-page .total-payments--received .number span {
+  font-family: 'reg',Arial, Helvetica, sans-serif;
+}
+
+.invoices-page .total-payments--paid .number span:nth-child(2),
+.invoices-page .total-payments--received .number span:nth-child(2) {
+  font-family: 'reg',Arial, Helvetica, sans-serif;
+}
+
+.invoices-page .total-payments--received .number .title {
+  color: #757575 !important;
+  font-family: 'reg';
+}
+
+.invoices-page .total-payments--received .number .price {
+  color: #212121 !important;
+  font-family: 'reg';
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
