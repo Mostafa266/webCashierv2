@@ -4431,4 +4431,123 @@ select {
 .bill-cash-page .layout-right--container .right-content-data {
   max-height: 100vh;
 }
+
+.invoices-page .product-item-in-list--counter {
+  width: 10%;
+  position: relative;
+  right: -9%;
+}
+
+.invoices-page .searchInput {
+  cursor: default;
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
+}
+
+.invoices-page .searchInput input {
+  cursor: default;
+  color: #757575;
+}
+
+.invoices-page .searchInput input::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.invoices-page .searchInput input:-ms-input-placeholder {
+  color: #757575;
+}
+
+.invoices-page .searchInput input::-ms-input-placeholder {
+  color: #757575;
+}
+
+.invoices-page .searchInput input::placeholder {
+  color: #757575;
+}
+
+.invoices-page .searchInput svg {
+  fill: #757575;
+}
+
+.invoices-page .appbar {
+  background-color: #ffffff;
+}
+
+.invoices-page .appbar span {
+  color: #212121;
+}
+
+.invoices-page .appbar.invoice .appbar-number--box {
+  border-color: #212121;
+}
+
+.invoices-page .appbar .appbar-menu-btn svg g circle {
+  fill: #212121;
+}
+
+.invoices-page .appbar .appbar-menu-btn:hover {
+  background-color: #F0F0F0;
+}
+
+.invoices-page .pay-receive-list-item--details {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.invoices-page .products-list-container {
+  height: 83%;
+}
+
+.invoices-page .checkout {
+  overflow: hidden;
+  min-height: 8.5%;
+  height: auto;
+}
+
+.invoices-page .checkout .checkout-chart-btn {
+  width: 3rem;
+  height: 0.5rem;
+  cursor: pointer;
+  background-color: #CBD0D6;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 222;
+}
+
+.invoices-page .checkout-list--item {
+  opacity: 0;
+  display: none;
+}
+
+.invoices-page .checkout-list--item.total-final {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invoices-page .checkout-list--item.total-final::before {
+  display: none;
+}
+
+.invoices-page .checkout-list--item.total-final span {
+  font-size: 2rem;
+  color: #212121;
+}
+
+.invoices-page .checkout-list--item:nth-last-child(1)::before {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
