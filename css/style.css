@@ -2403,7 +2403,7 @@ input[type=number] {
 }
 
 .checkout-list {
-  width: 98.5%;
+  width: 100%;
   height: auto;
   list-style: none;
   display: -webkit-box;
