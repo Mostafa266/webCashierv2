@@ -10,48 +10,6 @@ let tl3 = new TimelineMax({paused:true});
 let productsListContainer = document.querySelector('.products-list-container')
 tl3.to(productsListContainer,0.3,{opacity:'0'})
 
-
-document.getElementById('save_invoice').addEventListener('click',(e)=>{
-    e.preventDefault()
-    iziToast.show({
-        title: 'تم بنجاح',
-        message: 'تم حفظ الفاتورة بنجاح',
-        color:'green',
-        transitionIn:'fadeInUp',
-    });
-})
-
-document.getElementById('print_price').addEventListener('click',(e)=>{
-    e.preventDefault()
-    iziToast.show({
-        title: 'تمت الطباعه ',
-        message: 'تم طباعة عرض السعر بنجاح',
-        color:'green',
-        transitionIn:'fadeInUp',
-    });
-})
-
-document.getElementById('delete_invoice').addEventListener('click',(e)=>{
-    e.preventDefault()
-    tl3.play()
-    iziToast.show({
-        title: 'تم بنجاح',
-        message: 'تم مسح الفاتورة بنجاح',
-        color:'red',
-        transitionIn:'fadeInUp',
-    });
-})
-
-
-
-
-
-
-
-
-
-
-
 // Start animation for All Cards in Homepage
 
 let cards = document.querySelectorAll('.product-card');
@@ -89,7 +47,7 @@ let checkoutChartBtn = document.querySelector('.checkout-chart-btn');
 let checkoutTimeLine = new TimelineMax({paused:true});
 
 
-checkoutTimeLine.to(checkout,0.3,{height:'40%'})
+checkoutTimeLine.to(checkout,0.3,{height:'42rem'})
 checkoutTimeLine.to(checkoutItems,0.3,{display:'flex',opacity:'1'});
 
 

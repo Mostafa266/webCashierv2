@@ -4,10 +4,19 @@
         position: relative;
         right: -9%;
     }
+    .right-content-data{
+        max-height: 66vh;
+    }
     .searchInput{
         cursor: default;
         background-color: $white;
-        border: 2px solid #f2f2f2;
+        border-top: 2px solid #f2f2f2;
+        border-bottom: 2px solid #f2f2f2;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        margin: 10px 0;
+        width: 100%;
         input{
         cursor: default;
         color: #757575;
@@ -89,6 +98,11 @@
         display: none;
         .red-text{
               padding-left: 7.5%;
+        }
+        &-left{
+            &--price{
+                font-family: 'bold',Arial, Helvetica, sans-serif;
+            }
         }
         &.total-final{
         opacity: 1;

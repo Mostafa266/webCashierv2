@@ -69,7 +69,8 @@
     &-menu {
         display: none;
         width: 32em;
-        height: 45.2em;
+        // height: 45.2em;
+        height: auto;
         z-index: 2222;
         top: 102%;
         left: 0px;
@@ -78,7 +79,7 @@
         position: absolute;
         box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.16);
         overflow: hidden;
-
+        padding: 10px 0;
         ul {
             display: flex;
             justify-content: flex-start;

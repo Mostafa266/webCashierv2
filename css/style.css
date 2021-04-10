@@ -540,6 +540,7 @@ input[type=number] {
   border-top: 1px solid #BDBEC3;
   bottom: 0;
   left: 0;
+  background: whitesmoke;
   right: 0;
 }
 
@@ -2628,7 +2629,7 @@ input[type=number] {
 .appbar-menu {
   display: none;
   width: 32em;
-  height: 45.2em;
+  height: auto;
   z-index: 2222;
   top: 102%;
   left: 0px;
@@ -2638,6 +2639,7 @@ input[type=number] {
   -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.16);
   overflow: hidden;
+  padding: 10px 0;
 }
 
 .appbar-menu ul {
@@ -3134,6 +3136,49 @@ input[type=number] {
 .calculator .btn--receive-cash {
   width: 100%;
   direction: rtl;
+}
+
+.change-view-menu {
+  display: block;
+  width: 20em;
+  height: auto;
+  z-index: 2222;
+  top: 0%;
+  left: 0px;
+  border-radius: 0.8em;
+  background-color: #ffffff;
+  position: absolute;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.change-view-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.change-view-menu ul li {
+  font-size: 1.4em;
+  cursor: pointer;
+  height: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change-view-menu ul li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.change-view-menu ul li:hover {
+  background-color: #0065E8;
 }
 
 .sidemenu {
@@ -4411,6 +4456,7 @@ select {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  position: relative;
 }
 
 .sales-page .clients-list {
@@ -4420,7 +4466,7 @@ select {
 @media screen and (max-height: 850px) {
   .sales-page #salesInvoice {
     font-size: 7px;
-    height: 95%;
+    height: 99%;
   }
 }
 
@@ -4438,10 +4484,20 @@ select {
   right: -9%;
 }
 
+.invoices-page .right-content-data {
+  max-height: 66vh;
+}
+
 .invoices-page .searchInput {
   cursor: default;
   background-color: #ffffff;
-  border: 2px solid #f2f2f2;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  margin: 10px 0;
+  width: 100%;
 }
 
 .invoices-page .searchInput input {
@@ -4549,6 +4605,10 @@ select {
 
 .invoices-page .checkout-list--item .red-text {
   padding-left: 7.5%;
+}
+
+.invoices-page .checkout-list--item-left--price {
+  font-family: 'bold',Arial, Helvetica, sans-serif;
 }
 
 .invoices-page .checkout-list--item.total-final {
