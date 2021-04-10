@@ -1,15 +1,17 @@
 .change-view-menu {
-    display: block;
+    display: none;
     width: 20em;
     height: auto;
     z-index: 2222;
-    top: 0%;
-    left: 0px;
+    top: 6.5rem;
+    left: 0;
     border-radius: 0.8em;
     background-color: #ffffff;
     position: absolute;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 10px 0;
+    box-shadow: 0px -1px 5px rgba(0,0,0,0.12);
+
     ul {
         list-style: none;
         margin: 0;
@@ -21,8 +23,12 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            svg{
+                padding-right: 1rem;
+                margin-left: 1rem;
+            }
             &:hover{
-                background-color: $darkBlue;
+                background-color: $gray6;
             }
         }
     }
