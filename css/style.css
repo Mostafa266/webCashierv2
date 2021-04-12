@@ -4725,4 +4725,236 @@ select {
   font-family: 'reg';
   font-size: 2rem;
 }
+
+.invoices-recovery-page .appbar {
+  background-color: #FF8591;
+}
+
+.invoices-recovery-page .searchInput.grayscale {
+  cursor: default;
+  background-color: #ffffff;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.invoices-recovery-page .searchInput input {
+  cursor: default;
+  color: #757575;
+}
+
+.invoices-recovery-page .searchInput input::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.invoices-recovery-page .searchInput input:-ms-input-placeholder {
+  color: #757575;
+}
+
+.invoices-recovery-page .searchInput input::-ms-input-placeholder {
+  color: #757575;
+}
+
+.invoices-recovery-page .searchInput input::placeholder {
+  color: #757575;
+}
+
+.invoices-recovery-page .searchInput svg {
+  fill: #757575;
+}
+
+.invoices-recovery-page .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.invoices-recovery-page .appbar span {
+  color: #212121;
+}
+
+.invoices-recovery-page .appbar.invoice .appbar-number--box {
+  border-color: #212121;
+}
+
+.invoices-recovery-page .appbar .appbar-menu-btn svg g circle {
+  fill: #212121;
+}
+
+.invoices-recovery-page .appbar .appbar-menu-btn:hover {
+  background-color: #FF545D;
+}
+
+.invoices-recovery-page .products-list-container {
+  height: 69%;
+}
+
+.invoices-recovery-page .checkout {
+  overflow: hidden;
+  min-height: 20%;
+  height: 22rem;
+}
+
+.invoices-recovery-page .checkout .btn--receive-cash {
+  background-color: #FF545D;
+}
+
+.invoices-recovery-page .right-content-data {
+  height: 75vh;
+  max-height: 100%;
+  margin-top: 2rem;
+}
+
+.invoices-recovery-page .product-card.selected {
+  border: 3px solid #FF545D;
+}
+
+.invoices-recovery-page .product-card--selected-card {
+  background-color: #FF545D !important;
+}
+
+.invoices-recovery-page .checkout-list--item-left--price {
+  font-family: 'bold',Arial, Helvetica, sans-serif;
+}
+
+.invoices-recovery-page .checkout-list--item.total-final {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invoices-recovery-page .checkout-list--item.total-final::before {
+  display: none;
+}
+
+.invoices-recovery-page .checkout-list--item.total-final span {
+  font-size: 2rem;
+  color: #212121;
+}
+
+.invoices-recovery-page .checkout-list--item:nth-last-child(1)::before {
+  display: none;
+}
+
+.invoices-recovery-page .center-screen {
+  text-align: center;
+}
+
+.invoices-recovery-page .center-screen .numberr {
+  font-size: 14px;
+}
+
+.invoices-recovery-page .product-item-in-list--counter-screen input {
+  color: #FF8591;
+}
+
+.invoices-recovery-page .product-item-in-list--counter--plus,
+.invoices-recovery-page .product-item-in-list--counter--minus {
+  top: -1rem;
+  position: relative;
+}
+
+.invoices-recovery-page .product-card--details .priceData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.invoices-recovery-page .product-card--details .priceData .x {
+  font-size: 1.6em;
+  direction: ltr;
+}
+
+.invoices-recovery-page .product-item-in-list--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FF8591;
+}
+
+.invoices-recovery-page .product-item-in-list--price .second-price {
+  color: #212121;
+  font-size: 1.2em;
+}
+
+.invoices-recovery-page .selectAllBtn {
+  width: 97%;
+  height: 5rem;
+  border: 1px solid #FF545D;
+  margin: 0 auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+  /* padding: 0 10px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.invoices-recovery-page .selectAllBtn span {
+  color: #FF545D;
+  font-size: 1.6em;
+}
+
+.invoices-recovery-page .selectAllBtn.clicked {
+  background-color: #cc464d;
+}
+
+.invoices-recovery-page .selectAllBtn.clicked span {
+  color: #ffffff;
+}
+
+.invoices-recovery-page .selectAllBtn:hover {
+  background-color: #FF545D;
+}
+
+.invoices-recovery-page .selectAllBtn:hover span {
+  color: #ffffff;
+}
+
+.recovery-bill-cash-page .appbar {
+  background-color: #FF8591;
+}
+
+.recovery-bill-cash-page #btn--receive-cash {
+  background-color: #FF545D;
+}
 /*# sourceMappingURL=style.css.map */
