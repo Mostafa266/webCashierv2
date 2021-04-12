@@ -29,7 +29,7 @@ listviewTimeline.to(productCard,0.1,{
 })
 listviewTimeline.to(productCard,0,{
     width:'41.16em',
-    height:'12em',
+    height:'8em',
     flexDirection:'row'
 })
 .to(productCardMenuBtn,0,{left:'0',right:'auto'})

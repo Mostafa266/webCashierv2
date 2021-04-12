@@ -1566,9 +1566,23 @@ input[type=number] {
 
 .product-card.listview .product-card--details {
   height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85.3%;
+}
+
+.product-card.listview .product-card--details p {
+  margin-bottom: 0;
+  opacity: 1;
+  font-size: 1.6em;
+  display: block;
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.product-card.listview .product-card--image {
+  height: 87%;
 }
 
 .products-card-list {
@@ -1749,7 +1763,7 @@ input[type=number] {
 }
 
 .product-item-in-list--data-name h3 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-family: 'reg';
 }
 
@@ -1942,7 +1956,7 @@ input[type=number] {
 }
 
 .product-item-in-list--price span {
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 .product-item-in-list--delete {
