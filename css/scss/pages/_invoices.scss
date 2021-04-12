@@ -8,15 +8,17 @@
         max-height: 66vh;
     }
     .searchInput{
-        cursor: default;
-        background-color: $white;
-        border-top: 2px solid #f2f2f2;
-        border-bottom: 2px solid #f2f2f2;
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
-        margin: 10px 0;
-        width: 100%;
+        &.grayscale{
+            cursor: default;
+            background-color: $white;
+            border-top: 2px solid #f2f2f2;
+            border-bottom: 2px solid #f2f2f2;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 0;
+            margin: 10px 0;
+            width: 100%;
+        }
         input{
         cursor: default;
         color: #757575;
@@ -75,7 +77,7 @@
     }
     .checkout{
         overflow: hidden;
-        min-height: 8.5%;
+        min-height: 10.5%;
         height: auto;
         .checkout-chart-btn{
             width: 3rem;

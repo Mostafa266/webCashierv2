@@ -1564,6 +1564,13 @@ input[type=number] {
   font-size: 1.6em;
 }
 
+.product-card.listview .product-card--details {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .products-card-list {
   position: relative;
   font-size: 0.9rem;
@@ -1742,7 +1749,7 @@ input[type=number] {
 }
 
 .product-item-in-list--data-name h3 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-family: 'reg';
 }
 
@@ -4392,6 +4399,10 @@ select {
   font-family: 'reg', Arial, Helvetica, sans-serif !important;
 }
 
+.cash-management .right-content-data {
+  max-height: 66vh;
+}
+
 .cash-management .invoice {
   padding: 0;
 }
@@ -4537,7 +4548,7 @@ select {
   max-height: 66vh;
 }
 
-.invoices-page .searchInput {
+.invoices-page .searchInput.grayscale {
   cursor: default;
   background-color: #ffffff;
   border-top: 2px solid #f2f2f2;
@@ -4628,7 +4639,7 @@ select {
 
 .invoices-page .checkout {
   overflow: hidden;
-  min-height: 8.5%;
+  min-height: 10.5%;
   height: auto;
 }
 

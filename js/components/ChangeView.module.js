@@ -28,14 +28,14 @@ listviewTimeline.to(productCard,0.1,{
     // stagger:0.03
 })
 listviewTimeline.to(productCard,0,{
-    width:'40.16em',
-    height:'11em',
+    width:'41.16em',
+    height:'12em',
     flexDirection:'row'
 })
 .to(productCardMenuBtn,0,{left:'0',right:'auto'})
 .to(selectedCardBorder,0,{left:'auto',right:'-11px'})
 .to(productCardImage,0,{
-    width:'50%',
+    width:'34%',
     height:'100%'
 })
 .to(productCardTitle,0,{
@@ -101,21 +101,34 @@ changeViewMenuItems.forEach(ele => {
             case 'listview':
                 running = true;
                 allElementsInCard.forEach(el =>{el.removeAttribute('style');})
-                productCard.forEach(card =>{card.removeAttribute('style');})
+                productCard.forEach(card =>{
+                    card.removeAttribute('style');
+                    card.classList.remove('boxView')
+                    card.classList.remove('gridview')
+                    card.classList.add('listview')
+                })
                 listviewTimeline.play();
                 running === true ? listviewTimeline.restart() : null;
             break;
             case 'boxView':
                 running = true;
                 allElementsInCard.forEach(el =>{el.removeAttribute('style');})
-                productCard.forEach(card =>{card.removeAttribute('style');})
+                productCard.forEach(card =>{
+                    card.removeAttribute('style');
+                    card.classList.remove('gridview')
+                    card.classList.remove('listview')
+                    card.classList.add('boxView')
+                })
                 boxViewTimeline.play();
                 running === true ? boxViewTimeline.restart() : null;
             break;
             case 'gridview':
                 if(running === true){
                     allElementsInCard.forEach(el =>{el.removeAttribute('style');})
-                    productCard.forEach(card =>{card.removeAttribute('style');})
+                    productCard.forEach(card =>{card.removeAttribute('style');
+                    card.classList.remove('listview')
+                    card.classList.remove('boxView')
+                    card.classList.add('gridview')})
                 }else{running = false;}
             break;
 

@@ -101,6 +101,7 @@
             object-fit: cover;
         }
     }
+  
     &--details{
         height: 50%;
         width: 100%;
@@ -119,6 +120,12 @@
             // font-family: 'bold';
         }
 
+    }
+    &.listview{
+        .product-card--details{
+            height: 100%;
+            justify-content: space-between;
+        }
     }
 }
 
