@@ -52,10 +52,21 @@ cards.forEach(card => {
         card.classList.toggle('selected')
     })
 })
+
+
+let selected = false;
 selectAllBtn.addEventListener('click',()=>{
-    cards.forEach(card => {
-            card.classList.toggle('selected')
-    })
+    if(selected === false){
+        cards.forEach(card => {
+            selected = true;
+            card.classList.add('selected')
+        })
+    }else{
+        cards.forEach(card => {
+            selected = false;
+            card.classList.remove('selected')
+        })
+    }
     selectAllBtn.classList.toggle('clicked')
 })
 

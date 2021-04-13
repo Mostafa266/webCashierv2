@@ -1,6 +1,21 @@
 .invoices-recovery-page{
     .appbar{
         background-color: $lightRed2;
+        span{
+            color: $white !important;
+        }
+    }
+    .appbar-number--box{
+        border-color: $white !important;
+    }
+    .appbar-menu-btn{
+        svg{
+            g{
+                circle{
+                    fill:$white !important;
+                }
+            }
+        }
     }
     .searchInput{
         &.grayscale{
@@ -174,4 +189,20 @@
             }
         }
     }
+
+
+    .checkout-list--item-left{
+        width: auto;
+    }
+    .product-item-in-list--data-name h3{
+        font-size: 1.6em;
+    }
+    .products-list{
+        font-size: 1.2rem;
+    }
+    .searchInput{
+        height: 7rem;
+        border-top: none !important;
+    }
+  
 }

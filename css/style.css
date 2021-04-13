@@ -4730,6 +4730,18 @@ select {
   background-color: #FF8591;
 }
 
+.invoices-recovery-page .appbar span {
+  color: #ffffff !important;
+}
+
+.invoices-recovery-page .appbar-number--box {
+  border-color: #ffffff !important;
+}
+
+.invoices-recovery-page .appbar-menu-btn svg g circle {
+  fill: #ffffff !important;
+}
+
 .invoices-recovery-page .searchInput.grayscale {
   cursor: default;
   background-color: #ffffff;
@@ -4950,11 +4962,32 @@ select {
   color: #ffffff;
 }
 
+.invoices-recovery-page .checkout-list--item-left {
+  width: auto;
+}
+
+.invoices-recovery-page .product-item-in-list--data-name h3 {
+  font-size: 1.6em;
+}
+
+.invoices-recovery-page .products-list {
+  font-size: 1.2rem;
+}
+
+.invoices-recovery-page .searchInput {
+  height: 7rem;
+  border-top: none !important;
+}
+
 .recovery-bill-cash-page .appbar {
   background-color: #FF8591;
 }
 
 .recovery-bill-cash-page #btn--receive-cash {
   background-color: #FF545D;
+}
+
+.recovery-bill-cash-page .layout-right--container .right-content-data {
+  max-height: 90vh !important;
 }
 /*# sourceMappingURL=style.css.map */
