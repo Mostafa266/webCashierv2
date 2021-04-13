@@ -4738,7 +4738,7 @@ select {
   border-color: #ffffff !important;
 }
 
-.invoices-recovery-page .appbar-menu-btn svg g circle {
+.invoices-recovery-page .appbar-menu-btn svg g line {
   fill: #ffffff !important;
 }
 
