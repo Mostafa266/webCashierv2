@@ -53,6 +53,37 @@
               align-items: center;
               flex-grow: 0.06;
               flex-direction: row-reverse;
+              span{
+                display: none;
+                color: $white;
+              }
+              &.maintenance-process{
+                background: #B1E5EF;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                padding: 10px;
+                border-radius: 25px;
+                max-width: 126px;
+              }
+              &.maintenance-process .maintenance-process-data{
+                display: block !important;
+                  color: $black;
+              }
+              &.delivered-done{
+                background: #B3EBCC;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                padding: 10px;
+                max-width: 126px;
+                border-radius: 25px;
+              }
+
+              &.delivered-done .delivered-done-data{
+                display: block !important;
+                color: $black;
+              }
               // &-icon{
               //   width: 4.4em;
               //   height: 4.4em;

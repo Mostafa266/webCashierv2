@@ -909,6 +909,53 @@ input[type=number] {
           flex-direction: row-reverse;
 }
 
+.pay-receive-list-item--budget span {
+  display: none;
+  color: #ffffff;
+}
+
+.pay-receive-list-item--budget.maintenance-process {
+  background: #B1E5EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 25px;
+  max-width: 126px;
+}
+
+.pay-receive-list-item--budget.maintenance-process .maintenance-process-data {
+  display: block !important;
+  color: #212121;
+}
+
+.pay-receive-list-item--budget.delivered-done {
+  background: #B3EBCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  max-width: 126px;
+  border-radius: 25px;
+}
+
+.pay-receive-list-item--budget.delivered-done .delivered-done-data {
+  display: block !important;
+  color: #212121;
+}
+
 .customer-card {
   height: 40.3em;
   width: 100%;
@@ -4724,6 +4771,305 @@ select {
   color: #212121 !important;
   font-family: 'reg';
   font-size: 2rem;
+}
+
+.maintenance-page .product-item-in-list--counter {
+  width: 10%;
+  position: relative;
+  right: -9%;
+}
+
+.maintenance-page .right-content-data {
+  max-height: 66vh;
+}
+
+.maintenance-page .searchInput.grayscale {
+  cursor: default;
+  background-color: #ffffff;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.maintenance-page .searchInput input {
+  cursor: default;
+  color: #757575;
+}
+
+.maintenance-page .searchInput input::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.maintenance-page .searchInput input:-ms-input-placeholder {
+  color: #757575;
+}
+
+.maintenance-page .searchInput input::-ms-input-placeholder {
+  color: #757575;
+}
+
+.maintenance-page .searchInput input::placeholder {
+  color: #757575;
+}
+
+.maintenance-page .searchInput svg {
+  fill: #757575;
+}
+
+.maintenance-page .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.maintenance-page .appbar {
+  background-color: #ffffff;
+}
+
+.maintenance-page .appbar span {
+  color: #212121;
+}
+
+.maintenance-page .appbar.invoice .appbar-number--box {
+  border-color: #212121;
+}
+
+.maintenance-page .appbar .appbar-menu-btn svg g circle {
+  fill: #212121;
+}
+
+.maintenance-page .appbar .appbar-menu-btn:hover {
+  background-color: #F0F0F0;
+}
+
+.maintenance-page .pay-receive-list-item--details {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .products-list-container {
+  height: 83%;
+}
+
+.maintenance-page .clients-list {
+  display: none;
+}
+
+.maintenance-page .checkout {
+  overflow: hidden;
+  min-height: 10.5%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.maintenance-page .checkout .checkout-chart-btn {
+  width: 3rem;
+  height: 0.5rem;
+  cursor: pointer;
+  background-color: #CBD0D6;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 222;
+}
+
+.maintenance-page .checkout-list--item {
+  opacity: 0;
+  display: none;
+}
+
+.maintenance-page .checkout-list--item .red-text {
+  padding-left: 7.5%;
+}
+
+.maintenance-page .checkout-list--item-left--price {
+  font-family: 'bold',Arial, Helvetica, sans-serif;
+}
+
+.maintenance-page .checkout-list--item.total-final {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.maintenance-page .checkout-list--item.total-final::before {
+  display: none;
+}
+
+.maintenance-page .checkout-list--item.total-final span {
+  font-size: 2rem;
+  color: #212121;
+}
+
+.maintenance-page .checkout-list--item:nth-last-child(1)::before {
+  display: none;
+}
+
+.maintenance-page .total-payments--paid .number span,
+.maintenance-page .total-payments--received .number span {
+  font-family: 'reg',Arial, Helvetica, sans-serif;
+}
+
+.maintenance-page .total-payments--paid .number span:nth-child(2),
+.maintenance-page .total-payments--received .number span:nth-child(2) {
+  font-family: 'reg',Arial, Helvetica, sans-serif;
+}
+
+.maintenance-page .total-payments--received .number .title {
+  color: #757575 !important;
+  font-family: 'reg';
+}
+
+.maintenance-page .total-payments--received .number .price {
+  color: #212121 !important;
+  font-family: 'reg';
+  font-size: 2rem;
+}
+
+.maintenance-page .appbar.invoice {
+  height: 6.2rem;
+}
+
+.maintenance-page .layout-left--container .left-content-data {
+  height: 100%;
+}
+
+.maintenance-page .invoice {
+  height: 96%;
+  padding: 0 20px;
+}
+
+.maintenance-page .invoice .accordion-container {
+  height: 88%;
+  /* background: red; */
+}
+
+.maintenance-page .invoice .accordion-container .accordion .accordion-item:first-of-type .accordion-button {
+  padding-right: 8%;
+  position: relative;
+  color: #212121;
+  font-size: 1.6rem;
+}
+
+.maintenance-page .invoice .accordion-container .accordion .accordion-button::after {
+  right: 20px;
+}
+
+.maintenance-page .overlay {
+  opacity: 0;
+  width: 0vw;
+  bottom: 0;
+}
+
+.maintenance-page .features-btns-receiveDeveice {
+  background-color: #1877F2;
+  width: 146px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.maintenance-page .features-btns-receiveDeveice span {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.maintenance-page .deviceInformation-header {
+  position: relative;
+  width: 100%;
+  height: 5.5rem;
+  border-bottom: 1px solid #1877F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .deviceInformation-header h1 {
+  font-size: 1.6em;
+  color: #1877F2;
+  display: none;
+}
+
+.maintenance-page .deviceInformation-header.only-text h1 {
+  display: block;
+}
+
+.maintenance-page .accordion-information-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.maintenance-page .accordion-information-list--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+}
+
+.maintenance-page .accordion-information-list--item .name {
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.4em;
+  text-align: right;
+  color: #000;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.maintenance-page .accordion-information-list--item .title {
+  font-weight: 500;
+  font-size: 1.4em;
+  text-align: right;
+  color: #757575;
 }
 
 .invoices-recovery-page .appbar {
