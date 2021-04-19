@@ -1,15 +1,17 @@
-.maintenance-page{
+.maintenance-page {
 
-    .product-item-in-list--counter{
+    .product-item-in-list--counter {
         width: 10%;
         position: relative;
         right: -9%;
     }
-    .right-content-data{
+
+    .right-content-data {
         max-height: 66vh;
     }
-    .searchInput{
-        &.grayscale{
+
+    .searchInput {
+        &.grayscale {
             cursor: default;
             background-color: $white;
             border-top: 2px solid #f2f2f2;
@@ -20,17 +22,21 @@
             margin: 10px 0;
             width: 100%;
         }
-        input{
-        cursor: default;
-        color: #757575;
-            &::placeholder{
+
+        input {
+            cursor: default;
+            color: #757575;
+
+            &::placeholder {
                 color: #757575;
             }
         }
-        svg{
-            fill:#757575
+
+        svg {
+            fill: #757575
         }
     }
+
     .flex-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -46,44 +52,54 @@
         -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     }
-    .appbar{
+
+    .appbar {
         background-color: $white;
-        span{
+
+        span {
             color: $black;
         }
-        &.invoice .appbar-number--box{
+
+        &.invoice .appbar-number--box {
             border-color: $black;
         }
-     .appbar-menu-btn{
-         svg{
-             g{
-                 circle{
-                     fill: $black;
-                 }
-             }
-         }
-         &:hover{
-             background-color: #F0F0F0;
-         }
-     }   
+
+        .appbar-menu-btn {
+            svg {
+                g {
+                    circle {
+                        fill: $black;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: #F0F0F0;
+            }
+        }
     }
-    .pay-receive-list-item--details{
+
+    .pay-receive-list-item--details {
         width: 28%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .products-list-container{
+
+    .products-list-container {
         height: 83%;
     }
-    .clients-list{
+
+    .clients-list {
         display: none;
     }
-    .checkout{
+
+    .checkout {
         overflow: hidden;
         min-height: 10.5%;
         height: auto;
-        .checkout-chart-btn{
+
+        .checkout-chart-btn {
             width: 3rem;
             height: 0.5rem;
             cursor: pointer;
@@ -97,106 +113,128 @@
             position: absolute;
             z-index: 222;
         }
+
         left: 0;
         right: 0;
         margin: 0 auto;
     }
+
     .checkout-list--item {
         opacity: 0;
         display: none;
-        .red-text{
-              padding-left: 7.5%;
+
+        .red-text {
+            padding-left: 7.5%;
         }
-        &-left{
-            &--price{
-                font-family: 'bold',Arial, Helvetica, sans-serif;
+
+        &-left {
+            &--price {
+                font-family: 'bold', Arial, Helvetica, sans-serif;
             }
         }
-        &.total-final{
-        opacity: 1;
-        display: flex;
-        &::before{
-            display: none;
-        }
-            span{
+
+        &.total-final {
+            opacity: 1;
+            display: flex;
+
+            &::before {
+                display: none;
+            }
+
+            span {
                 font-size: 2rem;
                 color: $black;
             }
         }
-        &:nth-last-child(1){
-            &::before{
+
+        &:nth-last-child(1) {
+            &::before {
                 display: none;
             }
         }
     }
+
     .total-payments--paid .number span,
-    .total-payments--received .number span{
-        font-family: 'reg',Arial, Helvetica, sans-serif;
+    .total-payments--received .number span {
+        font-family: 'reg', Arial, Helvetica, sans-serif;
 
     }
+
     .total-payments--paid .number span:nth-child(2),
-    .total-payments--received .number span:nth-child(2){
-        font-family: 'reg',Arial, Helvetica, sans-serif;
+    .total-payments--received .number span:nth-child(2) {
+        font-family: 'reg', Arial, Helvetica, sans-serif;
     }
-    .total-payments--received .number .title{
+
+    .total-payments--received .number .title {
         color: #757575 !important;
         font-family: 'reg';
     }
-    .total-payments--received .number .price{
+
+    .total-payments--received .number .price {
         color: $black !important;
         font-family: 'reg';
         font-size: 2rem;
     }
-    .appbar.invoice{
-        height: 6.2rem ;
+
+    .appbar.invoice {
+        height: 6.2rem;
     }
+
     .layout-left--container .left-content-data {
         height: 100%;
     }
+
     .invoice {
         height: 96%;
+
         .accordion-container {
             height: 88%;
+
             /* background: red; */
-            .accordion .accordion-item:first-of-type .accordion-button{
+            .accordion .accordion-item:first-of-type .accordion-button {
                 padding-right: 8%;
                 position: relative;
                 color: $black;
                 font-size: 1.6rem;
-              
+
             }
-            .accordion .accordion-button::after{
+
+            .accordion .accordion-button::after {
                 right: 20px;
             }
-            
+
         }
+
         padding: 0 20px;
     }
+
     // --------------------------
-    .overlay{
+    .overlay {
         opacity: 0;
         width: 0vw;
         bottom: 0;
     }
-    .features-btns{
-        &-receiveDeveice{
+
+    .features-btns {
+        &-receiveDeveice {
             background-color: $blue;
             width: 146px;
             height: 44px;
             @include flexCenter;
             border-radius: 28px;
             cursor: pointer;
-            span{
-                color:#ffffff;
+
+            span {
+                color: #ffffff;
                 font-size: 1.5em;
             }
 
         }
     }
-  
 
 
-    .deviceInformation-header{
+
+    .deviceInformation-header {
         position: relative;
         width: 100%;
         height: 5.5rem;
@@ -204,47 +242,150 @@
         display: flex;
         justify-content: center;
         align-items: center;
-   
-        h1{
+
+        h1 {
             font-size: 1.6em;
             color: $blue;
             display: none;
         }
-        &.only-text{
-            h1{
-             display: block;
+
+        &.only-text {
+            h1 {
+                display: block;
             }
-         }
+        }
     }
 
-    .accordion-information-list{
-        ul{
+    .accordion-information-list {
+        ul {
             list-style: none;
             padding: 0;
+        }
+
+        &--item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+
+            .name {
+                font-weight: normal;
+                font-size: 12px;
+                font-size: 1.4em;
+                text-align: right;
+                color: #000;
+                flex-basis: 65%;
             }
-            &--item{
+
+            .title {
+                font-weight: 500;
+                font-size: 1.4em;
+                text-align: right;
+                color: $darkGray;
+            }
+        }
+    }
+
+    .checkout {
+        .payments-buttons{
+            display: none;
+          
+        }
+        &.active-request {
+            .payments-buttons{
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 0;
-                    .name{
-                        font-weight: normal;
-                        font-size: 12px;
-                        font-size: 1.4em;
-                        text-align: right;
-                        color: #000;
-                        flex-basis: 65%;
-                    }
-                    .title{
-                        font-weight: 500;
-                        font-size: 1.4em;
-                        text-align: right;
-                        color: $darkGray;
-                    }
+                margin-top: 0;
+                top: 15px;
+                bottom: auto;
+            }
+            .checkout-chart-btn{
+                display: none;
+            }
+            .checkout-list {
+                display: none;
+            }
+
+            .payments-buttons-receive,
+            .payments-buttons-pay {
+                width: 45%;
+            }
+
+            .payments-buttons-pay {
+                max-width: 31%;
+                svg{
+                    padding: 0px;
+
                 }
+                span {
+                    color: $red
+                }
+
+                &:hover {
+                    span {
+                        color: $white;
+                    }
+
+                    svg {
+                        g {
+
+                            circle,
+                            line {
+                                stroke: $white
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .payments-buttons-receive {
+                border: 1px solid $blue;
+                width: 55%;
+
+                span {
+                    color: $blue;
+                }
+
+                svg {
+                    padding-left: 0;
+                    padding-bottom: 0;
+                }
+
+                &:hover {
+                    background-color: $blue;
+
+                    span {
+                        color: $white;
+                    }
+
+                    svg {
+                        g {
+
+                            circle,
+                            path {
+                                stroke: $white
+                            }
+                        }
+                    }
+
+                }
+            }
         }
     }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+}

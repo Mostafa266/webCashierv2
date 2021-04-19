@@ -177,7 +177,7 @@
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">حركه النقديه</a>
                         </div>
-                    </nav>
+                    </nav> 
                     <!-- End Navbar -->
                     <div class="pushLandR25">
                         <div class="flex-container">
@@ -194,21 +194,18 @@
                                 <!-- Stylefile name => _searchInput.scss -->
                                 <div class="icon"><img src="imgs/searchIcon.svg"></div>
                                 <input type="search" name="search" placeholder="ابحث باسم العميل او المورد">
-
                             </div>
                         </div>
                         <div class="filter">
                             <!-- stylefile name => _filter.scss -->
                             <ul>
                                 <li class="active">
-                                    <div class="btn "><span>الكل</span></div>
+                                    <div class="btn "><span>طلبات نشطة</span></div>
                                 </li>
                                 <li>
-                                    <div class="btn"><span>المدفوع</span></div>
+                                    <div class="btn"><span>طلبات مسلمه</span></div>
                                 </li>
-                                <li>
-                                    <div class="btn"><span>المستلم</span></div>
-                                </li>
+                               
                             </ul>
                         </div>
                         <!-- STARt dynamic content -->
@@ -705,9 +702,55 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="checkout">
+                                <div class="checkout active-request">
                                     <!-- stylefile name => _checkout.scss -->
                                     <div class="checkout-chart-btn"></div>
+                                    <div class="payments-buttons">
+                                        <!-- stylefile name => btns/_payment-buttons.scss -->
+                                        <div class="payments-buttons-pay">
+                                            <div>
+                                                <svg id="Group_4765" data-name="Group 4765" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <g id="Ellipse_408" data-name="Ellipse 408" fill="none" stroke="#ff545d" stroke-width="1.6">
+                                                      <circle cx="12" cy="12" r="12" stroke="none"/>
+                                                      <circle cx="12" cy="12" r="11.2" fill="none"/>
+                                                    </g>
+                                                    <g id="Group_5551" data-name="Group 5551" transform="translate(8 8)">
+                                                      <g id="Group_4233" data-name="Group 4233" transform="translate(0 8.232) rotate(-45)">
+                                                        <g id="Group_4232" data-name="Group 4232">
+                                                          <g id="Group_3881" data-name="Group 3881">
+                                                            <line id="Line_318" data-name="Line 318" x2="11.642" transform="translate(0 0)" fill="none" stroke="#ff545d" stroke-width="1.6"/>
+                                                            <line id="Line_467" data-name="Line 467" x2="11.642" fill="none" stroke="#ff545d" stroke-width="1.6"/>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <g id="Group_5550" data-name="Group 5550" transform="translate(8.232 8.232) rotate(-135)">
+                                                        <g id="Group_4232-2" data-name="Group 4232" transform="translate(0)">
+                                                          <g id="Group_3881-2" data-name="Group 3881">
+                                                            <line id="Line_318-2" data-name="Line 318" x2="11.642" transform="translate(0)" fill="none" stroke="#ff545d" stroke-width="1.6"/>
+                                                            <line id="Line_467-2" data-name="Line 467" x2="11.642" transform="translate(0 0)" fill="none" stroke="#ff545d" stroke-width="1.6"/>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                    </g>
+                                                  </svg>
+                                            </div>
+                                            <span>رفض الجهاز</span>
+                                        </div>
+                                        <div class="payments-buttons-receive">
+                                            <span>انهاء الصيانه</span>
+                                            <div >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="25.6" viewBox="0 0 25.6 25.6">
+                                                    <g id="Group_4765" data-name="Group 4765" transform="translate(0.623 0.8)">
+                                                      <circle id="Ellipse_408" data-name="Ellipse 408" cx="12" cy="12" r="12" transform="translate(0.177)" fill="none" stroke="#1877f2" stroke-width="1.6"/>
+                                                      <g id="Group_4233" data-name="Group 4233" transform="translate(17.951 8.018) rotate(135)">
+                                                        <path id="Path_1960" data-name="Path 1960" d="M10.793,4.976V0H0" fill="none" stroke="#1877f2" stroke-width="1.6"/>
+                                                      </g>
+                                                    </g>
+                                                  </svg>
+                                                  
+                                            </div>
+                                        </div>
+                                    </div>
                                     <ul class="checkout-list">
                                         <!-- stylefile name => component/small/_checkout-list.scss -->
 
@@ -1030,7 +1073,6 @@
                                                         <span>00.00</span>
                                                     </div>
                                                 </div>
-
                                             </li>
                                             <li>
                                                 <div class="clients-list-users-item padding-10-lr">
@@ -1379,6 +1421,287 @@
                 </div>
             </div>
         </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <aside class="side-receiveDevice">
+        <div class="layout-container layout-left--container">
+            <!-- appbar style in _layout.scss -->
+            <div class="appbar invoice">
+                <!-- have have class invoice this to allow show invoice title and number and menu btn  -->
+                <!-- appbar style in components/small/_appbar.scss -->
+                <div class="appbar-title">
+                    <span>استلام جهاز 1005#</span>
+                </div>
+            
+                <div class="appbar-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18">
+                        <g id="Group_4318" data-name="Group 4318" transform="translate(0.194 -0.03)">
+                            <circle id="Ellipse_409" data-name="Ellipse 409" cx="2" cy="2" r="2"
+                                transform="translate(-0.194 0.03)" fill="#212121" />
+                            <circle id="Ellipse_418" data-name="Ellipse 418" cx="2" cy="2" r="2"
+                                transform="translate(-0.194 7.03)" fill="#212121" />
+                            <circle id="Ellipse_419" data-name="Ellipse 419" cx="2" cy="2" r="2"
+                                transform="translate(-0.194 14.03)" fill="#212121" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="appbar-menu">
+                    <ul>
+                        <li>
+                            <a href="invoices-recovery.html">
+                                <span>استرجاع الفاتوره</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.939" height="21.939"
+                                    viewBox="0 0 21.939 21.939">
+                                    <g id="Group_4739" data-name="Group 4739"
+                                        transform="translate(21.232 14.254) rotate(135)">
+                                        <path id="Path_1791" data-name="Path 1791"
+                                            d="M1.289,0H8.581A1.289,1.289,0,0,1,9.869,1.288V14.455a1.288,1.288,0,0,1-.419.951L5.8,18.738a1.288,1.288,0,0,1-1.738,0L.419,15.406A1.289,1.289,0,0,1,0,14.455V1.289A1.289,1.289,0,0,1,1.289,0Z"
+                                            transform="translate(0 0)" fill="rgba(0,0,0,0)" stroke="#212121"
+                                            stroke-width="1" />
+                                        <circle id="Ellipse_394" data-name="Ellipse 394" cx="1.343" cy="1.343"
+                                            r="1.343" transform="translate(3.591 11.514)" fill="rgba(0,0,0,0)"
+                                            stroke="#212121" stroke-width="1" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>طباعه الفاتوره</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.952" height="14.479"
+                                    viewBox="0 0 17.952 14.479">
+                                    <g id="Group_4748" data-name="Group 4748" transform="translate(0.5 0.5)">
+                                        <g id="Group_4747" data-name="Group 4747"
+                                            transform="translate(4.733 5.462)">
+                                            <line id="Line_434" data-name="Line 434" x1="6.769" fill="none"
+                                                stroke="#000" stroke-miterlimit="10" stroke-width="1.101" />
+                                        </g>
+                                        <path id="Path_1872" data-name="Path 1872"
+                                            d="M173.441,124.4l-3.505-2.279H158.128a1.639,1.639,0,0,1-1.639-1.639v-7.5a1.64,1.64,0,0,1,1.639-1.639H171.8a1.639,1.639,0,0,1,1.639,1.639Z"
+                                            transform="translate(-156.489 -111.34)" fill="none" stroke="#000"
+                                            stroke-miterlimit="10" stroke-width="1" />
+                                    </g>
+                                </svg>
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>تكرار الفاتورة</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.952" height="14.479"
+                                    viewBox="0 0 17.952 14.479">
+                                    <g id="Group_4748" data-name="Group 4748" transform="translate(0.5 0.5)">
+                                        <g id="Group_4747" data-name="Group 4747"
+                                            transform="translate(4.733 5.462)">
+                                            <line id="Line_434" data-name="Line 434" x1="6.769" fill="none"
+                                                stroke="#000" stroke-miterlimit="10" stroke-width="1.101" />
+                                        </g>
+                                        <path id="Path_1872" data-name="Path 1872"
+                                            d="M173.441,124.4l-3.505-2.279H158.128a1.639,1.639,0,0,1-1.639-1.639v-7.5a1.64,1.64,0,0,1,1.639-1.639H171.8a1.639,1.639,0,0,1,1.639,1.639Z"
+                                            transform="translate(-156.489 -111.34)" fill="none" stroke="#000"
+                                            stroke-miterlimit="10" stroke-width="1" />
+                                    </g>
+                                </svg>
+
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-content-data">
+                <div class="invoice" id="salesInvoice">
+                    <!-- stylefile name => _invoice.scss -->
+                    <div class="searchInput " id="invoice_search_input_container">
+                        <!-- stylefile name => _searchInput.scss -->
+                        <div class="image-container" id="removeClientNameFromInvoice">
+                            <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24"
+                                    rx="12" fill="#fff" opacity="0" />
+                                <g id="Group_4007" data-name="Group 4007"
+                                    transform="translate(12.206 4) rotate(45)">
+                                    <line id="Line_343" data-name="Line 343" y2="12" transform="translate(6)"
+                                        fill="none" stroke="#878a90" stroke-linecap="round"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                    <line id="Line_344" data-name="Line 344" y2="12"
+                                        transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90"
+                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <g id="Group_5006" transform="translate(-78.263 -102.166)">
+                                    <circle id="Ellipse_485" cx="16" cy="16" r="16" fill="#fff"
+                                        transform="translate(78.263 102.166)" />
+                                    <path id="Path_1893"
+                                        d="M103.424 125.677a9.992 9.992 0 0 1-16.561 0 9.992 9.992 0 0 1 16.561 0z"
+                                        class="cls-2" transform="translate(-.877 -1.923)" />
+                                    <circle id="Ellipse_486" cx="3.767" cy="3.767" r="3.767" class="cls-2"
+                                        transform="translate(90.497 109.787)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <input id="invoiceInput" value='' type="search" name="search" placeholder="لا يوجد عميل"/>
+                        <div class="remove_search_input" id='remove_search_input'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12.022" height="12.023"
+                                viewBox="0 0 12.022 12.023">
+                                <g id="Group_3933" data-name="Group 3933"
+                                    transform="translate(6.01 -5.303) rotate(45)">
+                                    <line id="Line_337" data-name="Line 337" y2="16"
+                                        transform="translate(8.002 0)" fill="none" stroke="#212121"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                    <line id="Line_338" data-name="Line 338" x2="16" transform="translate(0 8)"
+                                        fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="accordion-container">
+                        <!-- this is a standalone component -->
+                        <!-- stylefile name => _accordion.scss -->
+                        <div class="accordion">
+                            <!-- stylefile name => _accordion.scss -->
+                            <div class="accordion" id="accordion_deviceInfo">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordion_deviceInfo_header">
+                                        <button class="accordion-button" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_deviceInfoBody" aria-expanded="true"
+                                            aria-controls="accordion_deviceInfoBody">
+                                            معلومات الجهاز
+                                        </button>
+                                    </h2>
+                                    <div id="accordion_deviceInfoBody"
+                                        class="accordion-collapse collapse show"
+                                        aria-labelledby="accordion_deviceInfo_header"
+                                        data-bs-parent="#accordion_deviceInfo">
+                                        <div class="accordion-body">
+                                            <div class="accordion-information-list">
+                                                <ul>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">براند الجهاز</span>
+                                                        <span class="name">اسود-f1 بوكو فون - 3723872039</span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">الرقم المتسلسل</span>
+                                                        <span class="name">284849-284849-284849</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- new according -->
+                        <div class="accordion">
+                            <!-- this is a standalone component -->
+                            <!-- stylefile name => _accordion.scss -->
+                            <div class="accordion" id="accordion_maintenanceInfo">
+                                <div class=" accordion-item">
+                                    <h2 class="accordion-header" id="accordion_maintenanceInfoHeader">
+                                        <button class="accordion-button" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_maintenanceInfoBody"
+                                            aria-expanded="true"
+                                            aria-controls="accordion_maintenanceInfoBody">
+                                            معلومات الصيانه
+                                        </button>
+                                    </h2>
+                                    <div id="accordion_maintenanceInfoBody"
+                                        class="accordion-collapse collapse show"
+                                        aria-labelledby="accordion_maintenanceInfoHeader"
+                                        data-bs-parent="#accordion_maintenanceInfo">
+                                        <div class="accordion-body">
+                                            <div class="accordion-information-list accordion-maintenance">
+                                                <ul>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">مشكلات الجهاز</span>
+                                                        <span class="name">اسود-f1 بوكو فون - 3723872039</span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">فرع الاستلام</span>
+                                                        <span class="name">284849-284849-284849</span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">تاريخ الاستلام</span>
+                                                        <span class="name" >
+                                                           05:20 PM  - 14/7/72020 
+                                                        </span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">تاريخ التسليم</span>
+                                                        <span class="name" >
+                                                            05:20 PM  - 14/7/72020 
+                                                         </span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">تحت الحساب</span>
+                                                        <span class="name">150ج</span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title"> فني الصيانه</span>
+                                                        <span class="name">محمود علاء - 01052564856</span>
+                                                    </li>
+                                                    <li class="accordion-information-list--item">
+                                                        <span class="title">التعليق</span>
+                                                        <span class="name">لا يوجد</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Start POPUP -->
         <!-- START discount-on-each-product -->
         <div class="popup--discount-each-product">
@@ -1675,7 +1998,6 @@
             </div>
         </div>
         <!-- END modal of add new client  -->
-
         <!-- Start disount on invoice -->
         <!-- START discount-on-each-product -->
         <div class="popup--invoice">

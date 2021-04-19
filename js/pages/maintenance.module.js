@@ -17,10 +17,7 @@ let tl1 = new TimelineMax({paused:true});
 tl1.fromTo(cards,0.5,{opacity:0,top:'5rem'},{opacity:1,top:'0rem',stagger:0.08,ease:Back.easeOut.config(1.7)})
 .fromTo(productItemInList,0.5,{opacity:0,top:'5rem'},{opacity:1,top:'0rem',stagger:0.08,ease:Back.easeOut.config(1.7)},'-=1.5')
 tl1.play()
-cards.forEach(card => {
-    card.addEventListener('click',()=>{
-        card.classList.toggle('selected')
-    })
+cards.forEach(card => { card.addEventListener('click',()=>card.classList.toggle('selected'))
 })
 // checkout ANimation
 let checkout = document.querySelector('.checkout');
@@ -38,7 +35,21 @@ checkoutChartBtn.addEventListener('click',()=>{
 
 // New Functionlity
 let receiveDevice = document.querySelector('.features-btns-receiveDeveice');
+
+
+
+
+
+
+
+
+
+
+
+// Receive device side nav animation
+let side_receiveDevice = document.querySelector('.side-receiveDevice')
 let overlay = document.querySelector('.overlay');
+
 
 let receiveDeveiceTimeline = new TimelineMax({paused:true})
 
@@ -46,9 +57,17 @@ receiveDeveiceTimeline.to(overlay,0.3,{
     display:'block',
     opacity:'1',
     width:'100vw',
-});
+})
+.to(side_receiveDevice,0.3,{
+    width:'31.8vw'
+})
+
+
+
 
 
 receiveDevice.addEventListener('click',()=>{
     receiveDeveiceTimeline.play()
 })
+
+// END Receive device side nav animation

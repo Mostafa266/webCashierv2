@@ -227,6 +227,24 @@ input[type=number] {
   width: 100% !important;
 }
 
+.side-receiveDevice {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100vh;
+  z-index: 22229898;
+  background-color: #757575;
+}
+
+.side-receiveDevice .invoice .searchInput {
+  width: 100%;
+}
+
+.side-receiveDevice .layout-left--container {
+  background-color: #d5d5d5;
+}
+
 .btn--receive-cash {
   position: relative;
   width: 78%;
@@ -4910,7 +4928,7 @@ select {
 }
 
 .maintenance-page .checkout-list--item-left--price {
-  font-family: 'bold',Arial, Helvetica, sans-serif;
+  font-family: 'bold', Arial, Helvetica, sans-serif;
 }
 
 .maintenance-page .checkout-list--item.total-final {
@@ -4935,12 +4953,12 @@ select {
 
 .maintenance-page .total-payments--paid .number span,
 .maintenance-page .total-payments--received .number span {
-  font-family: 'reg',Arial, Helvetica, sans-serif;
+  font-family: 'reg', Arial, Helvetica, sans-serif;
 }
 
 .maintenance-page .total-payments--paid .number span:nth-child(2),
 .maintenance-page .total-payments--received .number span:nth-child(2) {
-  font-family: 'reg',Arial, Helvetica, sans-serif;
+  font-family: 'reg', Arial, Helvetica, sans-serif;
 }
 
 .maintenance-page .total-payments--received .number .title {
@@ -5070,6 +5088,80 @@ select {
   font-size: 1.4em;
   text-align: right;
   color: #757575;
+}
+
+.maintenance-page .checkout .payments-buttons {
+  display: none;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  top: 15px;
+  bottom: auto;
+}
+
+.maintenance-page .checkout.active-request .checkout-chart-btn {
+  display: none;
+}
+
+.maintenance-page .checkout.active-request .checkout-list {
+  display: none;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive,
+.maintenance-page .checkout.active-request .payments-buttons-pay {
+  width: 45%;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-pay {
+  max-width: 31%;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-pay svg {
+  padding: 0px;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-pay span {
+  color: #FF545D;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-pay:hover span {
+  color: #ffffff;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-pay:hover svg g circle,
+.maintenance-page .checkout.active-request .payments-buttons-pay:hover svg g line {
+  stroke: #ffffff;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive {
+  border: 1px solid #1877F2;
+  width: 55%;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive span {
+  color: #1877F2;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive svg {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive:hover {
+  background-color: #1877F2;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive:hover span {
+  color: #ffffff;
+}
+
+.maintenance-page .checkout.active-request .payments-buttons-receive:hover svg g circle,
+.maintenance-page .checkout.active-request .payments-buttons-receive:hover svg g path {
+  stroke: #ffffff;
 }
 
 .invoices-recovery-page .appbar {
