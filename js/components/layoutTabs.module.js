@@ -19,6 +19,7 @@ const layoutTabs = (e, layoutContainer, tabsBtn) => {
   e.currentTarget.classList.add('active')
 
 }
+
 tabBtnMain.forEach(node => {
   node.addEventListener('click', function (e) {
     layoutTabs(e, '.layout-container', '.main-layout-tab-btn')
@@ -31,7 +32,11 @@ subTabBtn.forEach(node => {
   })
 });
 
-
+subTabBtn.forEach(node => {
+  node.addEventListener('click', function (e) {
+    layoutTabs(e, '.deviceInfo-tab-content', '.layout-tabs--buttons')
+  })
+});
 // layoutTabs function take 2 parameter
 // 1 - Event
 // 2 - Tab Content class name

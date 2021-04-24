@@ -4791,10 +4791,13 @@ select {
   font-size: 2rem;
 }
 
-.maintenance-page .product-item-in-list--counter {
-  width: 10%;
-  position: relative;
-  right: -9%;
+.maintenance-page .deliveredRequests-leftSide-MultiTabs .layout-tabs {
+  display: block;
+  padding: 0;
+}
+
+.maintenance-page .deliverdTabs-multitabs {
+  display: none;
 }
 
 .maintenance-page .right-content-data {
@@ -4951,6 +4954,10 @@ select {
   display: none;
 }
 
+.maintenance-page .total-payments .total-deliveredRequests {
+  display: block !important;
+}
+
 .maintenance-page .total-payments--paid .number span,
 .maintenance-page .total-payments--received .number span {
   font-family: 'reg', Arial, Helvetica, sans-serif;
@@ -4999,6 +5006,97 @@ select {
 
 .maintenance-page .invoice .accordion-container .accordion .accordion-button::after {
   right: 20px;
+}
+
+.maintenance-page .invoice .accordion .accordion-deliverdRequests--maintenanceInfo {
+  display: none;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .branch {
+  text-decoration: underline;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-issues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-issues--issue {
+  width: 8em;
+  height: 2.5em;
+  background-color: #F2F2F2;
+  border-radius: 2em;
+  margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-issues--issue span {
+  color: #212121;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-maintenance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-maintenance--item {
+  width: 8em;
+  height: 2.5em;
+  background-color: #F2F2F2;
+  border-radius: 2em;
+  margin: 1em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-maintenance--item span {
+  color: #212121;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-maintenance--item.maintenance--done {
+  background-color: #B7EBF5;
+}
+
+.maintenance-page .invoice .accordion .accordion-information-list--item .device-maintenance--item.maintenance--delivered {
+  background-color: #B9F1D2;
 }
 
 .maintenance-page .overlay {
@@ -5162,6 +5260,29 @@ select {
 .maintenance-page .checkout.active-request .payments-buttons-receive:hover svg g circle,
 .maintenance-page .checkout.active-request .payments-buttons-receive:hover svg g path {
   stroke: #ffffff;
+}
+
+.maintenance-page .total-payments--paid .number, .maintenance-page .total-payments--received .number {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .filter ul li {
+  cursor: pointer;
+}
+
+.maintenance-page .ivoice-in-multitabs {
+  padding: 0 !important;
+}
+
+.maintenance-page .ivoice-in-multitabs .products-list-container {
+  height: 65vh;
+}
+
+.maintenance-page .ivoice-in-multitabs .product-item-in-list--counter {
+  right: 0%;
+  width: 105px;
 }
 
 .invoices-recovery-page .appbar {

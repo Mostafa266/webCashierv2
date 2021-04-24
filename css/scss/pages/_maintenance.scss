@@ -1,9 +1,19 @@
 .maintenance-page {
+    .deliveredRequests-leftSide-MultiTabs{
+        .layout-tabs{
+            display: block;
+            padding: 0;
+        }
+    }
 
+  
+    .deliverdTabs-multitabs{
+        display:none
+    }
     .product-item-in-list--counter {
-        width: 10%;
-        position: relative;
-        right: -9%;
+        // width: 10%;
+        // position: relative;
+        // right: -9%;
     }
 
     .right-content-data {
@@ -154,6 +164,12 @@
         }
     }
 
+    .total-payments{
+        .total-deliveredRequests{
+            display: block !important;
+        }
+    }
+
     .total-payments--paid .number span,
     .total-payments--received .number span {
         font-family: 'reg', Arial, Helvetica, sans-serif;
@@ -204,7 +220,57 @@
             }
 
         }
+        .accordion{
+            .accordion-deliverdRequests--maintenanceInfo{
+                display: none;
+            }
+           .accordion-information-list--item{
+               .branch{
+                   text-decoration: underline
+               }
+              .device-issues{
+                  @include flexCenter;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+                  &--issue{
+                      width: 8em;
+                      height: 2.5em;
+                      background-color: #F2F2F2;
+                      border-radius: 2em;
+                      margin: 1em 0;
+                      @include flexCenter;
+                      span{
+                          color:$black ;
+                      }
+                  }
+              }
+              
+              
 
+              .device-maintenance{
+                @include flexCenter;
+                justify-content: start;
+                flex-wrap: wrap;
+                &--item{
+                    width: 8em;
+                    height: 2.5em;
+                    background-color: #F2F2F2;
+                    border-radius: 2em;
+                    margin: 1em 0.5em;
+                    @include flexCenter;
+                    span{
+                        color:$black ;
+                    }
+                    &.maintenance--done{
+                        background-color: #B7EBF5;
+                    }
+                    &.maintenance--delivered{
+                        background-color: #B9F1D2;
+                    }
+                }
+            } 
+           } 
+        }
         padding: 0 20px;
     }
 
@@ -372,20 +438,20 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .total-payments--paid .number, .total-payments--received .number{
+        align-items: center;
+    }
+    .filter ul li{
+        cursor: pointer;
+    }
+    .ivoice-in-multitabs{
+        .products-list-container{
+            height: 65vh;
+        }
+        padding: 0 !important;
+        .product-item-in-list--counter{
+            right: 0%;
+            width: 105px;
+        }
+    }
 }
