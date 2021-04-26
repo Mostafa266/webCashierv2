@@ -18,6 +18,9 @@
 
     .right-content-data {
         max-height: 66vh;
+        @media screen and (max-height:700px){
+            max-height: 59vh;
+        }
     }
 
     .searchInput {
@@ -65,7 +68,9 @@
 
     .appbar {
         background-color: $white;
-
+        @include mediaMixin(desktop){
+            font-size:7px;
+        }
         span {
             color: $black;
         }
@@ -94,6 +99,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        span{
+            margin: 0 10px;
+        }
     }
 
     .products-list-container {
@@ -103,12 +111,11 @@
     .clients-list {
         display: none;
     }
-
     .checkout {
         overflow: hidden;
         min-height: 10.5%;
         height: auto;
-
+        
         .checkout-chart-btn {
             width: 3rem;
             height: 0.5rem;
@@ -132,12 +139,19 @@
     .checkout-list--item {
         opacity: 0;
         display: none;
-
+        
         .red-text {
             padding-left: 7.5%;
+            @include mediaMixin(lgDesktop){
+                padding-left: 1.5% !important;
+            }
+            @include mediaMixin(desktop){
+                padding-left: 1.5% !important;
+            }
         }
 
         &-left {
+          
             &--price {
                 font-family: 'bold', Arial, Helvetica, sans-serif;
             }
@@ -353,6 +367,7 @@
     }
 
     .checkout {
+        // bottom: 20px;
         .payments-buttons{
             display: none;
           
@@ -452,6 +467,35 @@
         .product-item-in-list--counter{
             right: 0%;
             width: 105px;
+        }
+    }
+    .activeRequest-leftSide-oneTab{
+        height: 100%;
+        overflow-y: scroll;
+       @include scrollBar;
+    }
+    @media screen and (max-height:700px){
+        .clients-list--individuals.active{
+            overflow-y: scroll;
+            height: auto;
+            max-height: 62vh;@include scrollBar;
+        }
+       .invoice{
+            height: 92%;
+        }
+        .checkout{
+            min-height: 13.5%;
+        }
+        .ivoice-in-multitabs .products-list-container{
+            max-height: 50vh;
+        }
+    }
+    .deliverdTabs-multitabs{
+        .products-list-container{
+            padding: 0px;
+            @media screen and (max-width:1400px) {
+                height: 60vh;
+            }
         }
     }
 }

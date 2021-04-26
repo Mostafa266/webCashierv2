@@ -4804,6 +4804,12 @@ select {
   max-height: 66vh;
 }
 
+@media screen and (max-height: 700px) {
+  .maintenance-page .right-content-data {
+    max-height: 59vh;
+  }
+}
+
 .maintenance-page .searchInput.grayscale {
   cursor: default;
   background-color: #ffffff;
@@ -4861,6 +4867,12 @@ select {
   background-color: #ffffff;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .maintenance-page .appbar {
+    font-size: 7px;
+  }
+}
+
 .maintenance-page .appbar span {
   color: #212121;
 }
@@ -4887,6 +4899,10 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.maintenance-page .pay-receive-list-item--details span {
+  margin: 0 10px;
 }
 
 .maintenance-page .products-list-container {
@@ -4928,6 +4944,18 @@ select {
 
 .maintenance-page .checkout-list--item .red-text {
   padding-left: 7.5%;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .maintenance-page .checkout-list--item .red-text {
+    padding-left: 1.5% !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .maintenance-page .checkout-list--item .red-text {
+    padding-left: 1.5% !important;
+  }
 }
 
 .maintenance-page .checkout-list--item-left--price {
@@ -5283,6 +5311,61 @@ select {
 .maintenance-page .ivoice-in-multitabs .product-item-in-list--counter {
   right: 0%;
   width: 105px;
+}
+
+.maintenance-page .activeRequest-leftSide-oneTab {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.maintenance-page .activeRequest-leftSide-oneTab::-webkit-scrollbar {
+  width: 5px;
+}
+
+.maintenance-page .activeRequest-leftSide-oneTab::-webkit-scrollbar-track {
+  background-color: #F0F0F0;
+}
+
+.maintenance-page .activeRequest-leftSide-oneTab::-webkit-scrollbar-thumb {
+  background-color: #BDBEC3;
+  border-radius: 20px;
+}
+
+@media screen and (max-height: 700px) {
+  .maintenance-page .clients-list--individuals.active {
+    overflow-y: scroll;
+    height: auto;
+    max-height: 62vh;
+  }
+  .maintenance-page .clients-list--individuals.active::-webkit-scrollbar {
+    width: 5px;
+  }
+  .maintenance-page .clients-list--individuals.active::-webkit-scrollbar-track {
+    background-color: #F0F0F0;
+  }
+  .maintenance-page .clients-list--individuals.active::-webkit-scrollbar-thumb {
+    background-color: #BDBEC3;
+    border-radius: 20px;
+  }
+  .maintenance-page .invoice {
+    height: 92%;
+  }
+  .maintenance-page .checkout {
+    min-height: 13.5%;
+  }
+  .maintenance-page .ivoice-in-multitabs .products-list-container {
+    max-height: 50vh;
+  }
+}
+
+.maintenance-page .deliverdTabs-multitabs .products-list-container {
+  padding: 0px;
+}
+
+@media screen and (max-width: 1400px) {
+  .maintenance-page .deliverdTabs-multitabs .products-list-container {
+    height: 60vh;
+  }
 }
 
 .invoices-recovery-page .appbar {
