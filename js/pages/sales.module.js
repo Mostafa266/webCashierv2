@@ -4,9 +4,14 @@ import '../components/modal.module.js';
 // to enbale menu in appbar
 import '../components/appBar-menu.module.js';
 // to enable function to get clicked client to get value and show in input in prdouct list 
-import './../components/client-list.module.js';
+import clientListRenderer from './../components/client-list.module.js';
 
 import './../components/ChangeView.module.js';
+
+clientListRenderer('salesInvoice','clientsList','salesInvoice')
+
+
+
 
 let tl3 = new TimelineMax({paused:true});
 let productsListContainer = document.querySelector('.products-list-container')

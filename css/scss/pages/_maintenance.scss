@@ -1,4 +1,8 @@
 .maintenance-page {
+    .statusPopup{
+        opacity: 0;
+        display: none;
+    }
     .deliveredRequests-leftSide-MultiTabs{
         .layout-tabs{
             display: block;
@@ -6,16 +10,10 @@
         }
     }
 
-  
+ 
     .deliverdTabs-multitabs{
         display:none
     }
-    .product-item-in-list--counter {
-        // width: 10%;
-        // position: relative;
-        // right: -9%;
-    }
-
     .right-content-data {
         max-height: 66vh;
         @media screen and (max-height:700px){
@@ -107,7 +105,6 @@
     .products-list-container {
         height: 83%;
     }
-
     .clients-list {
         display: none;
     }
@@ -115,7 +112,7 @@
         overflow: hidden;
         min-height: 10.5%;
         height: auto;
-        
+        bottom:25px;
         .checkout-chart-btn {
             width: 3rem;
             height: 0.5rem;
@@ -222,11 +219,10 @@
 
             /* background: red; */
             .accordion .accordion-item:first-of-type .accordion-button {
-                padding-right: 8%;
+                padding-right: 11%;
                 position: relative;
                 color: $black;
                 font-size: 1.6rem;
-
             }
 
             .accordion .accordion-button::after {
@@ -293,23 +289,6 @@
         opacity: 0;
         width: 0vw;
         bottom: 0;
-    }
-
-    .features-btns {
-        &-receiveDeveice {
-            background-color: $blue;
-            width: 146px;
-            height: 44px;
-            @include flexCenter;
-            border-radius: 28px;
-            cursor: pointer;
-
-            span {
-                color: #ffffff;
-                font-size: 1.5em;
-            }
-
-        }
     }
 
 
@@ -472,6 +451,7 @@
     .activeRequest-leftSide-oneTab{
         height: 100%;
         overflow-y: scroll;
+        // display: none; // remove this
        @include scrollBar;
     }
     @media screen and (max-height:700px){
@@ -498,4 +478,61 @@
             }
         }
     }
+    .finishOrderTabs{
+        display: block;
+        .infinishORderTabs{
+            margin-top: 1%;
+            padding: 0;
+            .products-list-container{
+                padding: 0;
+            }
+            .product-item-in-list--data{
+                width: 32%;
+                input{
+                    padding: 2px;
+                    margin-bottom: 2px;
+                    border: 1px solid #707070;
+                    box-shadow: none;
+                    border-radius: 3px;
+                    font-size: 14px;
+                }
+                .bandName{
+                    width: 100%;
+                }
+                .secondInput{
+                    width: 50%;
+                }
+            }
+
+            
+        }
+        .clients-list--individuals{
+            &.active{
+                display: block;
+            }
+        }
+        .client_invoiceInOrder{
+            .addRow{
+                width: 100%;
+                height: 5rem;
+                border-radius: 40px;
+                border-color: $blue;
+                border: 1px solid $blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                span{
+                    font-size: 1.6rem;
+                    color: $blue;
+                }
+               
+            }
+        }
+    }
+.client_invoiceInOrder {
+    min-height: 70vh;
+    height: 70vh;
+}
+
 }

@@ -4,7 +4,10 @@ import '../components/modal.module.js';
 // to enbale menu in appbar
 import '../components/appBar-menu.module.js';
 // to enable function to get clicked client to get value and show in input in prdouct list 
-// import './../components/client-list.module.js'
+import clientListRenderer from './../components/client-list.module.js';
+
+clientListRenderer('salesInvoiceInAside','clientsListInAside','receiveDevice_input')
+
 
 // let tl3 = new TimelineMax({
 //     paused: true
@@ -64,15 +67,8 @@ checkoutChartBtn.addEventListener('click', () => {
 
 
 // New Functionlity
-let receiveDevice = document.querySelector('.features-btns-receiveDeveice');
-
-
-
-
-
-
-
-
+let receiveDevice = document.getElementById('receiveDevice');
+let closeSideReceiveDevice = document.getElementById('closeSideReceiveDevice');
 
 
 
@@ -91,16 +87,28 @@ receiveDeveiceTimeline.to(overlay, 0.3, {
         width: '100vw',
     })
     .to(side_receiveDevice, 0.3, {
-        width: '31.8vw'
+       left:'0%',
     })
-
-
 
 
 
 receiveDevice.addEventListener('click', () => {
     receiveDeveiceTimeline.play()
 })
+
+
+
+closeSideReceiveDevice.addEventListener('click',()=>{
+    receiveDeveiceTimeline.reverse();
+})
+
+
+
+
+
+
+
+
 // END Receive device side nav animation
 let filter = document.querySelectorAll('.filter ul li')
 const makeItActive = (clickedItem) => {
@@ -114,9 +122,6 @@ filter.forEach(ele => {
         makeItActive(ele)
     })
 })
-
-
-
 
 
 
@@ -165,6 +170,69 @@ deliveredRequests.addEventListener('click', () => {
     .to('.deliverdTabs-multitabs',0.3,{
         display:'block'
     })
+    .to('.finishOrderTabs',0.3,{
+        display:'none'
+    })
     deliverdTimeline.play()
 
 })
+
+
+let finishMaintenanceInChekout = document.querySelector('.finishMaintenanceInChekout');
+let rejectDevice = document.querySelector('.finishMaintenance');
+let rejectDeviceTimeline = new TimelineMax({
+    paused: true
+});
+
+rejectDevice.addEventListener('click',()=>{
+    rejectDeviceTimeline.to('.activeRequest-leftSide-oneTab',0.3,{display:'none'})
+    .to('.finishOrderTabs',0.3,{
+        display:'block'
+    })
+    .to('.statusPopupOuter',0.3,{
+        opacity:'0',
+        display:'none'
+    })
+    rejectDeviceTimeline.to('.checkout.active-request.hideIt',0.3,{display:'none'},'-=0.3')
+
+    rejectDeviceTimeline.play()
+
+})
+
+
+
+let showStatusPopUpTl = new TimelineMax({
+    paused: true
+});
+finishMaintenanceInChekout.addEventListener('click',()=>{
+    showStatusPopUpTl.to('.statusPopup',0.3,{
+        display:'block',
+        opacity:1
+    })
+    showStatusPopUpTl.play()
+})
+
+
+
+
+
+
+
+// let invoiceInFinishOrder = document.querySelector('.invoiceInFinishOrder');
+// let statusPopupInOrder = document.querySelector('.statusPopup');
+// let invoiceInFinishOrderTl = new TimelineMax({paused:true})
+
+// invoiceInFinishOrder.addEventListener('click',()=>{
+
+//     statusPopupInOrder.classList.add('clientInvoiceInTabs')
+
+//     invoiceInFinishOrderTl.to('.checkout',0.2,{
+//         opacity:0,
+//         display:'none'
+//     })
+//     invoiceInFinishOrderTl.to('.statusPopup',0.2,{
+//         opacity:1,
+//         display:'block'
+//     })
+//     invoiceInFinishOrderTl.play()
+// })

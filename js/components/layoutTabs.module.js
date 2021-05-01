@@ -1,5 +1,9 @@
 let tabBtnMain = document.querySelectorAll('.main-layout-tab-btn');
 let subTabBtn = document.querySelectorAll('.clients-tabs-btn');
+let asideClientTabs = document.querySelectorAll('.asideClientTabs');
+let asideClientTabs2 = document.querySelectorAll('.clients-tabs-btn2');
+
+
 
 const layoutTabs = (e, layoutContainer, tabsBtn) => {
   e.preventDefault();
@@ -18,7 +22,14 @@ const layoutTabs = (e, layoutContainer, tabsBtn) => {
   getLayout.classList.add('active')
   e.currentTarget.classList.add('active')
 
+
 }
+
+asideClientTabs.forEach(node => {
+  node.addEventListener('click', function (e) {
+    layoutTabs(e, '.aside-tab-content', '.asideClientTabs')
+  })
+});
 
 tabBtnMain.forEach(node => {
   node.addEventListener('click', function (e) {
@@ -37,7 +48,22 @@ subTabBtn.forEach(node => {
     layoutTabs(e, '.deviceInfo-tab-content', '.layout-tabs--buttons')
   })
 });
+
+
+asideClientTabs2.forEach(node => {
+  node.addEventListener('click', function (e) {
+    layoutTabs(e, '.order-tab-content', '.clients-tabs-btn2')
+  })
+});
+
+
+
+
+
 // layoutTabs function take 2 parameter
+
+
+
 // 1 - Event
 // 2 - Tab Content class name
 // 3 - take Tabs btn class name 

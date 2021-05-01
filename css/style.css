@@ -229,20 +229,68 @@ input[type=number] {
 
 .side-receiveDevice {
   position: fixed;
-  left: 0;
+  left: -100%;
   bottom: 0;
   width: 0;
   height: 100vh;
   z-index: 22229898;
-  background-color: #757575;
+  width: 33vw;
+}
+
+.side-receiveDevice .aside-tab-content {
+  display: none;
+}
+
+.side-receiveDevice .aside-tab-content.active {
+  display: block;
+}
+
+.side-receiveDevice .invoice {
+  font-size: 0.9rem;
 }
 
 .side-receiveDevice .invoice .searchInput {
   width: 100%;
 }
 
+.side-receiveDevice .accordion-container {
+  padding: 0 5px;
+  height: 78% !important;
+  margin-bottom: 2em;
+  overflow-y: scroll;
+}
+
+.side-receiveDevice .accordion-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.side-receiveDevice .accordion-container::-webkit-scrollbar-track {
+  background-color: #F0F0F0;
+}
+
+.side-receiveDevice .accordion-container::-webkit-scrollbar-thumb {
+  background-color: #BDBEC3;
+  border-radius: 20px;
+}
+
 .side-receiveDevice .layout-left--container {
-  background-color: #d5d5d5;
+  background-color: white;
+}
+
+.side-receiveDevice .accordion .accordion-item:first-of-type .accordion-button {
+  background-color: transparent;
+}
+
+.side-receiveDevice .btn-default-blue {
+  margin: 0 auto;
+  height: 60px;
+  width: 90%;
+  position: absolute;
+  bottom: 5%;
+}
+
+.side-receiveDevice .btn-default-blue span {
+  font-size: 1.8em;
 }
 
 .btn--receive-cash {
@@ -358,6 +406,29 @@ input[type=number] {
 
 .sidemenu-btn svg {
   width: 70%;
+}
+
+.btn-default-blue {
+  margin: 0 20px;
+  background-color: #1877F2;
+  width: 146px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.btn-default-blue span {
+  color: #ffffff;
+  font-size: 1.5em;
 }
 
 .features-btns {
@@ -3270,6 +3341,42 @@ input[type=number] {
   direction: rtl;
 }
 
+.selectorMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin-top: 2em;
+  position: relative;
+  margin-bottom: 0.3em;
+}
+
+.selectorMenu--label {
+  font-size: 1.6em;
+}
+
+.selectorMenu-icon {
+  position: absolute;
+  left: 2em;
+  top: 60%;
+}
+
+.selectorMenu input {
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 1em;
+  margin-top: 0.6em;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #BDBEC3;
+  font-size: 1.6em;
+}
+
 .change-view-menu {
   display: none;
   width: 20em;
@@ -3716,6 +3823,98 @@ input[type=number] {
 
 .cancel-submit-btn:hover {
   border: 2px solid #FF545D;
+}
+
+.statusPopup {
+  position: absolute;
+  width: 100%;
+  background: white;
+  min-height: 43%;
+  height: auto;
+  bottom: 6px;
+  z-index: 20;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.12);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  z-index: 2222;
+}
+
+.statusPopup .payments-buttons {
+  position: relative;
+}
+
+.statusPopup-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.statusPopup .payments-buttons-pay {
+  width: 10%;
+  border: none;
+}
+
+.statusPopup .payments-buttons-pay svg {
+  padding: 0;
+  height: 100%;
+  width: 40%;
+}
+
+.statusPopup .payments-buttons-pay:hover {
+  background-color: #f0f0f0;
+}
+
+.statusPopup.clientInvoiceInTabs .payments-buttons {
+  display: none;
+}
+
+.statusPopup .checkout-btn-container {
+  display: none;
+}
+
+.statusPopup.clientInvoiceInTabs .checkout-btn-container {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statusPopup .payments-buttons-receive {
+  width: 75%;
+  background-color: #1877F2;
+  border-color: #1877F2;
+}
+
+.statusPopup .payments-buttons-receive span {
+  color: #ffffff;
+}
+
+.statusPopup .payments-buttons-receive:hover {
+  background-color: #1877F2;
+}
+
+.statusPopup.rejectStyle .payments-buttons-receive {
+  background-color: #FF545D;
+  border-color: #FF545D;
+}
+
+.statusPopup.rejectStyle .payments-buttons-receive:hover {
+  background-color: #e64c54;
 }
 
 .inverntory-popup {
@@ -4791,6 +4990,11 @@ select {
   font-size: 2rem;
 }
 
+.maintenance-page .statusPopup {
+  opacity: 0;
+  display: none;
+}
+
 .maintenance-page .deliveredRequests-leftSide-MultiTabs .layout-tabs {
   display: block;
   padding: 0;
@@ -4917,6 +5121,7 @@ select {
   overflow: hidden;
   min-height: 10.5%;
   height: auto;
+  bottom: 25px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -5026,7 +5231,7 @@ select {
 }
 
 .maintenance-page .invoice .accordion-container .accordion .accordion-item:first-of-type .accordion-button {
-  padding-right: 8%;
+  padding-right: 11%;
   position: relative;
   color: #212121;
   font-size: 1.6rem;
@@ -5131,28 +5336,6 @@ select {
   opacity: 0;
   width: 0vw;
   bottom: 0;
-}
-
-.maintenance-page .features-btns-receiveDeveice {
-  background-color: #1877F2;
-  width: 146px;
-  height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 28px;
-  cursor: pointer;
-}
-
-.maintenance-page .features-btns-receiveDeveice span {
-  color: #ffffff;
-  font-size: 1.5em;
 }
 
 .maintenance-page .deviceInformation-header {
@@ -5366,6 +5549,73 @@ select {
   .maintenance-page .deliverdTabs-multitabs .products-list-container {
     height: 60vh;
   }
+}
+
+.maintenance-page .finishOrderTabs {
+  display: block;
+}
+
+.maintenance-page .finishOrderTabs .infinishORderTabs {
+  margin-top: 1%;
+  padding: 0;
+}
+
+.maintenance-page .finishOrderTabs .infinishORderTabs .products-list-container {
+  padding: 0;
+}
+
+.maintenance-page .finishOrderTabs .infinishORderTabs .product-item-in-list--data {
+  width: 32%;
+}
+
+.maintenance-page .finishOrderTabs .infinishORderTabs .product-item-in-list--data input {
+  padding: 2px;
+  margin-bottom: 2px;
+  border: 1px solid #707070;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.maintenance-page .finishOrderTabs .infinishORderTabs .product-item-in-list--data .bandName {
+  width: 100%;
+}
+
+.maintenance-page .finishOrderTabs .infinishORderTabs .product-item-in-list--data .secondInput {
+  width: 50%;
+}
+
+.maintenance-page .finishOrderTabs .clients-list--individuals.active {
+  display: block;
+}
+
+.maintenance-page .finishOrderTabs .client_invoiceInOrder .addRow {
+  width: 100%;
+  height: 5rem;
+  border-radius: 40px;
+  border-color: #1877F2;
+  border: 1px solid #1877F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.maintenance-page .finishOrderTabs .client_invoiceInOrder .addRow span {
+  font-size: 1.6rem;
+  color: #1877F2;
+}
+
+.maintenance-page .client_invoiceInOrder {
+  min-height: 70vh;
+  height: 70vh;
 }
 
 .invoices-recovery-page .appbar {

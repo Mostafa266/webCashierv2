@@ -1,6 +1,7 @@
 // here import global styles
 @import './scss/helpers/variables';
 @import './scss/common/common';
+@import './scss/helpers/mixins';
 
 
 
@@ -10,13 +11,13 @@
 // Side
 @import './scss/components/side-receiveDevice';
 
-@import './scss/helpers/mixins';
 
 // buttons
 @import './scss/components/btns/btn-receive-cash';
 @import './scss/components/btns/btn-receive-payment';
 @import './scss/components/btns/default-btn';
 @import './scss/components/sidemenu-btn';
+@import './scss/components/btns/default-blue';
 
 
 @import './scss/components/small/features-btns';
@@ -42,6 +43,7 @@
 @import './scss/components/small/appbar';
 @import './scss/components/clients-list';
 @import './scss/components/calculator';
+@import './scss/components/menus/selectorMenu';
 
 
 // import menus
@@ -56,6 +58,7 @@
 
 // POPUPS
 @import './scss/components/popups/discount-each-product';
+@import './scss/components/popups/status_popup';
 @import './scss/components/popups/inventory-popup';
 @import './scss/components/popups/delivery-popup';
 @import './scss/components/popups/add-new-client';
