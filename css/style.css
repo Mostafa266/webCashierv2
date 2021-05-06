@@ -4683,11 +4683,6 @@ select {
           align-items: center;
 }
 
-.newSalesOne .checkout-btn-container {
-  position: absolute;
-  bottom: 2%;
-}
-
 .newSalesOne .checkout {
   min-height: 9%;
 }
