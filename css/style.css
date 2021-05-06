@@ -4669,7 +4669,7 @@ select {
   border: 2px solid #FF545D;
 }
 
-.centerdContainer {
+.newSalesOne .centerdContainer {
   width: 100%;
   height: 80%;
   display: -webkit-box;
@@ -4683,9 +4683,21 @@ select {
           align-items: center;
 }
 
-.checkout-btn-container {
+.newSalesOne .checkout-btn-container {
   position: absolute;
   bottom: 2%;
+}
+
+.newSalesOne .checkout {
+  min-height: 9%;
+}
+
+.newSalesOne #invoice_search_input_container svg circle, .newSalesOne #invoice_search_input_container svg path {
+  fill: #ffffff;
+}
+
+.newSalesOne #invoice_search_input_container svg #Ellipse_485 {
+  fill: #A3AAB2;
 }
 
 .invoice--customer-list {
