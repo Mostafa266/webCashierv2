@@ -5056,6 +5056,153 @@ select {
   color: black !important;
 }
 
+.customer-page-two .pay-receive-list {
+  max-height: 82em;
+}
+
+.customer-page-two .right-content-data {
+  max-height: auto !important;
+  overflow-y: visible  !important;
+}
+
+.customer-page-two .btn-blueInCustomer {
+  border: 2px solid #1877F2;
+  height: 7rem !important;
+}
+
+.customer-page-two .user-data {
+  margin-top: 2rem !important;
+  font-size: 9px !important;
+}
+
+.customer-page-two .pay-receive-list-item--details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+@media screen and (max-width: 992px) {
+  .customer-page-two .pay-receive-list-item--details {
+    -ms-flex-preferred-size: 28% !important;
+        flex-basis: 28% !important;
+  }
+}
+
+.customer-page-two .pay-receive-list-item--details a, .customer-page-two .pay-receive-list-item--details span {
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 992px) {
+  .customer-page-two .pay-receive-list-item--details a, .customer-page-two .pay-receive-list-item--details span {
+    font-size: 1.4em;
+  }
+}
+
+.customer-page-two .pay-receive-list-item--details span {
+  margin: 0 !important;
+}
+
+.customer-page-two .sidemenu-btn {
+  display: none;
+}
+
+.customer-page-two .left-content-data {
+  -webkit-box-shadow: 3px 1px 2px #f3f3f3;
+          box-shadow: 3px 1px 2px #f3f3f3;
+}
+
+.customer-page-two .layout-right {
+  background-color: #ffffff !important;
+}
+
+.customer-page-two .navbar {
+  background: transparent;
+}
+
+.customer-page-two .navbar .close-btn {
+  padding: 2rem;
+  margin: 0 1rem 0 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.customer-page-two .navbar .close-btn:hover {
+  background-color: #F5F5F5;
+}
+
+.customer-page-two .navbar .layout-tabs--buttons {
+  border-bottom: 1px solid #F5F5F5;
+}
+
+@media screen and (max-width: 992px) {
+  .customer-page-two .navbar .layout-tabs--buttons {
+    width: 80%;
+  }
+}
+
+.customer-page-two .flex-container {
+  margin-bottom: 1rem;
+}
+
+.customer-page-two .flex-container .searchInput {
+  background: #F5F5F5;
+  height: 5rem;
+}
+
+.customer-page-two .flex-container .calender {
+  width: 50%;
+  height: 2rem;
+  background: #F5F5F5;
+  height: 5rem;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.customer-page-two .flex-container .calender span {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  color: #757575;
+}
+
+.customer-page-two .flex-container .chooseOperation {
+  border-radius: 10px;
+  width: 50%;
+  height: 2rem;
+  cursor: pointer;
+  background: #F5F5F5;
+  height: 5rem;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-page-two .flex-container .chooseOperation span {
+  color: #757575;
+  font-size: 1.6rem;
+}
+
 .invoice--customer-list {
   display: none;
 }
