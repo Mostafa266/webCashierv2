@@ -5203,6 +5203,57 @@ select {
   font-size: 1.6rem;
 }
 
+.CustomerPage-SideContanet .appbar {
+  background-color: #1877F2 !important;
+}
+
+.CustomerPage-SideContanet .appbar span {
+  color: #ffffff !important;
+}
+
+.CustomerPage-SideContanet .customer-data--user-information {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.CustomerPage-SideContanet .customer-data {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+.CustomerPage-SideContanet .customer-card {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 0rem;
+  background: transparent;
+  font-size: 0.8em;
+}
+
+.CustomerPage-SideContanet .customer-card--invoice-details {
+  background: #F5F5F5;
+  padding: 0 2rem;
+  border-radius: 14px;
+}
+
+.CustomerPage-SideContanet .checkout {
+  position: relative;
+  padding: 2rem 0;
+  bottom: 47px;
+}
+
+.CustomerPage-SideContanet .checkout .payments-buttons {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  bottom: 0;
+  position: relative;
+}
+
+.CustomerPage-SideContanet .checkout-operations--group {
+  margin-bottom: 2rem;
+}
+
 .invoice--customer-list {
   display: none;
 }
