@@ -1,7 +1,9 @@
     .modal.addNew_client-class{
         display:block;
         opacity: 1;
-        
+        .divider{
+            border: 1px solid #F0F2F5;
+        }
         .accordion{
             margin-top: 3rem;
         }

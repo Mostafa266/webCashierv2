@@ -4674,6 +4674,10 @@ select {
   opacity: 1;
 }
 
+.modal.addNew_client-class .divider {
+  border: 1px solid #F0F2F5;
+}
+
 .modal.addNew_client-class .accordion {
   margin-top: 3rem;
 }
