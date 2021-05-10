@@ -4669,6 +4669,86 @@ select {
   border: 2px solid #FF545D;
 }
 
+.modal.addNew_client-class {
+  display: block;
+  opacity: 1;
+}
+
+.modal.addNew_client-class .accordion {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .modal.addNew_client-class {
+    overflow-y: scroll;
+  }
+  .modal.addNew_client-class .d-flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+}
+
+.modal.addNew_client-class .accordion-button:not(.collapsed)::after {
+  position: absolute;
+  right: 2%;
+}
+
+.modal.addNew_client-class .accordion-button::after {
+  position: absolute;
+  right: 2%;
+}
+
+.modal.addNew_client-class .accordion-button:not(.collapsed) {
+  border-left: none;
+  border-right: none;
+  background: transparent;
+}
+
+.modal.addNew_client-class .addnew_address {
+  background: #F0F2F5;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'reg' !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal.addNew_client-class .accordion-button:focus {
+  border-color: #C6CFD9;
+}
+
+.modal.addNew_client-class .accordion-collapse {
+  border: none;
+}
+
+.modal.addNew_client-class .accordion-button {
+  border-left: none;
+  border-color: #C6CFD9;
+  border-right: none;
+  background: transparent;
+}
+
+.modal.addNew_client-class .accordion-button span {
+  margin-right: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1877F2;
+  font-family: 'reg' !important;
+}
+
 .newSalesOne .centerdContainer {
   width: 100%;
   height: 80%;
