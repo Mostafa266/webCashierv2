@@ -4267,7 +4267,7 @@ datalist span {
   padding-right: 64px !important;
   padding-left: 0;
   padding-top: 8px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   background-color: #e3f3ff;
   border: none;
   font-size: 1.6em;
