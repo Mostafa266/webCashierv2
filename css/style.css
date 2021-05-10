@@ -231,6 +231,11 @@ input[type=number] {
   width: 100% !important;
 }
 
+.modal-dialog {
+  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+}
+
 .modal-footer {
   border-top: 1px solid #d4d4d4;
   -webkit-box-pack: start;
