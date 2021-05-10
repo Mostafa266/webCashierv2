@@ -4860,7 +4860,12 @@ select {
 }
 
 .inovice-discount-vOne {
+  padding: 0px;
   display: block;
+}
+
+.inovice-discount-vOne .popup--invoice--header {
+  background-color: #F5F5F5;
 }
 
 .inovice-discount-vOne .popup--invoice--header svg {

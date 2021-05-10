@@ -1,11 +1,16 @@
-.inovice-discount-vOne{
-    .popup--invoice--header{
-        svg{
+.inovice-discount-vOne {
+    padding: 0px;
+    .popup--invoice--header {
+  background-color: #F5F5F5;
+
+        svg {
             margin-left: 1rem;
         }
     }
+
     display: block;
-    .removeDiscount{
+
+    .removeDiscount {
         background: #FFEFF0;
         /* padding: 1rem; */
         border-radius: 29px;
@@ -14,17 +19,21 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        svg{
+
+        svg {
             right: -5px;
             position: relative;
         }
-        span{
+
+        span {
             color: #FF6B73;
-            font-size: 1.4em; right: -5px;
+            font-size: 1.4em;
+            right: -5px;
             position: relative;
         }
     }
-    .popup--invoice--body-value--inputs-container{
+
+    .popup--invoice--body-value--inputs-container {
         border: 1px solid #C6CFD9;
         height: 5rem;
         border-radius: 10px;
@@ -32,28 +41,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        input{
+
+        input {
             border-bottom: none;
-            height:95%;
+            height: 95%;
             width: 71%;
         }
-        label{
+
+        label {
             font-size: 16px;
             margin: 0 7px;
             color: #4080FF;
         }
     }
-    .sale-number{
+
+    .sale-number {
         position: relative;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .lineThrough{
+
+        .lineThrough {
             text-decoration: line-through;
         }
-        span{
+
+        span {
             font-size: 1.7em;
         }
     }
