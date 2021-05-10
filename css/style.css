@@ -257,6 +257,12 @@ input[type=number] {
   cursor: pointer;
 }
 
+.new-btns-container,
+.modal-footer,
+.popup--invoice--body-footer {
+  border-top: 1px solid #d4d4d4;
+}
+
 .side-receiveDevice {
   position: fixed;
   left: -100%;
