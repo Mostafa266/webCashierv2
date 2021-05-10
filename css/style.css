@@ -4127,6 +4127,13 @@ input[type=number] {
   font-size: 16px;
 }
 
+#order_delivring {
+  /* Reset Select */
+  /* Remove IE arrow */
+  /* Custom Select */
+  /* Arrow */
+}
+
 #order_delivring input {
   padding: 1.375rem 0.75rem;
   font-size: 1.4em;
@@ -4156,16 +4163,11 @@ input[type=number] {
   font-family: "NotoSansArabic-Bold";
 }
 
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-}
-
-.modal-header {
+#order_delivring .modal-header {
   background-color: #F5F5F5;
 }
 
-.addnew_address {
+#order_delivring .addnew_address {
   font-size: 1.4em;
   font-weight: 500;
   text-align: right;
@@ -4187,16 +4189,16 @@ input[type=number] {
   align-items: center;
 }
 
-datalist {
+#order_delivring datalist {
   opacity: 0;
   display: none !important;
 }
 
-datalist span {
+#order_delivring datalist span {
   display: block;
 }
 
-.d-flex {
+#order_delivring .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4209,23 +4211,23 @@ datalist span {
   margin: 2rem 0;
 }
 
-.d-flex .select.form-conterol {
+#order_delivring .d-flex .select.form-conterol {
   width: 95%;
 }
 
-.d-flex input, .d-flex select {
+#order_delivring .d-flex input, #order_delivring .d-flex select {
   width: 100%;
   border: 1px solid #ced4da;
   border-radius: 10px !important;
 }
 
-.deliver-container {
+#order_delivring .deliver-container {
   padding: 14.5px 28px 18px 28px;
   direction: rtl;
   text-align: right;
 }
 
-.deliver-container p {
+#order_delivring .deliver-container p {
   font-family: "NotoSansArabic-SemiBold";
   font-size: 1.4em;
   font-weight: 600;
@@ -4236,13 +4238,13 @@ datalist span {
   margin-right: 5px;
 }
 
-.deliver-container .input-group-btn.pic {
+#order_delivring .deliver-container .input-group-btn.pic {
   top: 8px;
   right: 21px;
   z-index: 100;
 }
 
-.deliver-container .input-group-btn {
+#order_delivring .deliver-container .input-group-btn {
   position: absolute;
   left: 16px;
   top: 15px;
@@ -4255,7 +4257,7 @@ datalist span {
   z-index: 100;
 }
 
-.deliver-container .input-group-btn.update {
+#order_delivring .deliver-container .input-group-btn.update {
   width: 24px;
   height: 21px;
   font-family: "NotoSansArabic-Medium";
@@ -4266,7 +4268,7 @@ datalist span {
   cursor: pointer;
 }
 
-.deliver-container .form-control.address {
+#order_delivring .deliver-container .form-control.address {
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   border: solid 2px #4080ff;
@@ -4274,13 +4276,13 @@ datalist span {
   background-color: #f5f5f5;
 }
 
-.deliver-container .form-control.address-content {
+#order_delivring .deliver-container .form-control.address-content {
   border: none;
   background-color: #f5f5f5;
   margin-top: 8px;
 }
 
-.deliver-container .form-control.client-info {
+#order_delivring .deliver-container .form-control.client-info {
   height: 51.5px;
   padding-right: 64px !important;
   padding-left: 0;
@@ -4294,11 +4296,11 @@ datalist span {
   color: #212121;
 }
 
-.discountTabsContainer {
+#order_delivring .discountTabsContainer {
   padding: 16px 41px 24px 41px;
 }
 
-.discountTabsContainer #chang-price p {
+#order_delivring .discountTabsContainer #chang-price p {
   opacity: 0.6;
   text-decoration: line-through;
   font-family: "NotoSansArabic-Medium";
@@ -4308,16 +4310,16 @@ datalist span {
   color: #212121;
 }
 
-.discountTabsContainer #chang-price .btns-container {
+#order_delivring .discountTabsContainer #chang-price .btns-container {
   padding-top: 24px !important;
 }
 
-.discountTabsContainer .inputs-container {
+#order_delivring .discountTabsContainer .inputs-container {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-.discountTabsContainer .inputs-container .form-control {
+#order_delivring .discountTabsContainer .inputs-container .form-control {
   border: none;
   border-bottom: 1px solid #ced4da;
   text-align: right;
@@ -4330,14 +4332,14 @@ datalist span {
   height: 29px;
 }
 
-.discountTabsContainer .inputs-container .input-group > .custom-select:not(:last-child),
-.discountTabsContainer .inputs-container .input-group > .form-control:not(:last-child) {
+#order_delivring .discountTabsContainer .inputs-container .input-group > .custom-select:not(:last-child),
+#order_delivring .discountTabsContainer .inputs-container .input-group > .form-control:not(:last-child) {
   border-radius: 0px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.discountTabsContainer .inputs-container .input-group-btn {
+#order_delivring .discountTabsContainer .inputs-container .input-group-btn {
   position: absolute;
   left: 5px;
   top: 10px;
@@ -4347,7 +4349,7 @@ datalist span {
   color: #212121;
 }
 
-.discountTabsContainer .btns-container {
+#order_delivring .discountTabsContainer .btns-container {
   padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4360,7 +4362,7 @@ datalist span {
           align-items: center;
 }
 
-.discountTabsContainer .btns-container .btn-apply {
+#order_delivring .discountTabsContainer .btns-container .btn-apply {
   width: 185px;
   height: 48px;
   padding: 10px 74px 9px 75px;
@@ -4374,7 +4376,7 @@ datalist span {
   color: #1877f2;
 }
 
-.discountTabsContainer .btns-container .btn-cancel {
+#order_delivring .discountTabsContainer .btns-container .btn-cancel {
   width: 79px;
   height: 48px;
   padding: 10px 27px 9px;
@@ -4388,7 +4390,7 @@ datalist span {
   color: #65676b;
 }
 
-.nav-item a {
+#order_delivring .nav-item a {
   font-size: 1.2em;
   line-height: 2.08;
   text-align: right;
@@ -4396,7 +4398,7 @@ datalist span {
   font-family: "NotoSansArabic-Regular";
 }
 
-#order_discount .modal-dialog {
+#order_delivring #order_discount .modal-dialog {
   width: 329px;
   height: auto !important;
   border-radius: 12px;
@@ -4404,11 +4406,11 @@ datalist span {
   margin: 0;
 }
 
-#order_discount .modal-content {
+#order_delivring #order_discount .modal-content {
   border: none;
 }
 
-#order_discount p {
+#order_delivring #order_discount p {
   font-size: 1.2em;
   font-weight: 600;
   line-height: 2.1;
@@ -4417,7 +4419,7 @@ datalist span {
   font-family: "NotoSansArabic-SemiBold";
 }
 
-#order_discount.modal {
+#order_delivring #order_discount.modal {
   position: fixed;
   top: 20%;
   z-index: 1050;
@@ -4430,8 +4432,7 @@ datalist span {
   direction: ltr;
 }
 
-/* Reset Select */
-select {
+#order_delivring select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -4442,13 +4443,11 @@ select {
   background-image: none;
 }
 
-/* Remove IE arrow */
-select::-ms-expand {
+#order_delivring select::-ms-expand {
   display: none;
 }
 
-/* Custom Select */
-.select {
+#order_delivring .select {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4456,7 +4455,7 @@ select::-ms-expand {
   overflow: hidden;
 }
 
-select {
+#order_delivring select {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -4465,8 +4464,7 @@ select {
   cursor: pointer;
 }
 
-/* Arrow */
-.select::after {
+#order_delivring .select::after {
   content: "\f078";
   font: normal normal normal 17px/1 FontAwesome;
   font-size: 1.2em;
@@ -4479,6 +4477,15 @@ select {
   pointer-events: none;
   -webkit-transition: 0.25s all ease;
   transition: 0.25s all ease;
+}
+
+#order_delivring .new-btns-container {
+  border-top: 0px;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 #addNew_client {

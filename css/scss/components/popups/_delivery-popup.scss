@@ -24,11 +24,8 @@
       color: #212121;
       font-family: "NotoSansArabic-Bold";
     }
-  }
-  .modal.fade .modal-dialog{
-    transform: translate(0);
-  }
-  
+ 
+    
   .modal-header{
     background-color: #F5F5F5;
   }
@@ -313,3 +310,12 @@ datalist{
     -webkit-transition: 0.25s all ease;
     transition: 0.25s all ease;
   }
+  .new-btns-container{
+    border-top: 0px;
+  }
+
+  }
+  .modal.fade .modal-dialog{
+    transform: translate(0);
+  }
+  
