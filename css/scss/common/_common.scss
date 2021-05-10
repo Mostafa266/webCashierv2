@@ -44,7 +44,9 @@ html {
 
   user-select: none !important;
 }
-
+.modal-header{
+  background-color: #F5F5F5;
+}
 button {
   &:focus {
     box-shadow: none !important;
@@ -246,3 +248,18 @@ input{
 //       width: 41.6666666667%;
 //   }
 // }
+
+.modal-footer{
+  border-top: 1px solid #d4d4d4;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0;
+  padding-bottom: 13px;
+  .new-btns-container{
+    padding-top: 10px;
+  }
+  button{
+    cursor: pointer;
+  }
+}
