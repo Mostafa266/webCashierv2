@@ -433,7 +433,7 @@ input[type=number] {
 .sidemenu-btn {
   position: fixed;
   top: 21px;
-  right: 20px;
+  right: 30px;
   width: 30px;
   height: 30px;
   display: -webkit-box;
@@ -442,6 +442,7 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .sidemenu-btn svg {
@@ -3468,11 +3469,12 @@ input[type=number] {
   z-index: 222;
   right: 0;
   top: 0;
-  width: 7.2rem;
+  width: 8.5rem;
   font-size: 1rem;
   height: 100%;
   margin-top: 6.5rem;
-  background-color: #f9fbfc;
+  background-color: #ffffff;
+  padding: 5px 6px 2px 3px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3502,13 +3504,19 @@ input[type=number] {
 .sidemenu ul li {
   display: block;
   font-size: 1.2em;
-  height: 5.6em;
+  height: 6em;
+  width: 95%;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-align: center;
   text-decoration: none;
   margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.sidemenu ul li:hover {
+  background-color: #f1f1f1;
 }
 
 .sidemenu ul li span {
@@ -3519,14 +3527,15 @@ input[type=number] {
   margin-top: -1.3rem;
   text-decoration: none;
   position: relative;
-  top: -11px;
+  top: 0;
 }
 
 .sidemenu ul li svg {
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
   fill: #a6cdff;
   margin-bottom: 16px;
+  margin-top: 5px;
 }
 
 .sidemenu ul li a {
@@ -3545,6 +3554,7 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .layout {

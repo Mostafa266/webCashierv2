@@ -1,11 +1,12 @@
 .sidemenu-btn{
     position: fixed;
     top: 21px;
-    right: 20px;
+    right: 30px;
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     svg{
         width:70%;
     }
