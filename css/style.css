@@ -3475,12 +3475,46 @@ input[type=number] {
   margin-top: 6.5rem;
   background-color: #ffffff;
   padding: 5px 6px 2px 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
   .sidemenu {
     display: none;
   }
+}
+
+.sidemenu.sideMenuOpened {
+  width: 22rem;
+  border-top-left-radius: 24px;
+  -webkit-box-shadow: 0px 0px 15px 2px #d0d0d0;
+          box-shadow: 0px 0px 15px 2px #d0d0d0;
+}
+
+.sidemenu.sideMenuOpened ul li {
+  margin: 2.5px auto;
+}
+
+.sidemenu.sideMenuOpened ul li a {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 4rem;
+}
+
+.sidemenu.sideMenuOpened ul li span {
+  margin-top: 0px;
+}
+
+.sidemenu.sideMenuOpened ul li svg {
+  margin: 0;
 }
 
 .sidemenu ul {

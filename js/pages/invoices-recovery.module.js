@@ -3,6 +3,7 @@ import '../components/layoutTabs.module.js';
 import '../components/modal.module.js';
 // to enbale menu in appbar
 import '../components/appBar-menu.module.js';
+import './../components/sidemenu.module.js';
 
 
 let tl3 = new TimelineMax({paused:true});

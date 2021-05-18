@@ -5,6 +5,7 @@ import '../components/modal.module.js';
 import '../components/appBar-menu.module.js';
 // to enable function to get clicked client to get value and show in input in prdouct list 
 // import './../components/client-list.module.js'
+import './../components/sidemenu.module.js';
 
 let tl3 = new TimelineMax({paused:true});
 let productsListContainer = document.querySelector('.products-list-container')

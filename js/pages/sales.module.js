@@ -7,6 +7,7 @@ import '../components/appBar-menu.module.js';
 import clientListRenderer from './../components/client-list.module.js';
 
 import './../components/ChangeView.module.js';
+import './../components/sidemenu.module.js';
 
 clientListRenderer('salesInvoice','clientsList','salesInvoice')
 

@@ -64,6 +64,3 @@ $( document ).ready(function() {
   // s.addEventListener('scroll',function(e){
   //   console.log(e);
   // })
-
-  
-

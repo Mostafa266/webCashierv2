@@ -5,6 +5,7 @@ import '../components/modal.module.js';
 import '../components/appBar-menu.module.js';
 // to enable function to get clicked client to get value and show in input in prdouct list 
 import clientListRenderer from './../components/client-list.module.js';
+import './../components/sidemenu.module.js';
 
 clientListRenderer('salesInvoiceInAside','clientsListInAside','receiveDevice_input')
 

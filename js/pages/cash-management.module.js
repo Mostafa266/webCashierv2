@@ -32,6 +32,7 @@ payReceiveItems.forEach(element => {
 
 
 
+import './../components/sidemenu.module.js';
 
 
 
