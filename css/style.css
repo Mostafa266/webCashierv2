@@ -5995,6 +5995,10 @@ input[type=number] {
   padding: 0;
 }
 
+.maintenance-page #addNew_client {
+  display: none;
+}
+
 .maintenance-page .deliverdTabs-multitabs {
   display: none;
 }
