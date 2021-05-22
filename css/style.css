@@ -3418,6 +3418,25 @@ input[type=number] {
   font-size: 1.6em;
 }
 
+.receiveFromOut {
+  width: 14%;
+  background: #F5F5F5;
+  padding: 1.8rem;
+  border-radius: 36px;
+  /* max-width: 15rem; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
 .change-view-menu {
   display: none;
   width: 20em;
@@ -5990,6 +6009,54 @@ input[type=number] {
   display: none;
 }
 
+.maintenance-page .accordion-container .accordion .accordion-button {
+  background: transparent;
+}
+
+.maintenance-page .accordion-information-list--item {
+  background: #F5F5F5  !important;
+  margin: 1rem 0;
+  padding: 1rem 1rem !important;
+}
+
+.maintenance-page .leftnewContent .layout-tabs--buttons-btn.active span {
+  color: #ffffff;
+}
+
+.maintenance-page .leftnewContent .layout-tabs--buttons-btn .numberCircle {
+  border: 1px solid #c3c3c3;
+  background: transparent;
+}
+
+.maintenance-page .leftnewContent .layout-tabs--buttons-btn.active .numberCircle {
+  border: none;
+  background: #F2F2F2;
+}
+
+.maintenance-page .leftnewContent .layout-tabs--buttons-btn.active .numberCircle span {
+  color: #1877F2;
+}
+
+.maintenance-page .layout-right {
+  background-color: red;
+}
+
+.maintenance-page .leftnewContent .layout-tabs--buttons-btn span {
+  color: #c3c3c3;
+}
+
+.maintenance-page .greenBG {
+  background-color: #2BAB5A !important;
+}
+
+.maintenance-page .blueBG {
+  background-color: #1877F2 !important;
+}
+
+.maintenance-page .redBG {
+  background-color: #2BAB5A !important;
+}
+
 .maintenance-page .deliveredRequests-leftSide-MultiTabs .layout-tabs {
   display: block;
   padding: 0;
@@ -5997,6 +6064,68 @@ input[type=number] {
 
 .maintenance-page #addNew_client {
   display: none;
+}
+
+.maintenance-page .withNumber {
+  position: relative;
+}
+
+.maintenance-page .device-issues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.maintenance-page .device-issues--issue {
+  width: 8em;
+  height: 2.5em;
+  border: 1px solid #4d4d4d;
+  border-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .device-issues--issue span {
+  color: #212121;
+}
+
+.maintenance-page .numberCircle {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  right: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance-page .numberCircle span {
+  font-size: 1.2rem;
 }
 
 .maintenance-page .deliverdTabs-multitabs {
@@ -6023,6 +6152,10 @@ input[type=number] {
   border-radius: 0;
   margin: 10px 0;
   width: 100%;
+}
+
+.maintenance-page .searchInput.halfSearchInput {
+  width: 65%;
 }
 
 .maintenance-page .searchInput input {
@@ -6077,7 +6210,7 @@ input[type=number] {
 }
 
 .maintenance-page .appbar span {
-  color: #212121;
+  color: #ffffff;
 }
 
 .maintenance-page .appbar.invoice .appbar-number--box {
@@ -6120,7 +6253,6 @@ input[type=number] {
   overflow: hidden;
   min-height: 10.5%;
   height: auto;
-  bottom: 25px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -6246,43 +6378,6 @@ input[type=number] {
 
 .maintenance-page .invoice .accordion .accordion-information-list--item .branch {
   text-decoration: underline;
-}
-
-.maintenance-page .invoice .accordion .accordion-information-list--item .device-issues {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.maintenance-page .invoice .accordion .accordion-information-list--item .device-issues--issue {
-  width: 8em;
-  height: 2.5em;
-  background-color: #F2F2F2;
-  border-radius: 2em;
-  margin: 1em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.maintenance-page .invoice .accordion .accordion-information-list--item .device-issues--issue span {
-  color: #212121;
 }
 
 .maintenance-page .invoice .accordion .accordion-information-list--item .device-maintenance {
@@ -6583,6 +6678,10 @@ input[type=number] {
 
 .maintenance-page .finishOrderTabs .infinishORderTabs .product-item-in-list--data .secondInput {
   width: 50%;
+}
+
+.maintenance-page .finishOrderTabs .clients-list--individuals {
+  display: block !important;
 }
 
 .maintenance-page .finishOrderTabs .clients-list--individuals.active {

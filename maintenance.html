@@ -462,18 +462,18 @@
             <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-4  layout-left">
                 <div class="layout-container layout-left--container" id="invoice_tab">
                     <!-- appbar style in _layout.scss -->
-                    <div class="appbar invoice">
+                    <div class="appbar invoice greenBG">
                         <!-- have have class invoice this to allow show invoice title and number and menu btn  -->
                         <!-- appbar style in components/small/_appbar.scss -->
                         <div class="appbar-title">
                             <span>الفاتوره 1005#</span>
                         </div>
-                        <div class="appbar-number">
+                        <!-- <div class="appbar-number">
                             <span>6</span>
                             <div class="appbar-number--box">
                                 <span>44</span>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="appbar-menu-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 4 18">
                                 <g id="Group_4318" data-name="Group 4318" transform="translate(0.194 -0.03)">
@@ -554,65 +554,9 @@
                     <div class="left-content-data">
                         <div class="invoice" id="salesInvoice">
                             <!-- stylefile name => _invoice.scss -->
-                            <div class="searchInput grayscale" id="invoice_search_input_container">
-                                <!-- stylefile name => _searchInput.scss -->
-                                <div class="image-container" id="removeClientNameFromInvoice">
-                                    <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24">
-                                        <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24"
-                                            rx="12" fill="#fff" opacity="0" />
-                                        <g id="Group_4007" data-name="Group 4007"
-                                            transform="translate(12.206 4) rotate(45)">
-                                            <line id="Line_343" data-name="Line 343" y2="12" transform="translate(6)"
-                                                fill="none" stroke="#878a90" stroke-linecap="round"
-                                                stroke-miterlimit="10" stroke-width="1" />
-                                            <line id="Line_344" data-name="Line 344" y2="12"
-                                                transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90"
-                                                stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                        <g id="Group_5006" transform="translate(-78.263 -102.166)">
-                                            <circle id="Ellipse_485" cx="16" cy="16" r="16" fill="#fff"
-                                                transform="translate(78.263 102.166)" />
-                                            <path id="Path_1893"
-                                                d="M103.424 125.677a9.992 9.992 0 0 1-16.561 0 9.992 9.992 0 0 1 16.561 0z"
-                                                class="cls-2" transform="translate(-.877 -1.923)" />
-                                            <circle id="Ellipse_486" cx="3.767" cy="3.767" r="3.767" class="cls-2"
-                                                transform="translate(90.497 109.787)" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <input id="invoiceInput" value='' type="search" name="search" placeholder="لا يوجد عميل"
-                                    disabled>
-                                <div class="remove_search_input" id='remove_search_input'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.022" height="12.023"
-                                        viewBox="0 0 12.022 12.023">
-                                        <g id="Group_3933" data-name="Group 3933"
-                                            transform="translate(6.01 -5.303) rotate(45)">
-                                            <line id="Line_337" data-name="Line 337" y2="16"
-                                                transform="translate(8.002 0)" fill="none" stroke="#212121"
-                                                stroke-miterlimit="10" stroke-width="1" />
-                                            <line id="Line_338" data-name="Line 338" x2="16" transform="translate(0 8)"
-                                                fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="1" />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
+                      
                             <!-- Start work in added products list -->
 
-                            <!-- All chcekout classes will change view 
-                                -- Choose-technician 
-                                -- WarrntyPeriod
-                                -- checkout - class only mean the defualt state
-                                -- Choose-technician & rejectDevice
-                                -- Choose-technician & acceptDevice
-                                -- HandOver-device
-                                -- WarrntyPeriod & receiveCash
-                            -->
                             <div class="activeRequest-leftSide-oneTab">
                                 <div class="deviceInformation-header only-text">
                                     <h1>معلومات الطلب</h1>
@@ -799,7 +743,7 @@
 
                             <div class="deliverdTabs-multitabs">
                                 <div class="deliveredRequests-leftSide-MultiTabs">
-                                    <div class="layout-tabs">
+                                    <div class="layout-tabs greenBG">
                                         <ul class="layout-tabs--buttons">
                                             <li class="layout-tabs--buttons-btn clients-tabs-btn active"
                                                 data-target-id='device_layoutTabs'>
@@ -814,6 +758,54 @@
                                                 <span>فاتورة العميل</span>
                                             </li>
                                         </ul>
+                                    </div>
+                                    <div class="searchInput grayscale" id="invoice_search_input_container">
+                                        <!-- stylefile name => _searchInput.scss -->
+                                        <div class="image-container" id="removeClientNameFromInvoice">
+                                            <svg id="Group_4925" data-name="Group 4925" xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24">
+                                                <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24" height="24"
+                                                    rx="12" fill="#fff" opacity="0" />
+                                                <g id="Group_4007" data-name="Group 4007"
+                                                    transform="translate(12.206 4) rotate(45)">
+                                                    <line id="Line_343" data-name="Line 343" y2="12" transform="translate(6)"
+                                                        fill="none" stroke="#878a90" stroke-linecap="round"
+                                                        stroke-miterlimit="10" stroke-width="1" />
+                                                    <line id="Line_344" data-name="Line 344" y2="12"
+                                                        transform="translate(12 6) rotate(90)" fill="none" stroke="#878a90"
+                                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" />
+                                                </g>
+                                            </svg>
+        
+                                        </div>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                <g id="Group_5006" transform="translate(-78.263 -102.166)">
+                                                    <circle id="Ellipse_485" cx="16" cy="16" r="16" fill="#fff"
+                                                        transform="translate(78.263 102.166)" />
+                                                    <path id="Path_1893"
+                                                        d="M103.424 125.677a9.992 9.992 0 0 1-16.561 0 9.992 9.992 0 0 1 16.561 0z"
+                                                        class="cls-2" transform="translate(-.877 -1.923)" />
+                                                    <circle id="Ellipse_486" cx="3.767" cy="3.767" r="3.767" class="cls-2"
+                                                        transform="translate(90.497 109.787)" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <input id="invoiceInput" value='' type="search" name="search" placeholder="لا يوجد عميل"
+                                            disabled>
+                                        <div class="remove_search_input" id='remove_search_input'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12.022" height="12.023"
+                                                viewBox="0 0 12.022 12.023">
+                                                <g id="Group_3933" data-name="Group 3933"
+                                                    transform="translate(6.01 -5.303) rotate(45)">
+                                                    <line id="Line_337" data-name="Line 337" y2="16"
+                                                        transform="translate(8.002 0)" fill="none" stroke="#212121"
+                                                        stroke-miterlimit="10" stroke-width="1" />
+                                                    <line id="Line_338" data-name="Line 338" x2="16" transform="translate(0 8)"
+                                                        fill="none" stroke="#212121" stroke-miterlimit="10" stroke-width="1" />
+                                                </g>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="clients-list--individuals deviceInfo-tab-content active"
@@ -4530,18 +4522,15 @@
                             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+                            <!-- All chcekout classes will change view 
+                                -- Choose-technician 
+                                -- WarrntyPeriod
+                                -- checkout - class only mean the defualt state
+                                -- Choose-technician & rejectDevice
+                                -- Choose-technician & acceptDevice
+                                -- HandOver-device
+                                -- WarrntyPeriod & receiveCash
+                            -->
 
                             <div class="checkout active-request hideIt">
                                 <!-- stylefile name => _checkout.scss -->
@@ -4712,570 +4701,7 @@
                                     <!-- ---- End ITEM ---- -->
                                 </ul>
                             </div>
-                            <div class="clients-list" id="clientsList">
-                                <div class="search-container">
-                                    <div class="back-btn" id="backBtn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23.675" height="17.518"
-                                            viewBox="0 0 23.675 17.518">
-                                            <g id="Group_4651" data-name="Group 4651"
-                                                transform="translate(1.413 0.707)">
-                                                <g id="Group_3933" data-name="Group 3933"
-                                                    transform="translate(22.261) rotate(90)">
-                                                    <g id="Group_5315" data-name="Group 5315">
-                                                        <line id="Line_337" data-name="Line 337" y2="22.261"
-                                                            transform="translate(7.973)" fill="none" stroke="#212121"
-                                                            stroke-miterlimit="10" stroke-width="2" />
-                                                        <path id="Path_1911" data-name="Path 1911"
-                                                            d="M0,0,8.052,8.052,16.1,0" transform="translate(0 14.209)"
-                                                            fill="none" stroke="#212121" stroke-miterlimit="10"
-                                                            stroke-width="2" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-
-                                    </div>
-                                    <div class="searchInput " id="invoice_search_input_container">
-                                        <!-- stylefile name => _searchInput.scss -->
-                                        <div class="image-container" id="removeClientNameFromInvoice">
-                                            <svg id="Group_4925" data-name="Group 4925"
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <rect id="Rectangle_1731" data-name="Rectangle 1731" width="24"
-                                                    height="24" rx="12" fill="#fff" opacity="0" />
-                                                <g id="Group_4007" data-name="Group 4007"
-                                                    transform="translate(12.206 4) rotate(45)">
-                                                    <line id="Line_343" data-name="Line 343" y2="12"
-                                                        transform="translate(6)" fill="none" stroke="#878a90"
-                                                        stroke-linecap="round" stroke-miterlimit="10"
-                                                        stroke-width="1" />
-                                                    <line id="Line_344" data-name="Line 344" y2="12"
-                                                        transform="translate(12 6) rotate(90)" fill="none"
-                                                        stroke="#878a90" stroke-linecap="round" stroke-miterlimit="10"
-                                                        stroke-width="1" />
-                                                </g>
-                                            </svg>
-
-                                        </div>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="26.646" height="26.646"
-                                                viewBox="0 0 26.646 26.646">
-                                                <g id="Group_4732" data-name="Group 4732"
-                                                    transform="translate(1.414 1.414)">
-                                                    <g id="Group_3888" data-name="Group 3888">
-                                                        <g id="Group_1114" data-name="Group 1114">
-                                                            <g id="Group_3929" data-name="Group 3929">
-                                                                <g id="Group_3924" data-name="Group 3924"
-                                                                    transform="translate(0 11.884) rotate(-45)">
-                                                                    <ellipse id="Ellipse_1" data-name="Ellipse 1"
-                                                                        cx="8.403" cy="8.439" rx="8.403" ry="8.439"
-                                                                        fill="none" stroke="#757575"
-                                                                        stroke-miterlimit="10" stroke-width="2" />
-                                                                    <line id="Line_1" data-name="Line 1" y2="6.066"
-                                                                        transform="translate(8.403 16.87)" fill="none"
-                                                                        stroke="#757575" stroke-linecap="round"
-                                                                        stroke-miterlimit="10" stroke-width="2" />
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-
-
-                                        </div>
-                                        <input id="invoiceInput" value='' type="search" name="search"
-                                            placeholder="ابحث باسم المحل او رقم الموبيل" disabled>
-                                    </div>
-                                </div>
-
-                                <div class="layout-tabs">
-                                    <ul class="layout-tabs--buttons">
-                                        <li class="layout-tabs--buttons-btn clients-tabs-btn active"
-                                            data-target-id='client_list_individuals'>
-                                            <span>افراد</span>
-                                        </li>
-                                        <li class="layout-tabs--buttons-btn clients-tabs-btn"
-                                            data-target-id="client_list_shope">
-                                            <span>محلات</span>
-                                        </li>
-                                        <li class="layout-tabs--buttons-btn clients-tabs-btn"
-                                            data-target-id="client_list_suppliers">
-                                            <span>موردين</span>
-                                        </li>
-                                    </ul>
-                                    <!-- // add client -->
-                                    <div class="add-client">
-                                        <span data-target-modal='addNew_client-class'>+ اضافه عميل</span>
-                                    </div>
-                                </div>
-                                <div class="clients-list--container">
-                                    <div class="clients-list--individuals customers-tab-content active"
-                                        id="client_list_individuals">
-
-                                        <ul class="clients-list-users">
-                                            <!-- you can use this component only stylefile  => _Clients-list.scss -->
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="clients-list-users-item padding-10-lr">
-                                                    <div class="clients-list-users-item-data">
-                                                        <div class="clients-list-users-item-data--photo">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.97"
-                                                                height="28.803" viewBox="0 0 25.97 28.803">
-                                                                <g id="Group_5544" data-name="Group 5544"
-                                                                    transform="translate(-12.009 -12.348)">
-                                                                    <path id="Path_1893" data-name="Path 1893"
-                                                                        d="M112.833,128.177a15.669,15.669,0,0,1-25.97,0,15.669,15.669,0,0,1,25.97,0Z"
-                                                                        transform="translate(-74.854 -93.925)"
-                                                                        fill="#fff" />
-                                                                    <circle id="Ellipse_486" data-name="Ellipse 486"
-                                                                        cx="5.907" cy="5.907" r="5.907"
-                                                                        transform="translate(19.082 12.348)"
-                                                                        fill="#fff" />
-                                                                </g>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="clients-list-users-item-data--name">
-                                                            <span>عاصم الجزيري</span>
-                                                            <span>01126622221</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clients-list-users-item-price">
-                                                        <span>00.00</span>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="clients-list--shope customers-tab-content" id="client_list_shope">
-
-                                    </div>
-                                    <div class="clients-list--suppliers customers-tab-content"
-                                        id="client_list_suppliers">
-
-                                    </div>
-                                </div>
-                            </div>
+                      
 
                         </div>
                     </div>

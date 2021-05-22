@@ -3,6 +3,53 @@
         opacity: 0;
         display: none;
     }
+    .accordion-container .accordion .accordion-button{
+        background: transparent;
+    }
+    .accordion-information-list--item{
+        background: #F5F5F5  !important;
+        margin: 1rem 0;
+        padding: 1rem 1rem !important;
+
+    }
+    .leftnewContent .layout-tabs--buttons-btn.active span{
+        color: $white;
+    }
+    .leftnewContent .layout-tabs--buttons-btn{
+    .numberCircle{
+        border: 1px solid #c3c3c3;
+        background: transparent;
+    }
+    }
+    .leftnewContent .layout-tabs--buttons-btn.active{
+        .numberCircle{
+            border: none;
+            background: #F2F2F2;
+            span{
+                color: $blue
+            }
+        }
+        }
+
+
+
+
+        .layout-right{
+            background-color: red;
+        }
+
+    .leftnewContent .layout-tabs--buttons-btn span{
+        color: #c3c3c3;
+    }
+    .greenBG{
+        background-color: #2BAB5A !important;
+    }
+    .blueBG{
+        background-color: #1877F2 !important;
+    }
+    .redBG{
+        background-color: #2BAB5A !important;
+    }
     .deliveredRequests-leftSide-MultiTabs{
         .layout-tabs{
             display: block;
@@ -12,6 +59,39 @@
 
     #addNew_client{
         display: none;
+    }
+    .withNumber{
+        position: relative;
+    }
+    .device-issues{
+        @include flexCenter;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        &--issue{
+            width: 8em;
+            height: 2.5em;
+            border:1px solid #4d4d4d;
+            border-radius: 2em;
+            // margin: 1em 0;
+            @include flexCenter;
+            span{
+                color:$black ;
+            }
+        }
+    }
+    .numberCircle{
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #ffffff;
+        border-radius: 50%;
+        right: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .numberCircle span{
+        font-size: 1.2rem;
     }
     .deliverdTabs-multitabs{
         display:none
@@ -34,6 +114,9 @@
             border-radius: 0;
             margin: 10px 0;
             width: 100%;
+        }
+        &.halfSearchInput{
+            width: 65% ;
         }
 
         input {
@@ -72,7 +155,7 @@
             font-size:7px;
         }
         span {
-            color: $black;
+            color: $white;
         }
 
         &.invoice .appbar-number--box {
@@ -114,7 +197,7 @@
         overflow: hidden;
         min-height: 10.5%;
         height: auto;
-        bottom:25px;
+        // bottom:25px;
         .checkout-chart-btn {
             width: 3rem;
             height: 0.5rem;
@@ -240,22 +323,7 @@
                .branch{
                    text-decoration: underline
                }
-              .device-issues{
-                  @include flexCenter;
-                  justify-content: space-around;
-                  flex-wrap: wrap;
-                  &--issue{
-                      width: 8em;
-                      height: 2.5em;
-                      background-color: #F2F2F2;
-                      border-radius: 2em;
-                      margin: 1em 0;
-                      @include flexCenter;
-                      span{
-                          color:$black ;
-                      }
-                  }
-              }
+           
               
               
 
@@ -509,6 +577,7 @@
             
         }
         .clients-list--individuals{
+            display: block !important;
             &.active{
                 display: block;
             }
